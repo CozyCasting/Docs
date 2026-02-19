@@ -52,6 +52,7 @@ markdown_extensions:
       alternate_style: true
   - pymdownx.tasklist:
       custom_checkbox: true
+  - md_in_html
 
 extra:
   generator: false
@@ -73,6 +74,7 @@ nav:
   - Reference:
     - Locations: reference/locations.md
     - Rarities: reference/rarities.md
+  - Screenshots: screenshots.md
   - FAQ: faq.md
   - Tips: tips.md
   - Roadmap: roadmap.md
