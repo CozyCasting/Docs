@@ -73,3 +73,6 @@ nav:
   - Reference:
     - Locations: reference/locations.md
     - Rarities: reference/rarities.md
+  - FAQ: faq.md
+  - Tips: tips.md
+  - Roadmap: roadmap.md

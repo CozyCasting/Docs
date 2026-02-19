@@ -58,6 +58,24 @@ Redeem a promotional code.
 
 Enter a code to claim rewards like coins, bait, consumables, or exclusive items.
 
+## /units
+
+Toggle between metric and imperial units.
+
+- **Usage:** `/units`
+
+Switches fish size and weight display between **metric (cm / kg)** and **imperial (in / lbs)**. Your preference is saved per-user. Defaults to imperial.
+
+## /lookup
+
+Look up info about any item.
+
+- **Usage:** `/lookup <query>`
+- **Aliases:** `wiki`, `iteminfo`
+- **Examples:** `/lookup shrimp`, `/lookup rabbit foot`, `/lookup bamboo rod`
+
+Search for detailed stats on any rod, bait, or consumable. Supports fuzzy matching — you don't need the exact name. Shows rarity boost, cost, level requirement, and other relevant stats for the matched item.
+
 ## /settings
 
 Manage server settings (requires Manage Server permission).

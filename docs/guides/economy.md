@@ -16,9 +16,9 @@ The primary currency. Earned by selling fish, claiming dailies, and from camp in
 
 A premium currency earned through special activities like displaying Pearlescent fish in your camp. Used to buy the Pearl Rod (500 pearls) and other exclusive items.
 
-### Tickets
+### Vote Tickets
 
-Fishing Tickets let you skip your fishing cooldown. When you have a ticket and try to fish while on cooldown, it's automatically consumed to let you fish immediately. Tickets are found in chests.
+A currency earned by voting for CozyCasting on bot listing sites. Spent to purchase Chest Keys (`/buy key tickets`, costs 20 Vote Tickets per key).
 
 ## Earning Coins
 
@@ -90,7 +90,7 @@ Core chests open directly — **no key required**. They come in four tiers:
 | Chest | Rolls | Typical Loot |
 |-------|-------|--------------|
 | Common | 2 | Bait, small coin drops, fishing tickets |
-| Rare | 3 | Better bait, consumables, tickets |
+| Rare | 3 | Better bait, consumables, fishing tickets |
 | Epic | 4 | Consumables, rare bait, titles |
 | Legendary | 5 | Premium consumables, rare titles, gear |
 
