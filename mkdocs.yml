@@ -1,0 +1,75 @@
+site_name: CozyCasting
+site_description: Your guide to CozyCasting — a relaxing Discord fishing bot
+site_author: Drew
+
+theme:
+  name: material
+  palette:
+    - scheme: slate
+      primary: teal
+      accent: cyan
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+    - scheme: default
+      primary: teal
+      accent: cyan
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+docs_dir: docs
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.betterem
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+extra:
+  generator: false
+
+nav:
+  - Home: index.md
+  - Getting Started: getting-started.md
+  - Commands:
+    - Overview: commands/index.md
+    - Fishing: commands/fishing.md
+    - Economy: commands/economy.md
+    - Travel: commands/travel.md
+    - Profile: commands/profile.md
+    - Misc: commands/misc.md
+  - Guides:
+    - Fishing: guides/fishing.md
+    - Progression: guides/progression.md
+    - Economy: guides/economy.md
+  - Reference:
+    - Locations: reference/locations.md
+    - Rarities: reference/rarities.md
