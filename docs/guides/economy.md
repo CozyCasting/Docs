@@ -73,7 +73,7 @@ Your biggest investment. Better rods reduce cooldown and boost rarity odds.
 
 ### Bait
 
-Consumable items that boost rarity per cast. Ranges from 5 coins (Earthworm) to 10,000 coins (Magic Bait). See the [Fishing Guide](fishing.md) for the full bait table.
+Consumable items that boost rarity or add special effects per cast. Ranges from 5 coins (Earthworm) to 6,000 coins (Magic Bait). See the [Fishing Guide](fishing.md) for the full bait table.
 
 ### Camp Upgrades
 
@@ -92,9 +92,9 @@ Core chests open directly — **no key required**. They come in four tiers:
 | Common | 2 | Bait, small coin drops, fishing tickets |
 | Rare | 3 | Better bait, consumables, fishing tickets |
 | Epic | 4 | Consumables, rare bait, titles |
-| Legendary | 5 | Premium consumables, rare titles, gear |
+| Legendary | 5 | Premium consumables (Magnets, etc.), rare titles, gear |
 
-Possible loot from any chest includes coins, pearls, bait, consumables (XP boosts, rarity boosts), fishing tickets, titles, and gear.
+Possible loot from any chest includes coins, pearls, bait, consumables (XP boosts, rarity boosts, Magnets, Double Worms), fishing tickets, titles, and gear.
 
 ### Seasonal Chests
 
@@ -135,7 +135,7 @@ Generates free bait over time. Higher levels produce more bait per cycle and unl
 
 #### Tackle Shop
 
-Gives you a discount on shop purchases. Each level adds **5% off**, up to 25% at level 5.
+Gives you a discount on shop purchases and **camp building upgrades**. Each level adds **5% off**, up to 25% at level 5.
 
 #### Display Tank
 

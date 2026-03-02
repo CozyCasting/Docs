@@ -72,12 +72,14 @@ As you level up, you unlock access to new locations, better equipment, and achie
 |-------|---------|
 | 1 | Stream, Pond (NA) |
 | 5 | River (NA), Wooden Rod |
-| 10 | Lake (NA), Fiberglass Rod |
-| 15 | Asia (Stream, Pond), Pearl Rod |
-| 20 | Ocean (NA), Carbon Fiber Rod |
-| 25 | Cave (NA) |
-| 30 | Europe (Stream, Pond) |
+| 10 | Lake (NA), Fiberglass Rod, **Basic Net** |
+| 15 | Asia (Stream, Pond), Pearl Rod, **Improved Net** |
+| 20 | Ocean (NA), Carbon Fiber Rod, **Reinforced Net** |
+| 25 | Cave (NA), **Camp**, **Master Net** |
+| 30 | Europe (Stream, Pond), **Legendary Net** |
 | 35 | Deep Sea (NA), Titanium Rod |
 | 45 | Volcano (NA) |
 | 50 | Arctic (NA), Legendary Rod |
 | 75 | Mystic Rod |
+
+*Note: Nets are passive fishing items that automatically catch fish for you over time. Once you reach the required level, you can purchase them in the **Nets** tab of the `/shop`. Use `/net status` and `/net collect` to manage them!*

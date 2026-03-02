@@ -86,12 +86,22 @@ Bait is consumed on each cast and provides a rarity bonus. Some baits work bette
 | Minnow | +5% | Lake, River | 25 coins | 1 |
 | Shrimp | +8% | Ocean, Deep Sea | 50 coins | 1 |
 | Squid | +12% | Deep Sea, Ocean | 100 coins | 1 |
-| Golden Lure | +5% | All | 5,000 coins | 25 |
-| Magic Bait | +35% | All | 10,000 coins | 10 |
+| Golden Lure | +20% | All | 2,500 coins | 1 |
+| Magic Bait | +30% | All | 6,000 coins | 1 |
+| Seasonal Bait | +25% | All | 500 coins | 1 |
+| Lucky Double Worm | +5% | All | N/A (Event/Drop) | 1 |
+
+*Note: The **Seasonal Bait** gives a 50% chance to guarantee catching a Seasonal Variant fish (when an event is active). The **Lucky Double Worm** provides a 15% chance to catch two fish in a single cast!*
 
 ## Location Matters
 
 Different locations have different species pools, base values, and rarity modifiers. Higher-level locations like Deep Sea, Volcano, and Arctic have better odds for Epic+ fish and higher base coin values. See the [Locations Reference](../reference/locations.md) for details.
+
+## Nets (Passive Fishing)
+
+In addition to casting your rod, you can passively catch fish using your **Net**. Your net automatically gathers fish and occasional items or chests over time while you are away. 
+
+Use `/net status` to view your current net capacity and what's waiting for you, and use `/net collect` to claim your catches! Nets can sometimes catch rare fish or items, making them an excellent way to continue progressing even when you aren't actively fishing.
 
 ## Chests
 

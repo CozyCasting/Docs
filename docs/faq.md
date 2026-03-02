@@ -14,6 +14,10 @@ Yes, completely free to play. Pearls (the premium currency) are earned in-game b
 
 No, CozyCasting is a server-based bot. All commands must be used inside a Discord server.
 
+### Why is my leaderboard stat different from my profile (`/info`)?
+
+Leaderboards are cached and update every 5 minutes to keep the bot fast. Your `/info` profile is always instantly up to date!
+
 ---
 
 ## Fishing
@@ -38,6 +42,14 @@ Each fish you keep gets a unique 8-character code (e.g. `ABC123DE`). Use it with
 ### Can I fish at multiple locations?
 
 You can only be at one location at a time. Use `/travel` to move. Higher-level locations have better species, base values, and rarity odds.
+
+### How do I use a Net (Passive Fishing)?
+
+Nets automatically gather fish and items over time without you needing to cast. Use `/net status` to see what your net has collected, and `/net collect` to claim them.
+
+### How do Seasonal Fish work?
+
+During special seasonal events, you have a chance to catch limited-time fish variations. You can use **Seasonal Bait** to get a 50% chance of guaranteeing a Seasonal Variant on your next cast!
 
 ---
 
@@ -75,7 +87,7 @@ At **level 25**, for **75,000 coins**.
 
 ### What's the best building to upgrade first?
 
-The **Bait Bin** for free bait, or the **Display Tank** if you have Pearlescent fish. The Tackle Shop discount pays off over time if you buy a lot of bait.
+The **Bait Bin** for free bait, or the **Display Tank** if you have Pearlescent fish. The **Tackle Shop** discount pays off over time if you buy a lot of bait, and it also applies a discount to the cost of other camp building upgrades!
 
 ### How often should I collect from camp?
 
@@ -99,4 +111,4 @@ Use `/chest <type>` — for example `/chest common` or `/chest rare 5`. Core che
 
 ### What do consumables do?
 
-Consumables grant timed buffs: XP boost, rarity boost, sell boost, or cooldown reduction. Use them with `/use <item>` and check active effects with `/effects`.
+Consumables grant timed buffs: XP boost, rarity boost, sell boost, or cooldown reduction. Rare items like **Magnets** and **Lucky Double Worms** give special effects, like drawing in specific traits or a 15% chance to catch two fish at once! Use them with `/use <item>` and check active effects with `/effects`.

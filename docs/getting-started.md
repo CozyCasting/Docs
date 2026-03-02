@@ -29,6 +29,7 @@ When you catch a fish, you'll see:
 - **View your tank** with `/tank` to see your fish collection
 - **Visit the shop** with `/shop` to browse rods and bait
 - **Claim daily rewards** with `/daily` for free coins and streak bonuses
+- **Check your net** with `/net status` to see passively caught fish
 - **Travel** with `/travel` to unlock new fishing spots as you level up
 - **Check your level** with `/level` to see progress toward the next milestone
 

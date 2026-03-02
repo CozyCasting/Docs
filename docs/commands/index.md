@@ -22,4 +22,4 @@ The default prefix is `!f`. For example:
 | Economy | Shop, buy gear, check your wallet and inventory | [Economy](economy.md) |
 | Travel | Explore different fishing locations | [Travel](travel.md) |
 | Profile | View stats, level progress, achievements, and leaderboards | [Profile](profile.md) |
-| Misc | Daily rewards, chests, consumables, camp, and more | [Misc](misc.md) |
+| Misc | Daily rewards, chests, consumables, camp, nets, and more | [Misc](misc.md) |

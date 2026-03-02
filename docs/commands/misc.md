@@ -50,6 +50,14 @@ View and manage your fishing camp.
 
 Your camp generates passive income. Upgrade buildings like the Bait Bin, Tackle Shop, Breeding Tank, and Display Tank to increase earnings.
 
+## /net
+
+Manage your passive fishing net.
+
+- **Usage:** `/net status`, `/net collect`
+
+Your net automatically gathers fish and occasional items or chests over time while you are away. Use `/net status` to view your current net capacity and what's waiting for you, and use `/net collect` to claim your catches!
+
 ## /redeem
 
 Redeem a promotional code.
