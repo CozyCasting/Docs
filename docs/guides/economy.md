@@ -18,7 +18,7 @@ A premium currency earned through special activities like displaying Pearlescent
 
 ### Vote Tickets
 
-A currency earned by voting for CozyCasting on bot listing sites. Spent to purchase Chest Keys (`/buy key tickets`, costs 20 Vote Tickets per key).
+A currency earned by voting for CozyCasting on bot listing sites. Spent to purchase Chest Keys (`/buy key tickets`, costs 15 Vote Tickets per key).
 
 ## Earning Coins
 
@@ -42,6 +42,8 @@ The final sell value is: `base_value x rarity_multiplier x trait_multipliers`
 
 For example, a Giant Legendary fish from the Arctic would be worth: 100 x 30 x 2.0 = **6,000 coins**.
 
+Your `/tank` has a **Bulk Sell** button — toggle individual fish or entire pages for sale, then confirm in one click.
+
 ### Daily Rewards
 
 Use `/daily` once every 24 hours to claim:
@@ -50,6 +52,10 @@ Use `/daily` once every 24 hours to claim:
 - **Streak bonus:** +15 coins per consecutive day
 - **Level bonus:** +1 coin per level
 - **Chest chance:** 10% to receive a common chest
+
+### Referral Rewards
+
+Share your referral code with `/referral`. New players can use `/refer <code>` before reaching level 4. When the referred player reaches level 5, **you earn 150 pearls** and **they earn 100 pearls**.
 
 ### Camp Income
 
@@ -66,10 +72,10 @@ Your biggest investment. Better rods reduce cooldown and boost rarity odds.
 | Basic Rod | Free | 1 |
 | Wooden Rod | 500 | 5 |
 | Fiberglass Rod | 2,000 | 10 |
-| Carbon Fiber Rod | 8,000 | 20 |
-| Titanium Rod | 25,000 | 35 |
-| Legendary Rod | 100,000 | 50 |
-| Mystic Rod | 500,000 | 75 |
+| Carbon Fiber Rod | 25,000 | 20 |
+| Titanium Rod | 75,000 | 35 |
+| Legendary Rod | 250,000 | 50 |
+| Mystic Rod | 1,000,000 | 75 |
 
 ### Bait
 

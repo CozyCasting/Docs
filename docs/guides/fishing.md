@@ -11,6 +11,24 @@ When you use `/fish`, the game:
 3. **Rolls for traits** — special modifiers that affect value and XP
 4. **Calculates size, value, and XP** based on all the above
 
+## Fishing Sessions
+
+When you use `/fish`, a fishing session begins. Press **Cast Line** to start your first cast — it's guaranteed to catch a fish or chest.
+
+Subsequent casts in the same session have an increasing **escape chance** that climbs from 0% on your second cast to roughly 80% by the 10th+ cast. If a fish escapes, your session ends. If you have a **Fishing Ticket**, you can use it to guarantee the next catch and keep fishing.
+
+You can keep casting until you miss, run out of time, or manually stop. **One 15-minute cooldown applies per session, not per cast** — so all your catches in a session share the same cooldown timer.
+
+### Streaks
+
+Consecutive catches in a session build a **streak**. Each catch adds **+1% rarity bonus**, capped at **+10%** (shown on the catch embed). When your session ends, you see a summary: fish caught, kept/sold split, coins earned, XP gained, chests found, and your best streak.
+
+### During a Session
+
+- **Chest catches** — There's roughly a 5% chance to reel in a chest instead of a fish. Chests count toward your streak.
+- **Bait switching** — After each catch, a "Bait" button appears so you can switch bait mid-session without ending it.
+- **Double catches** — A small chance to reel in two fish on one cast (each with independent species and rarity rolls). You get a 4-button view: Keep Both / Sell Both / Keep 1st Sell 2nd / Sell 1st Keep 2nd.
+
 ## Rarity Tiers
 
 Fish come in 7 rarity tiers. Higher rarities are worth more coins and XP but are much harder to catch.
@@ -60,6 +78,8 @@ Trait multipliers stack with rarity multipliers, so a Giant Legendary fish is wo
 
 These rare traits can **only** appear through the fish breeding system. They offer exceptional value bonuses and unique appearances.
 
+**Fertility** is a stat (0–100) on every fish that determines how many times it can breed. Wild-caught fish start with **50 fertility**. Each breeding costs **15 fertility** from each parent (minimum 10 required to breed). Offspring start with a fertility penalty — roughly parent average minus 10 — which naturally limits how many generations you can chain.
+
 | Trait | Value Multiplier | XP Multiplier | Appearance | Source |
 |-------|-----------------|---------------|-----------|--------|
 | Gilded | 3.5x | 1.3x | Rich golden shimmer | Breeding mutation (2–6% chance) |
@@ -81,10 +101,10 @@ Better rods reduce your fishing cooldown **and** increase your rarity bonus. Eac
 | Basic Rod | 0s | +0% | Free | 1 |
 | Wooden Rod | -5s | +5% | 500 coins | 5 |
 | Fiberglass Rod | -10s | +10% | 2,000 coins | 10 |
-| Carbon Fiber Rod | -15s | +15% | 8,000 coins | 20 |
-| Titanium Rod | -20s | +20% | 25,000 coins | 35 |
-| Legendary Rod | -30s | +30% | 100,000 coins | 50 |
-| Mystic Rod | -40s | +50% | 500,000 coins | 75 |
+| Carbon Fiber Rod | -15s | +15% | 25,000 coins | 20 |
+| Titanium Rod | -20s | +20% | 75,000 coins | 35 |
+| Legendary Rod | -30s | +30% | 250,000 coins | 50 |
+| Mystic Rod | -40s | +40% | 1,000,000 coins | 75 |
 | Pearl Rod | 0s | +0% | 500 pearls | 15 |
 
 The **Pearl Rod** is special — it doesn't boost rarity or reduce cooldown, but it can give fish the exclusive **Pearlescent** trait.
@@ -99,7 +119,7 @@ Bait is consumed on each cast and provides a rarity bonus. Some baits work bette
 | Cricket | +2% | Pond, River, Lake | 10 coins | 1 |
 | Minnow | +5% | Lake, River | 25 coins | 1 |
 | Shrimp | +8% | Ocean, Deep Sea | 50 coins | 1 |
-| Squid | +12% | Deep Sea, Ocean | 100 coins | 1 |
+| Squid | +12% | Deep Sea, Ocean | 500 coins | 1 |
 | Golden Lure | +20% | All | 2,500 coins | 1 |
 | Magic Bait | +30% | All | 6,000 coins | 1 |
 | Seasonal Bait | +25% | All | 500 coins | 1 |

@@ -57,7 +57,7 @@ During special seasonal events, you have a chance to catch limited-time fish var
 
 ### What are Vote Tickets?
 
-Vote Tickets are a currency earned by voting for CozyCasting on bot listing sites. They're spent to buy Chest Keys (`/buy key tickets`, 20 tickets per key), which are required to open seasonal chests.
+Vote Tickets are a currency earned by voting for CozyCasting on bot listing sites. They're spent to buy Chest Keys (`/buy key tickets`, 15 tickets per key), which are required to open seasonal chests.
 
 ### What are Fishing Tickets?
 
@@ -91,7 +91,7 @@ The **Bait Bin** for free bait, or the **Display Tank** if you have Pearlescent 
 
 ### How often should I collect from camp?
 
-At least once every 7 days — that's when Display Tank income caps. Bait Bin stacks up to 12 cycles (every 2 hours), so collecting daily is ideal.
+At least once every 3 days — that's when Display Tank income caps. Bait Bin stacks up to 12 cycles (every 2 hours), so collecting daily is ideal.
 
 ---
 

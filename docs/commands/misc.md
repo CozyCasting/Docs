@@ -10,6 +10,30 @@ Claim your daily reward.
 
 Grants coins based on your level and current streak. Consecutive days build a streak bonus (+15 coins per day). There's also a 10% chance to receive a bonus chest.
 
+## /quests
+
+View and claim your daily quests.
+
+- **Usage:** `/quests`
+
+You get 3 quests per day: 2 shared globally across all players, plus 1 personal quest scaled to your level. Quest types include catching a number of fish, hunting specific rarities, fishing at certain locations, selling goals, and bait usage. Rewards are XP + coins scaled to your level. Complete all 3 to earn a bonus Common Chest. Quests and the daily reward reset at midnight UTC — a live countdown is shown.
+
+## /referral
+
+View and share your referral code.
+
+- **Usage:** `/referral`
+
+Share your personal referral code with friends. New players can enter it with `/refer <code>` before reaching level 4. When they hit level 5, you receive **150 pearls** and they receive **100 pearls**.
+
+## /refer
+
+Use a referral code from another player.
+
+- **Usage:** `/refer <code>`
+
+Must be used before you reach level 4. Earns you 100 pearls when you reach level 5.
+
 ## /chest
 
 Open a chest from your inventory.
