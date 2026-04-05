@@ -56,6 +56,20 @@ Fish can spawn with special traits that modify their value and XP. Traits are ro
 
 Trait multipliers stack with rarity multipliers, so a Giant Legendary fish is worth significantly more than a normal one.
 
+### Breeding-Only Mutations
+
+These rare traits can **only** appear through the fish breeding system. They offer exceptional value bonuses and unique appearances.
+
+| Trait | Value Multiplier | XP Multiplier | Appearance | Source |
+|-------|-----------------|---------------|-----------|--------|
+| Gilded | 3.5x | 1.3x | Rich golden shimmer | Breeding mutation (2–6% chance) |
+| Bioluminescent | 2.5x | 1.3x | Glowing teal coloration | Breeding mutation (2–6% chance) |
+| Colossal | 1.8x | 1.3x | Massive size (2–3× normal) | Special: Both parents Giant (5% chance) |
+
+**How to obtain:**
+- **Gilded & Bioluminescent** — Random mutations that can occur during breeding. Mutation chance increases with Breeding Tank level (2% at Level 1–2, 4% at Level 3–4, 6% at Level 5). Only one mutation per breeding session.
+- **Colossal** — A special upgrade that occurs when both parents have the Giant trait. There's a 5% chance the Giant trait becomes Colossal instead. If both parents are Giant, the offspring also has a bonus 25% chance to inherit Giant even if the normal inheritance roll fails.
+
 ## Improving Your Odds
 
 ### Rods
@@ -99,7 +113,7 @@ Different locations have different species pools, base values, and rarity modifi
 
 ## Nets (Passive Fishing)
 
-In addition to casting your rod, you can passively catch fish using your **Net**. Your net automatically gathers fish and occasional items or chests over time while you are away. 
+In addition to casting your rod, you can passively catch fish using your **Net**. Your net automatically gathers fish and occasional items or chests over time while you are away.
 
 Use `/net status` to view your current net capacity and what's waiting for you, and use `/net collect` to claim your catches! Nets can sometimes catch rare fish or items, making them an excellent way to continue progressing even when you aren't actively fishing.
 

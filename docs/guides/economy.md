@@ -75,6 +75,27 @@ Your biggest investment. Better rods reduce cooldown and boost rarity odds.
 
 Consumable items that boost rarity or add special effects per cast. Ranges from 5 coins (Earthworm) to 6,000 coins (Magic Bait). See the [Fishing Guide](fishing.md) for the full bait table.
 
+### Tank Slot Upgrades
+
+Expand your fish tank capacity with permanent upgrades.
+
+Each Tank Slot upgrade adds 5 additional slots to your storage capacity. Prices scale with each purchase:
+
+| Purchase | Cost |
+|----------|------|
+| 1st Slot | 2,000 coins |
+| 2nd Slot | 3,600 coins |
+| 3rd Slot | 6,480 coins |
+| 4th Slot | 11,664 coins |
+| 5th Slot | 20,995 coins |
+| 6th Slot | 37,791 coins |
+| 7th Slot | 68,023 coins |
+| 8th Slot | 122,442 coins |
+| 9th Slot | 220,395 coins |
+| 10th Slot | 396,711 coins |
+
+Each subsequent purchase costs 1.8x the previous price (base cost: 2,000 coins).
+
 ### Camp Upgrades
 
 Invest in your camp buildings for long-term passive income. See the [Camp](#camp) section below.
@@ -142,13 +163,21 @@ Gives you a discount on shop purchases and **camp building upgrades**. Each leve
 Lets you showcase your best fish and earn passive coin and pearl income.
 
 - Each level adds **1 display slot** (up to 5 fish at level 5)
-- Displayed fish earn **10% of their value per day** in coins
+- Displayed fish earn **5% of their value per day** in coins
 - Fish with the **Pearlescent** trait earn pearls instead of coins
-- Income accumulates for up to 7 days before it caps — collect regularly with `/camp collect`
+- Income accumulates for up to 3 days before it caps — collect regularly with `/camp collect`
 
 #### Breeding Tank
 
-Reserved for a future fish breeding feature. You can build it now, but it doesn't have gameplay effects yet.
+Unlock the fish breeding system. Breed two compatible fish to create offspring with inherited traits and rare mutations.
+
+- **Requirements:** Breeding Tank must be built (level 1+)
+- **Breeding slots per level:** Level 1–2 = 1 slot, Level 3–4 = 2 slots, Level 5 = 3 slots
+- **Breeding time:** 12–24 hours depending on parent rarities. Tank level reduces time (up to 30% faster at level 5)
+- **Offspring inheritance:** Species (45% each parent + 10% random), rarity (mostly matches parent avg, 15% up/10% down), traits (40% inherit chance per trait)
+- **Breeding-only mutations:** Gilded (3.5× value), Bioluminescent (2.5× value), Colossal (1.8× value + size multiplier)
+
+See the [Fishing Guide](fishing.md#breeding-only-mutations) for details on the special traits that can only appear via breeding.
 
 ### Building Costs
 
@@ -156,11 +185,11 @@ Buildings cost coins (and pearls at higher levels) to construct and upgrade:
 
 | Level | Coin Cost | Pearl Cost |
 |-------|-----------|------------|
-| 1 (Build) | 10,000 | 0 |
-| 2 | 25,000 | 0 |
-| 3 | 50,000 | 0 |
-| 4 | 100,000 | 50 |
-| 5 | 200,000 | 150 |
+| 1 (Build) | 15,000 | 0 |
+| 2 | 40,000 | 0 |
+| 3 | 75,000 | 0 |
+| 4 | 150,000 | 50 |
+| 5 | 300,000 | 150 |
 
 ### Camp Levels
 

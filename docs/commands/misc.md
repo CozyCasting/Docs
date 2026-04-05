@@ -1,6 +1,6 @@
 # Misc Commands
 
-Daily rewards, chests, consumables, camp, and utility commands.
+Daily rewards, chests, consumables, camp, breeding, and utility commands.
 
 ## /daily
 
@@ -49,6 +49,46 @@ View and manage your fishing camp.
 - **Usage:** `/camp`
 
 Your camp generates passive income. Upgrade buildings like the Bait Bin, Tackle Shop, Breeding Tank, and Display Tank to increase earnings.
+
+## /breed
+
+Manage your fish breeding sessions.
+
+- **Usage:** `/breed` or `/breed status`
+
+View your active breeding sessions, eggs, and ready-to-hatch fish. Shows breeding tank capacity and how many slots are in use.
+
+### /breed start
+
+Start breeding two compatible fish.
+
+- **Usage:** `/breed start <code1> <code2>`
+
+Begin a breeding session with two fish from your tank. Both fish must be in your tank (not displayed), have fertility ≥ 10, and be compatible (different sexes). Breeding takes 12–24 hours depending on parent rarities. Parents are locked during breeding and cannot be sold or used in other breeding sessions.
+
+### /breed hatch
+
+Begin incubating a ready egg.
+
+- **Usage:** `/breed hatch [session_id]`
+
+Move an egg to the hatching phase. Hatching time depends on the offspring's rarity (0.5–96 hours before tank level reduction). If you have only one egg ready, the session ID is optional.
+
+### /breed collect
+
+Collect a fully hatched fish into your tank.
+
+- **Usage:** `/breed collect [session_id]`
+
+Claim your hatched offspring and add it to your tank. The offspring inherits species, rarity, and traits from its parents, and may have rare breeding-only mutations. If you have only one fish ready to collect, the session ID is optional.
+
+### /breed cancel
+
+Cancel an active breeding session.
+
+- **Usage:** `/breed cancel [session_id]`
+
+Abort a breeding session and return both parents to normal status. Useful if you need the parents for fishing or another session. Fertility is not refunded.
 
 ## /net
 

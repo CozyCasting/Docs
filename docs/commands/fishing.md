@@ -10,6 +10,8 @@ Cast your line and catch a fish.
 - **Aliases:** `f`, `catch`
 - **Cooldown:** 10 minutes base (reduced by better rods)
 
+When you use `/fish`, a fishing session starts. You'll see a **Cast Line** button to begin your session. If you're on cooldown, you can still cast using a Fishing Ticket — the Cast button will be available, and one ticket will be consumed automatically when you cast.
+
 After catching a fish, you'll see two buttons:
 
 - **Keep** — Adds the fish to your tank

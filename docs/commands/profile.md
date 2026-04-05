@@ -50,6 +50,7 @@ Titles are earned through achievements and rare chest drops. Your equipped title
 
 View the server leaderboard.
 
-- **Usage:** `/leaderboard`
+- **Usage:** `/leaderboard [category]`
+- **Categories:** Most Fish, Most Coins, Highest Level, Highest Streak
 
-See who's caught the most fish, earned the most coins, or reached the highest level in your server.
+See who's caught the most fish, earned the most coins, reached the highest level, or built the longest fishing streak in your server.
