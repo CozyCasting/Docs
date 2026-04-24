@@ -67,6 +67,7 @@ nav:
     - Travel: commands/travel.md
     - Profile: commands/profile.md
     - Misc: commands/misc.md
+    - Server Admin: commands/server-admin.md
   - Guides:
     - Fishing: guides/fishing.md
     - Progression: guides/progression.md

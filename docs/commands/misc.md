@@ -152,14 +152,7 @@ Search for detailed stats on any rod, bait, or consumable. Supports fuzzy matchi
 
 Manage server settings (requires Manage Server permission).
 
-- **Usage:** `/settings view`, `/settings prefix <new_prefix>`, `/settings prefix-reset`, `/settings ephemeral <command> <enabled>`
-
-**Subcommands:**
-
-- `/settings view` — View current server settings
-- `/settings prefix <new_prefix>` — Set a custom command prefix (1-10 characters)
-- `/settings prefix-reset` — Revert to the default prefix
-- `/settings ephemeral <command> <enabled>` — Toggle ephemeral (private) responses for specific commands
+See the full **[Server Admin guide](server-admin.md)** for all subcommands including notification roles, chest drop channels, timezone, and prefix configuration.
 
 ## /help
 
