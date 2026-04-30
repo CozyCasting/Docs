@@ -20,6 +20,7 @@ The default prefix is `!f`. For example:
 |----------|-------------|------|
 | Fishing | Catch fish, view your tank, sell, and rename | [Fishing](fishing.md) |
 | Economy | Shop, buy gear, check your wallet and inventory | [Economy](economy.md) |
+| Trading | Send items to other players or open interactive trade sessions | [Trading](trading.md) |
 | Travel | Explore different fishing locations | [Travel](travel.md) |
 | Profile | View stats, level progress, achievements, and leaderboards | [Profile](profile.md) |
 | Misc | Daily rewards, chests, consumables, camp, nets, and more | [Misc](misc.md) |

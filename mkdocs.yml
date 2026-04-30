@@ -64,6 +64,7 @@ nav:
     - Overview: commands/index.md
     - Fishing: commands/fishing.md
     - Economy: commands/economy.md
+    - Trading: commands/trading.md
     - Travel: commands/travel.md
     - Profile: commands/profile.md
     - Misc: commands/misc.md

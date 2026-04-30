@@ -16,7 +16,6 @@ These features are actively being worked on.
 Features confirmed for future updates, roughly in priority order.
 
 - **Voting Integration** — Earn Vote Tickets automatically by voting on bot listing sites, with streak bonuses for consistent voters.
-- **Trading** — Trade fish, bait, and items with other players in your server.
 - **Seasonal Events** — Recurring limited-time events with exclusive fish species, seasonal chests, and event-only titles.
 - **Guild / Server Challenges** — Server-wide cooperative goals with shared rewards.
 - **More Locations** — Additional fishing spots across new regions.
@@ -26,6 +25,7 @@ Features confirmed for future updates, roughly in priority order.
 
 Recently shipped features.
 
+- **Trading** — `/give` for one-way gifting and `/trade` for interactive two-way trades with atomic execution
 - **Seasonal Chests** — Limited-time event chests with unique loot pools and Chest Key requirement
 - **Camp System** — Passive income via Bait Bin, Display Tank, Tackle Shop, and Breeding Tank
 - **Pearl Rod & Pearlescent Trait** — Pearl currency and the exclusive rod that unlocks it

@@ -95,6 +95,26 @@ At least once every 3 days — that's when Display Tank income caps. Bait Bin st
 
 ---
 
+## Trading
+
+### How do I send items to another player?
+
+Use `/give @player <item>` for a quick one-way transfer (no acceptance needed), or `/trade @player` to open an interactive session where both sides can put up multiple items and accept when ready.
+
+### What items can I trade?
+
+You can trade coins, pearls, vote tickets, fish (from your tank), gear, rods, bait, keys, chests, and most consumables. A few consumables are not tradeable: Title Pouch, Fishing Pass, Fishing Journal, Shopping Card, and Twin Hook Token.
+
+### Can I cancel a trade after accepting?
+
+Not after both players have accepted — the trade executes immediately and cannot be undone. However, if only you have accepted and the other player hasn't yet, either player can cancel. Adding or removing any item also resets both acceptances.
+
+### Why did my acceptance reset?
+
+If either player modifies their offer after you accepted, both acceptances clear automatically. This prevents bait-and-switch. Just review the updated offer and accept again when you're happy with it.
+
+---
+
 ## Items & Commands
 
 ### How do I look up item stats?
