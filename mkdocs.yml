@@ -80,3 +80,6 @@ nav:
   - FAQ: faq.md
   - Tips: tips.md
   - Roadmap: roadmap.md
+  - Legal:
+    - Privacy Policy: privacy.md
+    - Terms of Service: terms.md
