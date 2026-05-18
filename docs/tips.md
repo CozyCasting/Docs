@@ -6,13 +6,13 @@ A collection of tips to help you fish smarter and progress faster.
 
 - **Sell most fish early** — You need coins for your first rod upgrades. Don't hoard.
 - **Upgrade your rod ASAP** — The Wooden Rod (500 coins, level 5) and Fiberglass Rod (2,000 coins, level 10) both meaningfully cut your cooldown.
-- **Claim `/daily` every day** — The streak bonus compounds quickly. A 30-day streak adds +450 coins per claim.
+- **Claim `/daily` every day** — The streak bonus compounds quickly. A 30-day streak adds +750 coins per claim.
 - **Don't waste expensive bait at low-level locations** — Earthworms are fine at the Stream and Pond. Save Shrimp and Squid for Ocean+.
 - **Keep your first Rare+ fish** — You'll want them for early collection achievements.
 
 ## Mid Game (Levels 20–50)
 
-- **Unlock your camp at level 25** — 75,000 coins is a big ask, but the passive income pays off fast. Build the Bait Bin first.
+- **Unlock your camp at level 15** — 75,000 coins is a big ask, but the passive income pays off fast. Build the Bait Bin first.
 - **Fish at the highest location you can access** — Higher base values mean more coins per catch, even with the same rarity.
 - **Use `/lookup` before buying** — Check rod and bait stats before spending. `/lookup titanium rod` shows exact cooldown reduction and rarity bonus.
 - **Stack bait + rod bonuses** — Using Magic Bait on a Legendary Rod gives a massive combined rarity boost. Save it for your best location.

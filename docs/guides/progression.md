@@ -23,17 +23,17 @@ Traits like Giant (1.5x), Ancient (2x), and Glowing (1.75x) multiply on top of t
 
 The XP required to reach each level follows a power curve:
 
-> **XP for level N** = 100 x N^1.5^
+> **XP for level N** = 30 x N^2.3^
 
 | Level | Total XP Required | XP for This Level |
 |-------|------------------|-------------------|
-| 2 | 283 | 283 |
-| 5 | 1,118 | 282 |
-| 10 | 3,162 | 570 |
-| 20 | 8,944 | 1,260 |
-| 50 | 35,355 | 3,589 |
-| 75 | 64,952 | 4,899 |
-| 100 | 100,000 | 5,858 |
+| 2 | 147 | 147 |
+| 5 | 1,215 | 488 |
+| 10 | 5,985 | 1,288 |
+| 20 | 29,477 | 3,280 |
+| 50 | 242,522 | 11,011 |
+| 75 | 616,257 | 18,735 |
+| 100 | 1,194,321 | 27,291 |
 
 The maximum level is **100**.
 
@@ -73,9 +73,9 @@ As you level up, you unlock access to new locations, better equipment, and achie
 | 1 | Stream, Pond (NA) |
 | 5 | River (NA), Wooden Rod |
 | 10 | Lake (NA), Fiberglass Rod, **Basic Net** |
-| 15 | Asia (Stream, Pond), Pearl Rod, **Improved Net** |
+| 15 | Asia (Stream, Pond), Pearl Rod, **Improved Net**, **Camp** |
 | 20 | Ocean (NA), Carbon Fiber Rod, **Reinforced Net** |
-| 25 | Cave (NA), **Camp**, **Master Net** |
+| 25 | Cave (NA), **Master Net** |
 | 30 | Europe (Stream, Pond), **Legendary Net** |
 | 35 | Deep Sea (NA), Titanium Rod |
 | 45 | Volcano (NA) |

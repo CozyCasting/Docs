@@ -103,8 +103,8 @@ Better rods reduce your fishing cooldown **and** increase your rarity bonus. Eac
 | Fiberglass Rod | -10s | +10% | 2,000 coins | 10 |
 | Carbon Fiber Rod | -15s | +15% | 25,000 coins | 20 |
 | Titanium Rod | -20s | +20% | 75,000 coins | 35 |
-| Legendary Rod | -30s | +30% | 250,000 coins | 50 |
-| Mystic Rod | -40s | +40% | 1,000,000 coins | 75 |
+| Legendary Rod | -25s | +25% | 250,000 coins | 50 |
+| Mystic Rod | -30s | +30% | 1,000,000 coins | 75 |
 | Pearl Rod | 0s | +0% | 500 pearls | 15 |
 
 The **Pearl Rod** is special — it doesn't boost rarity or reduce cooldown, but it can give fish the exclusive **Pearlescent** trait.

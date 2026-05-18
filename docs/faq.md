@@ -74,7 +74,7 @@ As soon as you can afford it. Rod upgrades reduce cooldown (letting you fish mor
 ### What do I spend coins on first?
 
 1. **Rod upgrade** — biggest impact on earnings
-2. **Camp** (level 25+) — passive income
+2. **Camp** (level 15+) — passive income
 3. **Bait** — situational, save for high-level locations
 
 ---
@@ -83,7 +83,7 @@ As soon as you can afford it. Rod upgrades reduce cooldown (letting you fish mor
 
 ### When does the camp unlock?
 
-At **level 25**, for **75,000 coins**.
+At **level 15**, for **75,000 coins**.
 
 ### What's the best building to upgrade first?
 

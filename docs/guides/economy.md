@@ -48,9 +48,9 @@ Your `/tank` has a **Bulk Sell** button — toggle individual fish or entire pag
 
 Use `/daily` once every 24 hours to claim:
 
-- **Base reward:** 75 coins
-- **Streak bonus:** +15 coins per consecutive day
-- **Level bonus:** +1 coin per level
+- **Base reward:** 200 coins
+- **Streak bonus:** +25 coins per consecutive day
+- **Level bonus:** +5 coins per level
 - **Chest chance:** 10% to receive a common chest
 
 ### Referral Rewards
@@ -135,12 +135,12 @@ Use `/chest <type> [amount]` to open chests. You can open up to 25 at once and l
 
 ## Camp
 
-The fishing camp is a passive income system that unlocks at **level 25** for **75,000 coins**. Once purchased, your camp earns XP from fishing and levels up to unlock building upgrades.
+The fishing camp is a passive income system that unlocks at **level 15** for **75,000 coins**. Once purchased, your camp earns XP from fishing and levels up to unlock building upgrades.
 
 ### Camp Commands
 
 - `/camp view` — View your camp overview, buildings, and display tank
-- `/camp buy` — Purchase your camp (level 25+, 75,000 coins)
+- `/camp buy` — Purchase your camp (level 15+, 75,000 coins)
 - `/camp build <building>` — Construct a new building (level 1)
 - `/camp upgrade <building>` — Upgrade a building to the next level
 - `/camp collect` — Collect accumulated bait and display income
@@ -213,7 +213,7 @@ Your camp earns XP passively from fishing. Higher camp levels unlock the ability
 
 - **Don't sell everything** — Keep rare fish for your collection and achievement progress
 - **Use bait wisely** — Expensive bait at low-level locations is wasteful; save it for Ocean+ spots
-- **Daily streaks matter** — A 30-day streak gives you +450 bonus coins per claim
+- **Daily streaks matter** — A 30-day streak gives you +750 bonus coins per claim
 - **Upgrade your rod first** — The cooldown reduction lets you fish more often, compounding your earnings over time
 - **Display your most valuable fish** — A Legendary fish in the Display Tank earns far more passive income than a Common one
 - **Pearlescent fish are display gold** — They generate pearls instead of coins, which are much harder to earn otherwise
