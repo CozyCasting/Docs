@@ -5,6 +5,17 @@ All notable changes to CozyCasting will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.9.3] - 2026-07-31
+
+### Changed
+- **Shop gear can't be salvaged** — `/salvage` now only accepts gear you found, not gear you bought. Buying ten cheap items was a cheaper route to a chest than earning one. Shop gear no longer shows up in the salvage list; use `/destroy` to clear it out.
+
+### Fixed
+- **`/card` opens again for everyone** — If you'd earned both the achievement and the title for your first catch, the stamp menu listed it twice and Discord refused to show the card at all. The menu now lists each stamp once.
+- **`/card` menus stop snapping back to your old pick** — Choosing a new background updated the card but the menu jumped back to the one you started with, which then made it impossible to switch back. The menus now show what you actually have equipped.
+- **Redeem codes name your rewards properly** — Claiming a code listed rewards by their internal id, so an Epic Chest showed up as "epic". It now shows the real item names.
+- **Long fish names no longer eat the numbers on your profile card** — A very long species name pushed the coin value off the end of the **Most Valuable** line. The value now drops onto its own line underneath, so you see the whole name *and* what it's worth. The showcase caption keeps its size and value too.
+
 ## [0.9.2] - 2026-07-31
 
 ### Changed
