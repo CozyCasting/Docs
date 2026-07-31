@@ -2,13 +2,13 @@
 
 View your stats, track your progress, and see how you compare.
 
-## /info
+## /profile
 
 View a user profile and stats.
 
-- **Usage:** `/info [user]`
-- **Aliases:** `profile`, `me`
-- **Examples:** `/info`, `/info @friend`
+- **Usage:** `/profile [user]`
+- **Aliases:** `!fme` (prefix only)
+- **Examples:** `/profile`, `/profile @friend`
 - **Cooldown:** 10 seconds
 
 Renders your **fishing licence** — a card image with your avatar, level, and stats — plus an embed for your wallet and equipped gear. See [Profile Cards](#profile-cards) below for what's on it.
@@ -18,7 +18,7 @@ Renders your **fishing licence** — a card image with your avatar, level, and s
 
 ## Profile Cards
 
-`/info` renders your profile as a **fishing licence** card alongside its embed. The card shows:
+`/profile` renders your profile as a **fishing licence** card alongside its embed. The card shows:
 
 | Field | What it means |
 |-------|---------------|
@@ -36,7 +36,7 @@ Renders your **fishing licence** — a card image with your avatar, level, and s
 | Showcase fish | The fish shown on the card with its species, size, rarity, and value — defaults to your most valuable fish, but you can pick a different one with `/card` |
 | Stamps | Up to six postmarks representing achievements and titles you've unlocked |
 
-Viewing someone else's card with `/info @user` shows *their* stats and *their* chosen cosmetics.
+Viewing someone else's card with `/profile @user` shows *their* stats and *their* chosen cosmetics.
 
 ## /card
 
@@ -124,7 +124,7 @@ Titles are earned through achievements and rare chest drops. Your equipped title
 
 ## /referral
 
-View your referral stats and code — see the [Trading & Referrals](misc.md#referral) section for details. `/info` also shows a quick summary, with a nudge toward `/referral` if you haven't shared your code yet.
+View your referral stats and code — see the [Trading & Referrals](misc.md#referral) section for details. `/profile` also shows a quick summary, with a nudge toward `/referral` if you haven't shared your code yet.
 
 ## /leaderboard
 

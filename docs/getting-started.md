@@ -25,7 +25,7 @@ When you catch a fish, you'll see:
 
 ## What's Next?
 
-- **Check your profile** with `/info` to see your rendered fishing licence card and stats
+- **Check your profile** with `/profile` to see your rendered fishing licence card and stats
 - **View your tank** with `/tank` to see your fish collection
 - **Visit the shop** with `/shop` to browse rods and bait
 - **Claim daily rewards** with `/daily` for free coins and streak bonuses

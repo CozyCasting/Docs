@@ -17,7 +17,7 @@ Features confirmed for future updates, roughly in priority order.
 
 Recently shipped features.
 
-- **Profile Cards** — `/info` renders a rendered "fishing licence" card; `/card` customises background, frame, name style, stamps, and showcase fish
+- **Profile Cards** — `/profile` renders a rendered "fishing licence" card; `/card` customises background, frame, name style, stamps, and showcase fish
 - **Gear Salvage** — `/salvage` turns 10 spare gear items into a chest
 - **Contest Leaderboards & Server of the Month** — `/leaderboard` Contest and Servers scopes, with automatic prize payouts
 - **Rare Catch Announcements** — Server admins can route Mythical+ catches (including to threads) with `/settings rarecatch`
@@ -31,7 +31,7 @@ Recently shipped features.
 - **Achievements** — `/achievements` with category filtering, progress bars, and milestone rewards
 - **Daily Quests** — `/quests` with 3 rotating daily objectives, streak-scaled bonus chests, and completion bonuses
 - **Daily Rewards** — `/daily` with streak bonuses, coin rewards, and chance for bonus items
-- **Referral System** — `/refer` and `/referral` commands with pearl rewards for referred players who reach milestones, tracked on `/info`
+- **Referral System** — `/refer` and `/referral` commands with pearl rewards for referred players who reach milestones, tracked on `/profile`
 - **Voting Integration** — `/vote` with streak bonuses and Vote Ticket rewards on top.gg
 - **Monster Fish** — Cooperative server-wide boss fights with reaction minigame and placement rewards
 - **Fishing Frenzy** — Server-wide frenzy events with accelerated cooldowns for all guild members

@@ -26,7 +26,7 @@ View and share your referral code.
 
 - **Usage:** `/referral`
 
-Share your personal referral code with friends. New players can enter it with `/refer <code>` before reaching level 4. When they hit level 5, you receive **150 pearls** and they receive **100 pearls**. Your referral count also appears on `/info`.
+Share your personal referral code with friends. New players can enter it with `/refer <code>` before reaching level 4. When they hit level 5, you receive **150 pearls** and they receive **100 pearls**. Your referral count also appears on `/profile`.
 
 ## /refer
 

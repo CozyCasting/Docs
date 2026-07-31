@@ -14,13 +14,13 @@ Yes, completely free to play. Pearls (the premium currency) are earned in-game b
 
 No, CozyCasting is a server-based bot. All commands must be used inside a Discord server.
 
-### What's the image on my `/info`?
+### What's the image on my `/profile`?
 
 That's your profile card — a rendered "fishing licence" showing your level, stats, and a showcase fish. Customise its background, frame, name style, and stamps with `/card`. If you'd rather see plain text (slow connection, screen reader, or just preference), compact mode replaces it with the classic text-only embed.
 
-### Why is my leaderboard stat different from my profile (`/info`)?
+### Why is my leaderboard stat different from my profile (`/profile`)?
 
-Leaderboards are cached and update every 5 minutes to keep the bot fast. Your `/info` profile is always instantly up to date!
+Leaderboards are cached and update every 5 minutes to keep the bot fast. Your `/profile` profile is always instantly up to date!
 
 ---
 

@@ -8,8 +8,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [0.9.2] - 2026-07-31
 
 ### Changed
+- **`/profile` is a real slash command** — Your profile was `/info` in the slash menu and `/profile` only worked as a `!f` text command. It's `/profile` now, the way everyone was already typing it. `!finfo` and `!fme` still work.
 - **Pearl fish are easy to spot** — Pearlescent fish now show a 🦪 wherever fish are listed, so you can tell at a glance which of your catches will earn pearls in the camp display tank. Bulk sell warns you before you sell one.
-- **`/version` is shorter** — It now shows the version you're on plus buttons to the full patch notes: the new [Changelog page](https://docs.cozycasting.app/changelog/) on the docs site, and the `#changelog` channel in our Discord.
+- **`/version` is shorter** — It now shows the version you're on plus buttons to the full patch notes: the new [Changelog page](https://cozycasting.github.io/Docs/changelog/) on the docs site, and the `#changelog` channel in our Discord.
 
 ### Added
 - **Profile cards** — `/profile` now shows a rendered fishing licence: your avatar, level, lifetime catches, fish bred, contest wins, best streak, home server and your most valuable catch, with that fish shown off on the card. Use `/card` to pick a background, a frame, a name style, up to six stamps from the achievements and titles you've earned, and a different fish to display. Prefer text? `/compact` switches `/profile` back to a plain embed.
@@ -140,7 +141,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [0.6.1] - 2026-05-10
 
 ### Added
-- **Documentation Site** — A new player-facing documentation site at https://docs.cozycasting.app with guides, command references, and tips. The `/docs` command provides a direct link.
+- **Documentation Site** — A new player-facing documentation site at https://cozycasting.github.io/Docs with guides, command references, and tips. The `/docs` command provides a direct link.
 - **Feedback Command** - Users can now send feedback to the developer via the `/feedback` command.
 
 ## [0.6.0] - 2026-05-09
