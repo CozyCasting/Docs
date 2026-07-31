@@ -10,7 +10,7 @@ Show all current server settings at a glance.
 
 - **Usage:** `/settings view`
 
-Displays your prefix, response visibility, chest drop channel, notification roles, and server timezone.
+Displays your prefix, response visibility, chest drop channel, rare catch announcement channel, notification roles, and server timezone.
 
 ---
 
@@ -68,6 +68,21 @@ Disable community chest drops.
 
 ---
 
+## Rare Catch Announcements
+
+Automatically announce every **Mythical** or **Unique** catch, with the fish, who caught it, and an optional role ping.
+
+### /settings rarecatch
+
+Set (or clear) where rare catches are announced.
+
+- **Usage:** `/settings rarecatch [channel] [role]`
+- **Examples:** `/settings rarecatch #big-catches`, `/settings rarecatch #big-catches @RareCatchFans`
+
+`channel` accepts a regular text channel **or a thread** — including an archived one, which the announcement will automatically un-archive. Leave `channel` empty to turn announcements back off.
+
+---
+
 ## Notification Roles
 
 Roles that get pinged when events fire. Generally best to have a way for userse to self-assign these roles. 
@@ -113,14 +128,18 @@ Uses standard [IANA timezone names](https://en.wikipedia.org/wiki/List_of_tz_dat
 
 ---
 
+!!! info "Permission checks"
+    `/settings channel` and `/settings rarecatch` both check that the bot can actually post in the channel (or thread) you pick — send messages, embed links, and attach files — before saving it. If something's missing, you'll get told exactly which permission to grant instead of a setup that silently never announces anything.
+
 ## Recommended Setup
 
 A typical server admin setup looks like this:
 
 1. **`/settings channel #fishing`** — designate your fishing channel for chest drops
-2. **`/settings notify-events @Events`** — create an opt-in role and assign it here
-3. **`/settings notify-chest @Events`** — use the same role or a separate one for chests
-4. **`/settings timezone America/New_York`** — set your community's timezone
-5. **`/settings prefix !f`** — leave as default or pick your own
+2. **`/settings rarecatch #fishing`** — announce Mythical+ catches in the same channel, or pick a quieter one
+3. **`/settings notify-events @Events`** — create an opt-in role and assign it here
+4. **`/settings notify-chest @Events`** — use the same role or a separate one for chests
+5. **`/settings timezone America/New_York`** — set your community's timezone
+6. **`/settings prefix !f`** — leave as default or pick your own
 
 Members who want event pings can self-assign the role via your server's role menu.

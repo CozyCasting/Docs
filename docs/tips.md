@@ -9,6 +9,7 @@ A collection of tips to help you fish smarter and progress faster.
 - **Claim `/daily` every day** — The streak bonus compounds quickly. A 30-day streak adds +750 coins per claim.
 - **Don't waste expensive bait at low-level locations** — Earthworms are fine at the Stream and Pond. Save Shrimp and Squid for Ocean+.
 - **Keep your first Rare+ fish** — You'll want them for early collection achievements.
+- **Ride your Beginner's Luck** — Your first-ever achievement grants 24 hours of 75% faster bites. Fish a lot during that window.
 
 ## Mid Game (Levels 20–50)
 
@@ -17,14 +18,16 @@ A collection of tips to help you fish smarter and progress faster.
 - **Use `/lookup` before buying** — Check rod and bait stats before spending. `/lookup titanium rod` shows exact cooldown reduction and rarity bonus.
 - **Stack bait + rod bonuses** — Using Magic Bait on a Legendary Rod gives a massive combined rarity boost. Save it for your best location.
 - **Check `/achievements`** — Many achievements give coin and XP rewards. Knowing what's close to completion helps you prioritize.
+- **Salvage instead of hoarding gear** — Once you're swimming in spare gear, `/salvage` turns 10 unequipped pieces into a chest instead of clutter.
 
 ## Late Game (Levels 50+)
 
 - **Get the Pearl Rod** — It's the only way to catch Pearlescent fish, which generate pearls passively in your Display Tank.
-- **Fill your Display Tank with Pearlescent fish** — Pearls are the hardest currency to earn; this is the main way.
+- **Fill your Display Tank with Pearlescent fish** — Pearls are the hardest currency to earn; this is the main way. They're marked with 🦪 anywhere your fish are listed, so they're easy to spot before you accidentally sell one.
 - **Upgrade Display Tank to level 5** — Five display slots means five passive income streams. Prioritize this once you have the Pearl Rod.
 - **Use consumables strategically** — Pop an XP Boost + Rarity Boost together before a long fishing session at a top-tier location.
 - **Keep at least one of every species** — Mythical and Unique fish are extremely rare. Don't sell them — they're worth far more as collection pieces and achievement progress.
+- **Chase the weekly/monthly contest** — If you're already on a fishing binge, check `/leaderboard` → Contest to see if you're in range of a Unique Chest prize.
 
 ## General
 
@@ -33,6 +36,7 @@ A collection of tips to help you fish smarter and progress faster.
 - **Use `/effects` to track buffs** — Don't waste a consumable when one is already active.
 - **`/stats` shows your catch history** — Use it to see which rarities you're missing and where to focus.
 - **Redeem codes** — Check the official Discord for `/redeem` codes that give free coins, bait, or consumables.
+- **Customise your `/card`** — Once you've unlocked a background, frame, name style, or a few stamps, `/card` is a quick way to make your profile yours.
 
 ## Bait Efficiency
 

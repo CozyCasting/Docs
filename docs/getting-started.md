@@ -17,7 +17,7 @@ That's it — you're fishing!
 When you catch a fish, you'll see:
 
 - **Species** — The type of fish (depends on your location)
-- **Rarity** — From Common to Mythical (see [Rarities](reference/rarities.md))
+- **Rarity** — From Common to Unique (see [Rarities](reference/rarities.md)) — Unique is event-only, so most of your catches will be Common through Mythical
 - **Traits** — Special modifiers like Shiny or Giant that affect value
 - **Size** — Each fish has a random size
 - **Value** — How many coins you'll get if you sell
@@ -25,13 +25,17 @@ When you catch a fish, you'll see:
 
 ## What's Next?
 
-- **Check your profile** with `/info` to see your stats
+- **Check your profile** with `/info` to see your rendered fishing licence card and stats
 - **View your tank** with `/tank` to see your fish collection
 - **Visit the shop** with `/shop` to browse rods and bait
 - **Claim daily rewards** with `/daily` for free coins and streak bonuses
 - **Check your net** with `/net status` to see passively caught fish
 - **Travel** with `/travel` to unlock new fishing spots as you level up
 - **Check your level** with `/level` to see progress toward the next milestone
+- **Share your code** with `/referral` once you're a few levels in
+
+!!! tip "Beginner's Luck"
+    Your very first achievement unlock grants a 24-hour buff that makes bites come 75% faster — a great time to fish a lot.
 
 ## Slash Commands vs Prefix Commands
 

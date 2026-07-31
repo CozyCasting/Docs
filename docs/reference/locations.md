@@ -8,15 +8,15 @@ Each location type has a base value, level requirement, and set of available rar
 
 | Type | Base Value | Base Level | Available Rarities |
 |------|-----------|------------|-------------------|
-| Stream | 10 | 1 | Common, Uncommon, Rare |
-| Pond | 10 | 1 | Common, Uncommon, Rare |
-| River | 25 | 5 | Common, Uncommon, Rare, Epic |
-| Lake | 25 | 10 | Common, Uncommon, Rare, Epic |
-| Ocean | 50 | 20 | Uncommon, Rare, Epic, Legendary |
-| Cave | 50 | 25 | Uncommon, Rare, Epic, Legendary |
-| Deep Sea | 80 | 35 | Rare, Epic, Legendary, Mythical |
-| Volcano | 80 | 45 | Rare, Epic, Legendary, Mythical |
-| Arctic | 100 | 50 | Rare, Epic, Legendary, Mythical |
+| Stream | 15 | 1 | Common, Uncommon, Rare |
+| Pond | 15 | 1 | Common, Uncommon, Rare |
+| River | 30 | 5 | Common, Uncommon, Rare, Epic |
+| Lake | 40 | 10 | Common, Uncommon, Rare, Epic |
+| Ocean | 65 | 20 | Uncommon, Rare, Epic, Legendary |
+| Cave | 75 | 25 | Uncommon, Rare, Epic, Legendary |
+| Deep Sea | 100 | 35 | Rare, Epic, Legendary, Mythical |
+| Volcano | 120 | 45 | Rare, Epic, Legendary, Mythical |
+| Arctic | 140 | 50 | Rare, Epic, Legendary, Mythical |
 
 ## North America
 

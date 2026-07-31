@@ -11,6 +11,9 @@ When you use `/fish`, the game:
 3. **Rolls for traits** — special modifiers that affect value and XP
 4. **Calculates size, value, and XP** based on all the above
 
+!!! tip "Beginner's Luck"
+    The very first achievement you unlock (even something as small as your first catch) grants **Beginner's Luck** — bites come 75% faster for the next **24 hours**. It's a one-time nudge to help new anglers get going.
+
 ## Fishing Sessions
 
 When you use `/fish`, a fishing session begins. Press **Cast Line** to start your first cast — it's guaranteed to catch a fish or chest.
@@ -21,13 +24,15 @@ You can keep casting until you miss, run out of time, or manually stop. **One 15
 
 ### Streaks
 
-Consecutive catches in a session build a **streak**. Each catch adds **+1% rarity bonus**, capped at **+10%** (shown on the catch embed). When your session ends, you see a summary: fish caught, kept/sold split, coins earned, XP gained, chests found, and your best streak.
+Consecutive catches in a session build a **streak**. Each catch adds **+1% rarity bonus**, capped at **+10%** (shown on the catch embed). When your session ends, you see a summary: fish caught, kept/sold split, coins earned, XP gained, chests found, best streak, and any achievements or quests you completed along the way.
 
 ### During a Session
 
-- **Chest catches** — There's roughly a 5% chance to reel in a chest instead of a fish. Chests count toward your streak.
+- **Chest catches** — There's roughly a 6% chance to reel in a chest instead of a fish. Chests count toward your streak.
 - **Bait switching** — After each catch, a "Bait" button appears so you can switch bait mid-session without ending it.
 - **Double catches** — A small chance to reel in two fish on one cast (each with independent species and rarity rolls). You get a 4-button view: Keep Both / Sell Both / Keep 1st Sell 2nd / Sell 1st Keep 2nd.
+- **Random events** — Once in a while (about 4% per session end, level 3+), you'll run into a random encounter — a riddle, a lucky frog, a wishing well, and more. Every outcome is a win or a wash; there's no way to lose anything. See [Random Events](#random-events) below.
+- **Monster Fish** — Very rarely (about 1 in 200 catches), a cooperative boss fight can spawn in your channel. See [Monster Fish](#monster-fish) below.
 
 ## Rarity Tiers
 
@@ -39,8 +44,8 @@ Fish come in 7 rarity tiers. Higher rarities are worth more coins and XP but are
 | Uncommon | ~20% | 2x | 1.5x |
 | Rare | ~7% | 5x | 2.5x |
 | Epic | ~2.25% | 12x | 5x |
-| Legendary | ~0.6% | 30x | 10x |
-| Mythical | ~0.15% | 100x | 25x |
+| Legendary | ~0.6% | 20x | 10x |
+| Mythical | ~0.15% | 50x | 25x |
 | Unique | Event only | 500x | 50x |
 
 Your rod and bait add **rarity bonuses** that shift the odds in your favor. See the [Rarities Reference](../reference/rarities.md) for the full breakdown.
@@ -64,6 +69,9 @@ Fish can spawn with special traits that modify their value and XP. Traits are ro
 | Trait | Value Multiplier | XP Multiplier | Source |
 |-------|-----------------|---------------|--------|
 | Pearlescent | 1.6x | 1.3x | Pearl Rod exclusive |
+
+!!! tip "Spotting Pearlescent fish"
+    Pearlescent fish are marked with 🦪 everywhere your fish are listed (`/tank`, bulk sell, etc.) — they're the only fish worth displaying in your camp's [Display Tank](economy.md#camp) instead of selling, since they earn pearls instead of coins. Bulk sell will warn you before you sell one, so you don't lose a pearl-earner by accident.
 
 ### Negative Traits
 
@@ -90,6 +98,9 @@ These rare traits can **only** appear through the fish breeding system. They off
 - **Gilded & Bioluminescent** — Random mutations that can occur during breeding. Mutation chance increases with Breeding Tank level (2% at Level 1–2, 4% at Level 3–4, 6% at Level 5). Only one mutation per breeding session.
 - **Colossal** — A special upgrade that occurs when both parents have the Giant trait. There's a 5% chance the Giant trait becomes Colossal instead. If both parents are Giant, the offspring also has a bonus 25% chance to inherit Giant even if the normal inheritance roll fails.
 
+!!! note "Pearlescent fish can't breed"
+    Pearlescent fish have 0 fertility and can't be used for breeding.
+
 ## Improving Your Odds
 
 ### Rods
@@ -115,7 +126,7 @@ Bait is consumed on each cast and provides a rarity bonus. Some baits work bette
 
 | Bait | Rarity Bonus | Best Locations | Cost | Uses |
 |------|-------------|----------------|------|------|
-| Earthworm | +0% | All | 5 coins | 1 |
+| Earthworm | +1% | All | 5 coins | 1 |
 | Cricket | +2% | Pond, River, Lake | 10 coins | 1 |
 | Minnow | +5% | Lake, River | 25 coins | 1 |
 | Shrimp | +8% | Ocean, Deep Sea | 50 coins | 1 |
@@ -139,6 +150,25 @@ Use `/net status` to view your current net capacity and what's waiting for you, 
 
 ## Chests
 
-There's a ~5% chance to receive a chest when you catch a fish. Chests come in tiers: Common, Rare, Epic, and Legendary. Core chests open directly with no key required. Seasonal chests (limited-time event chests) require a Chest Key and have a daily open limit based on your level.
+There's a ~6% chance to receive a chest when you catch a fish. Chests come in tiers: Common, Rare, Epic, and Legendary. Core chests open directly with no key required. Seasonal chests (limited-time event chests) require a Chest Key and have a daily open limit based on your level.
 
 See the [Economy Guide](economy.md#chests) for more details on chest loot and seasonal variants.
+
+## Random Events
+
+While you're fishing, you might stumble into a random encounter — roughly a **4% chance** each time a session ends, once you're level 3 or higher. Ten different events can appear, from a riddling old angler to a lucky frog, a wishing well, a shooting star, and more.
+
+Every event follows one rule: **it can only help you or do nothing — it's never a loss.** Rewards range from small coin drops to timed buffs (XP, rarity, cooldown, or sell boosts) up to chests and pearls. A few events are puzzles (answer right for the better reward table; a wrong answer still gets you a small consolation prize).
+
+You have 2 minutes to respond before the moment passes with no reward — never a penalty. Events have their own 30-minute cooldown per player, separate from your fishing cooldown.
+
+## Monster Fish
+
+Very rarely (about a 0.5% chance per catch), a massive Monster Fish appears in your channel and kicks off a cooperative boss fight:
+
+1. **Join phase (60 seconds)** — Anyone in the channel can join. At least 3 players are needed for the fight to start; if too few join, the event fizzles out with no cooldown penalty.
+2. **The fight (15 rounds, 5 seconds each)** — Each round, click the attack button matching the monster's weak spot. A correct hit scores a point; a miss costs one (never below zero).
+3. **Rewards** — The top 3 scorers earn chests: 🥇 Legendary + Seasonal Chest, 🥈 Epic Chest, 🥉 Rare Chest. Ties for a placement are broken randomly, not by who joined first.
+4. **Catching the monster** — 1st place also has a chance to reel in the Monster Fish itself as a **Unique**-rarity catch. The base chance is small, but scales up with your equipped rod's rarity bonus — better rods meaningfully improve your odds.
+
+There are 30 unique Monster Fish species (10 per region) that can **only** be caught this way.

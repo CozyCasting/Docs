@@ -8,7 +8,7 @@ Claim your daily reward.
 
 - **Usage:** `/daily`
 
-Grants coins based on your level and current streak. Consecutive days build a streak bonus (+15 coins per day). There's also a 10% chance to receive a bonus chest.
+Grants coins based on your level and current streak. Consecutive days build a streak bonus (+25 coins per day, plus +5 coins per level). There's also a 10% chance to receive a bonus chest.
 
 ## /quests
 
@@ -16,7 +16,9 @@ View and claim your daily quests.
 
 - **Usage:** `/quests`
 
-You get 3 quests per day: 2 shared globally across all players, plus 1 personal quest scaled to your level. Quest types include catching a number of fish, hunting specific rarities, fishing at certain locations, selling goals, and bait usage. Rewards are XP + coins scaled to your level. Complete all 3 to earn a bonus Common Chest. Quests and the daily reward reset at midnight UTC — a live countdown is shown.
+You get 3 quests per day: 2 shared globally across all players, plus 1 personal quest scaled to your level. Quest types include catching a number of fish, hunting specific rarities, fishing at certain locations, selling goals, and bait usage. Rewards are XP + coins scaled to your level. Quests and the daily reward reset at midnight UTC — a live countdown is shown.
+
+Complete all 3 to earn a bonus chest — usually Common, but a **quest completion streak** (finishing all 3 every day) shifts the odds toward rarer chests the longer it runs, capping out at 30 days.
 
 ## /referral
 
@@ -24,7 +26,7 @@ View and share your referral code.
 
 - **Usage:** `/referral`
 
-Share your personal referral code with friends. New players can enter it with `/refer <code>` before reaching level 4. When they hit level 5, you receive **150 pearls** and they receive **100 pearls**.
+Share your personal referral code with friends. New players can enter it with `/refer <code>` before reaching level 4. When they hit level 5, you receive **150 pearls** and they receive **100 pearls**. Your referral count also appears on `/info`.
 
 ## /refer
 
@@ -34,13 +36,26 @@ Use a referral code from another player.
 
 Must be used before you reach level 4. Earns you 100 pearls when you reach level 5.
 
+!!! note "Alt-account protection"
+    Referral codes can't be redeemed from a Discord account under 30 days old.
+
 ## /chest
 
 Open a chest from your inventory.
 
 - **Usage:** `/chest <type> [amount]`
 
-Chests drop randomly when you catch fish (~5% chance). Core chests (Common, Rare, Epic, Legendary) open directly with no key required. Seasonal event chests require a Chest Key and have a daily limit based on your level. Loot includes coins, pearls, bait, consumables, titles, and gear. You can open up to 25 chests at once.
+Chests drop randomly when you catch fish (~6% chance). Core chests (Common, Rare, Epic, Legendary) open directly with no key required. Seasonal event chests require a Chest Key and have a daily limit equal to your level. Loot includes coins, pearls, bait, consumables, titles, and gear. You can open up to 25 chests at once.
+
+The **Unique Chest** is a special case — it isn't found while fishing. It's the prize for winning a weekly/monthly [contest](profile.md#contests) or placing top 3 in a Monster Fish event, and always contains a Rare-or-better piece of crafted gear.
+
+## /salvage
+
+Trade in spare gear for a chest.
+
+- **Usage:** `/salvage`
+
+Scrap **10 unequipped gear items** for one chest: **60%** chance Rare, **30%** Epic, **10%** Legendary. Pick which 10 to scrap from a paginated list, the same way you'd bulk-sell fish — equipped gear is never shown, so your loadout can't accidentally get scrapped. The chest lands in your inventory unopened, so you'll still need a key if it's a seasonal one.
 
 ## /use
 
@@ -130,6 +145,14 @@ Redeem a promotional code.
 
 Enter a code to claim rewards like coins, bait, consumables, or exclusive items.
 
+## /notifications
+
+Manage your DM notification preferences.
+
+- **Usage:** `/notifications`
+
+An interactive panel with per-type toggles: Master, Fishing Cooldown, Daily Reminder, Vote Reminder, Net Full, and Come Back (win-back) reminders. Turning off the master toggle stops all DMs at once.
+
 ## /units
 
 Toggle between metric and imperial units.
@@ -152,7 +175,7 @@ Search for detailed stats on any rod, bait, or consumable. Supports fuzzy matchi
 
 Manage server settings (requires Manage Server permission).
 
-See the full **[Server Admin guide](server-admin.md)** for all subcommands including notification roles, chest drop channels, timezone, and prefix configuration.
+See the full **[Server Admin guide](server-admin.md)** for all subcommands including notification roles, chest drop channels, rare catch announcements, timezone, and prefix configuration.
 
 ## /help
 

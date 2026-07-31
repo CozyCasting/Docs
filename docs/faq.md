@@ -14,6 +14,10 @@ Yes, completely free to play. Pearls (the premium currency) are earned in-game b
 
 No, CozyCasting is a server-based bot. All commands must be used inside a Discord server.
 
+### What's the image on my `/info`?
+
+That's your profile card — a rendered "fishing licence" showing your level, stats, and a showcase fish. Customise its background, frame, name style, and stamps with `/card`. If you'd rather see plain text (slow connection, screen reader, or just preference), compact mode replaces it with the classic text-only embed.
+
 ### Why is my leaderboard stat different from my profile (`/info`)?
 
 Leaderboards are cached and update every 5 minutes to keep the bot fast. Your `/info` profile is always instantly up to date!
@@ -51,6 +55,14 @@ Nets automatically gather fish and items over time without you needing to cast. 
 
 During special seasonal events, you have a chance to catch limited-time fish variations. You can use **Seasonal Bait** to get a 50% chance of guaranteeing a Seasonal Variant on your next cast!
 
+### What's a Monster Fish event?
+
+A rare cooperative boss fight that can spawn in your channel while people are fishing. Anyone can join during a 60-second window, then everyone competes in a short reaction minigame. Top 3 finishers win chests, and whoever finishes 1st has a chance to catch the monster itself as a Unique-rarity fish. See the [Fishing Guide](guides/fishing.md#monster-fish) for the full breakdown.
+
+### What are Random Events?
+
+Occasional surprise encounters that can appear when a fishing session ends — a riddle, a lucky frog, a wishing well, and more. They're always a win or a wash; you can never lose anything from one.
+
 ---
 
 ## Economy
@@ -65,7 +77,7 @@ Fishing Tickets are consumables found in chests. When you try to `/fish` while o
 
 ### How do I earn Pearls?
 
-Display fish with the **Pearlescent** trait in your camp's Display Tank. Pearlescent fish generate pearls as passive income instead of coins. The Pearl Rod (bought with pearls) is what gives fish the Pearlescent trait.
+Display fish with the **Pearlescent** trait (marked with 🦪 wherever your fish are listed) in your camp's Display Tank. Pearlescent fish generate pearls as passive income instead of coins. The Pearl Rod (bought with pearls) is what gives fish the Pearlescent trait.
 
 ### When should I upgrade my rod?
 
@@ -132,3 +144,7 @@ Use `/chest <type>` — for example `/chest common` or `/chest rare 5`. Core che
 ### What do consumables do?
 
 Consumables grant timed buffs: XP boost, rarity boost, sell boost, or cooldown reduction. Rare items like **Magnets** and **Lucky Double Worms** give special effects, like drawing in specific traits or a 15% chance to catch two fish at once! Use them with `/use <item>` and check active effects with `/effects`.
+
+### What do I do with spare gear I'll never equip?
+
+Use `/salvage` to trade in 10 unequipped gear items for a chest (60% Rare / 30% Epic / 10% Legendary odds). Equipped gear is never shown as an option, so your current loadout is always safe.

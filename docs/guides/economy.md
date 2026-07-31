@@ -26,23 +26,15 @@ A currency earned by voting for CozyCasting on bot listing sites. Spent to purch
 
 The main way to earn coins. Fish value is determined by:
 
-1. **Location base value** — Higher-level locations have higher base values
+1. **Location base value** — Higher-level locations have higher base values (see the [Locations Reference](../reference/locations.md) for every location type's base value)
 2. **Rarity sell multiplier** — Rarer fish are worth much more
 3. **Trait multipliers** — Traits like Giant (2x) and Ancient (2.5x) boost the value
 
-| Location Tier | Base Value | Examples |
-|--------------|-----------|----------|
-| Starter | 10 coins | Stream, Pond |
-| Mid | 25 coins | River, Lake |
-| Advanced | 50 coins | Ocean, Cave |
-| Expert | 80 coins | Deep Sea, Volcano |
-| Master | 100 coins | Arctic |
+The final sell value is: `base_value x rarity_multiplier x trait_multipliers`, with size and weight nudging it up or down a bit further.
 
-The final sell value is: `base_value x rarity_multiplier x trait_multipliers`
+For example, a Giant Legendary fish from the Arctic (base value 140) would be worth roughly: 140 x 20 x 2.0 = **5,600 coins**.
 
-For example, a Giant Legendary fish from the Arctic would be worth: 100 x 30 x 2.0 = **6,000 coins**.
-
-Your `/tank` has a **Bulk Sell** button — toggle individual fish or entire pages for sale, then confirm in one click.
+Your `/tank` has a **Bulk Sell** button — toggle individual fish or entire pages for sale, then confirm in one click. Fish sitting in your camp Display Tank, or with the Pearlescent trait, are flagged with a warning before you confirm — selling them ends their passive income.
 
 ### Daily Rewards
 
@@ -56,6 +48,10 @@ Use `/daily` once every 24 hours to claim:
 ### Referral Rewards
 
 Share your referral code with `/referral`. New players can use `/refer <code>` before reaching level 4. When the referred player reaches level 5, **you earn 150 pearls** and **they earn 100 pearls**.
+
+### Weekly & Monthly Contests
+
+Catch the most fish in a week or a month and you'll be paid out automatically once the period ends — see [Contests](../commands/profile.md#contests) for prize details and how to check the live standings.
 
 ### Camp Income
 
@@ -108,7 +104,7 @@ Invest in your camp buildings for long-term passive income. See the [Camp](#camp
 
 ## Chests
 
-There's a ~5% chance to receive a chest each time you catch a fish. When one drops, it goes straight into your inventory.
+There's a ~6% chance to receive a chest each time you catch a fish. When one drops, it goes straight into your inventory.
 
 ### Core Chests
 
@@ -125,13 +121,21 @@ Possible loot from any chest includes coins, pearls, bait, consumables (XP boost
 
 ### Seasonal Chests
 
-Seasonal chests are limited-time event chests (e.g., Winter 2026) with unique loot pools and bonus gear drops. They require a **Chest Key** to open and have a daily open limit equal to your current level (resets at midnight UTC).
+Seasonal chests are limited-time event chests (e.g., Summer 2026) with unique loot pools and bonus gear drops. They require a **Chest Key** to open and have a daily open limit equal to your current level (resets at midnight UTC).
 
 When a chest drops from fishing, there's an 80% chance it's a core chest and a 20% chance it's a seasonal chest (if one is currently active).
+
+### Unique Chest
+
+The Unique Chest isn't a fishing drop — it's a reward you win, from a weekly/monthly [contest](../commands/profile.md#contests) or a top-3 finish in a [Monster Fish](fishing.md#monster-fish) event. It always contains a guaranteed Rare-or-better piece of crafted gear. Open it the same way, with `/chest unique`.
 
 ### Opening Chests
 
 Use `/chest <type> [amount]` to open chests. You can open up to 25 at once and loot is aggregated into a single summary.
+
+## Gear Salvage
+
+Got more gear than slots? Use `/salvage` to trade in **10 unequipped gear items** for one chest: **60%** Rare, **30%** Epic, **10%** Legendary. Pick which 10 to scrap from a paginated list — equipped gear never shows up as an option, so your loadout is safe. The chest lands unopened, same as any other.
 
 ## Camp
 
@@ -170,7 +174,7 @@ Lets you showcase your best fish and earn passive coin and pearl income.
 
 - Each level adds **1 display slot** (up to 5 fish at level 5)
 - Displayed fish earn **5% of their value per day** in coins
-- Fish with the **Pearlescent** trait earn pearls instead of coins
+- Fish with the **Pearlescent** trait (marked 🦪 wherever your fish are listed) earn pearls instead of coins
 - Income accumulates for up to 3 days before it caps — collect regularly with `/camp collect`
 
 #### Breeding Tank
@@ -218,3 +222,4 @@ Your camp earns XP passively from fishing. Higher camp levels unlock the ability
 - **Display your most valuable fish** — A Legendary fish in the Display Tank earns far more passive income than a Common one
 - **Pearlescent fish are display gold** — They generate pearls instead of coins, which are much harder to earn otherwise
 - **Collect your camp regularly** — Bait and display income cap out, so don't let resources go to waste
+- **Salvage instead of hoarding** — Spare gear you'll never equip is worth more as a chest than as inventory clutter
