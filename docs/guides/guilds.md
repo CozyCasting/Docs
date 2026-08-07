@@ -83,22 +83,38 @@ You have **7 days** to accept. Click **Accept** to join immediately.
 
 ## Guild Level & Thresholds
 
-Guild level (1–5) is determined by **lifetime contributions** of both coins AND pearls to the guild bank. Both thresholds must be met simultaneously.
+Guild level (1–5) is raised by the Owner or a Mod running `/guild upgrade`. It never goes up on its own, and it never goes down.
 
-### Key Points
+An upgrade requires **all three** of:
 
-**Contributions are not escrowed** — the same coins and pearls stay in the bank and can be spent on camp upgrades. The level only records what has ever been deposited; withdrawals never demote a guild.
+| Requirement | Where it comes from | Spent? |
+|---|---|---|
+| ⭐ **Guild XP** | Members fishing | **No** — checked only |
+| 🪙 **Coins** | The guild chest | Yes, permanently |
+| 🦪 **Pearls** | The guild chest | Yes, permanently |
 
-Example: A guild deposits 50 million coins and 500 pearls. It's now level 3 (25M + 250P threshold met). Even if they withdraw 30 million coins to upgrade buildings, they remain level 3 because the lifetime total still exceeds 75M.
+### Guild XP — the one you can't buy
 
-### Cumulative Thresholds
+Every point of catch XP a member earns is mirrored into the guild automatically, boosts and all. There's no "donate XP" command; playing the game **is** the contribution. XP from quests, redeem codes and admin grants does not count — this counter measures fishing.
 
-| Level | Coins | Pearls |
-|-------|-------|--------|
-| 2 | 25,000,000 | 250 |
-| 3 | 75,000,000 | 750 |
-| 4 | 200,000,000 | 2,000 |
-| 5 | 500,000,000 | 5,000 |
+Guild XP is a lifetime total that **never decreases**. If a member leaves or is kicked, everything they earned stays banked in the guild.
+
+The XP requirement is tuned so that a typical roster clears about one level every **two weeks**. This is deliberate: one rich member can cover the coin cost overnight, but nobody can shortcut the requirement that people actually fish together.
+
+### Thresholds
+
+| Level | Guild XP | Coins | Pearls |
+|-------|----------|-------|--------|
+| 2 | 350,000 | 25,000,000 | 250 |
+| 3 | 1,000,000 | 75,000,000 | 750 |
+| 4 | 2,000,000 | 200,000,000 | 2,000 |
+| 5 | 3,500,000 | 500,000,000 | 5,000 |
+
+Each level's cost is paid fresh — nothing carries over from the previous tier.
+
+`/guild info` shows all three bars with your current progress, so you always know which one is holding you back. `/guild members` shows each member's XP contribution, ranked.
+
+**Deposits are not escrowed** — coins and pearls in the chest stay spendable on camp buildings right up until `/guild upgrade` actually spends them. Withdrawing money never demotes a guild.
 
 ### Membership & Slots
 
@@ -136,8 +152,8 @@ The guild chest stores:
 ### Deposits
 
 Any member can deposit with `/guild chest add <item> <quantity>`:
-- Coins and pearls count toward guild level
-- Materials (logs, stone) and items do not count toward level but are essential for camp upgrades
+- Coins and pearls are what `/guild upgrade` spends
+- Materials (logs, stone) and items can't pay for a level, but are essential for camp upgrades
 - Depositing is free and instant
 
 ### Withdrawals
@@ -274,7 +290,8 @@ Logs and stone appear in a **Materials tab** in your `/inventory`, separate from
 
 ### For Owners
 
-- **Set a donation target** — Early levels require 25–500M coins + 250–5K pearls (shared effort)
+- **Set a donation target** — Levels cost 25–500M coins + 250–5K pearls out of the chest (shared effort)
+- **Recruit anglers, not wallets** — guild XP only comes from members fishing, so an active roster is the one thing money can't replace
 - **Plan camp upgrades** — Start with Lure Workshop or Library for universal buffs
 - **Assign Mods early** — Mods can invite and manage the chest while you're offline
 - **Communicate with members** — Use your server chat to coordinate material farming and mission pushes
@@ -286,13 +303,14 @@ Logs and stone appear in a **Materials tab** in your `/inventory`, separate from
 
 ### For Members
 
-- **Donate regularly** — Small deposits from everyone add up to guild level fast
+- **Just fish** — every point of catch XP you earn is mirrored into the guild automatically; no command to remember
+- **Donate regularly** — Small deposits from everyone add up to the coin and pearl costs fast
 - **Fish during missions** — Even 20 catches per person makes a difference
 - **Stock materials** — If you fish a lot, save your materials bags for camp upgrades
 
 ### Donation Psychology
 
-People often worry that depositing coins "locks money away." **Emphasize:** Donations are **not escrowed**. The same coins sit in the bank and can be withdrawn for camp upgrades. The level only records what has ever been put in.
+People often worry that depositing coins "locks money away." **Emphasize:** Deposits are **not escrowed**. The same coins sit in the bank and can be withdrawn for camp upgrades — nothing is consumed until an Owner or Mod actually runs `/guild upgrade`.
 
 ---
 

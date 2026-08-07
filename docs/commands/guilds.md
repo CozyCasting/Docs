@@ -60,7 +60,7 @@ View your guild's roster, paginated by 10 members per page.
 
 **Members see:** Rank, join date
 
-**Owner/Mod see:** Member level, last fish time, and total contribution (coins + pearls) to the guild bank
+**Owner/Mod see:** Member level, last fish time, ⭐ guild XP contributed and 🪙 coins donated — ranked by XP contributed, so it doubles as a leaderboard for who's carrying the guild
 
 ---
 
@@ -125,9 +125,9 @@ Deposit items or currency into the guild chest (any member).
   - `/guild chest add worm 50`
   - `/guild chest add materials_bag 3`
 
-Only **coins and pearls** count toward guild level thresholds. Materials and items do not.
+Only **coins and pearls** can pay for `/guild upgrade`. Materials and items cannot.
 
-**Deposited money is not escrowed** — it stays spendable on camp upgrades. The level only tracks what has ever been contributed.
+Deposits are **not escrowed** — everything in the chest stays spendable on camp upgrades until `/guild upgrade` actually spends it.
 
 ### /guild chest remove
 
@@ -203,19 +203,30 @@ Materials are deposited automatically into the guild bank and capped at 500 per 
 
 ## Guild Level & Bonuses
 
-Guilds level up from **Level 1 to Level 5** based on lifetime contributions of coins AND pearls to the guild chest.
+Guilds level up from **Level 1 to Level 5** with `/guild upgrade` (Owner/Mod only).
+
+### /guild upgrade
+
+Raise the guild one level. Requires **all three**:
+
+- ⭐ **Guild XP** — earned automatically as members fish. It never goes down, and it is only *checked*, never spent.
+- 🪙 **Coins** and 🦪 **Pearls** — **spent** out of the guild chest, permanently.
+
+- **Usage:** `/guild upgrade`
+
+`/guild info` always shows how you're tracking against all three.
 
 ### Level Thresholds
 
-Both coin and pearl thresholds must be met to reach each level. Withdrawals do not demote a guild — only the total ever contributed matters.
+| Level | Guild XP | Coins | Pearls | Max Members | Sell Bonus | XP Bonus |
+|-------|----------|-------|--------|-------------|-----------|----------|
+| 1 | — | — | — | 10 | — | — |
+| 2 | 350,000 | 25,000,000 | 250 | 20 | +2% | +2% |
+| 3 | 1,000,000 | 75,000,000 | 750 | 30 | +4% | +4% |
+| 4 | 2,000,000 | 200,000,000 | 2,000 | 40 | +6% | +6% |
+| 5 | 3,500,000 | 500,000,000 | 5,000 | 50 | +8% | +8% |
 
-| Level | Coins | Pearls | Max Members | Sell Bonus | XP Bonus |
-|-------|-------|--------|-------------|-----------|----------|
-| 1 | — | — | 10 | — | — |
-| 2 | 25,000,000 | 250 | 20 | +2% | +2% |
-| 3 | 75,000,000 | 750 | 30 | +4% | +4% |
-| 4 | 200,000,000 | 2,000 | 40 | +6% | +6% |
-| 5 | 500,000,000 | 5,000 | 50 | +8% | +8% |
+Guild XP comes **only from fishing** — every point of catch XP a member earns is mirrored into the guild automatically, boosts included. Quest rewards, redeem codes and admin grants do not count. A member leaving never lowers the guild's total.
 
 Each guild level above 1 grants all members a **+2% sell value** and **+2% catch XP** bonus (stacking with camp building bonuses).
 
@@ -265,7 +276,8 @@ Logs and stone are used for guild camp upgrades. The guild chest holds them as s
 ## Tips
 
 - **Founding costs 1 million coins** — save up or join an existing guild to start building immediately
-- **Donating doesn't lock money away** — deposited coins and pearls stay spendable on camp
+- **Donating doesn't lock money away** — deposited coins and pearls stay spendable on camp until an upgrade spends them
+- **Money alone can't level a guild** — you need guild XP too, and the only way to earn it is members fishing
 - **Level matters for building** — you can't upgrade a building past your guild level
 - **Active members count** — Logging/Stone camps produce more when more members have fished recently
 - **Missions are global** — the same mission runs for every guild each week, so coordination helps

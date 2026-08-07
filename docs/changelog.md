@@ -5,6 +5,16 @@ All notable changes to CozyCasting will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.9.5] - 2026-08-07
+
+### Changed
+- **Guild levels now need your guild to actually fish** — `/guild upgrade` still spends 🪙 coins and 🦪 pearls out of the chest, but it now also requires ⭐ **guild XP**, and that can only be earned one way: members fishing. Every point of catch XP anyone earns is mirrored into the guild automatically — no new command, no "donate XP", nothing to remember. Quest rewards and redeem codes don't count; this counter measures fishing.
+    - **A level now means something.** One rich member could bankroll every upgrade before. They still can't be stopped from covering the coins, but nobody can buy their way past the requirement that people actually turn up and fish. Thresholds are tuned so a typical roster clears a level in about **two weeks**.
+    - **Guild XP never goes down.** If a member leaves or gets kicked, everything they earned stays banked in the guild.
+    - **Existing guilds keep their level** — every guild has been credited with the XP for the level it already holds, so you start the next tier from a clean slate rather than being stranded.
+    - **`/guild info` shows all three bars** — guild XP, coins and pearls, each with your progress, so you always know which one is holding you back. If you're short on an upgrade, the error names *everything* you're missing at once instead of one thing at a time.
+    - **`/guild members` is a leaderboard now** — the detailed roster shows each member's ⭐ guild XP contribution and ranks by it, so carrying the guild is visible.
+
 ## [0.9.4] - 2026-08-07
 
 ### Added
