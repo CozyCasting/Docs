@@ -79,7 +79,7 @@ Item names support fuzzy matching, so `energy drink`, `energy drinks`, and `ener
 - Coins, Pearls, Vote Tickets
 - Fish (from your tank, not in an active breeding session)
 - Gear items
-- Rods, bait, chest keys
+- Rods, bait
 - Most consumables (XP boosts, rarity boosts, sell boosts, magnets, etc.)
 - Chests (common, rare, epic, legendary, seasonal)
 

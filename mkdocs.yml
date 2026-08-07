@@ -67,6 +67,7 @@ nav:
     - Economy: commands/economy.md
     - Trading: commands/trading.md
     - Travel: commands/travel.md
+    - Guilds: commands/guilds.md
     - Profile: commands/profile.md
     - Misc: commands/misc.md
     - Server Admin: commands/server-admin.md
@@ -74,6 +75,7 @@ nav:
     - Fishing: guides/fishing.md
     - Progression: guides/progression.md
     - Economy: guides/economy.md
+    - Guilds: guides/guilds.md
   - Reference:
     - Locations: reference/locations.md
     - Rarities: reference/rarities.md

@@ -9,7 +9,7 @@ Browse the shop for rods, bait, and upgrades.
 - **Usage:** `/shop`
 - **Aliases:** `store`, `market`
 
-The shop shows available items organized by category (rods, bait, keys, etc.) along with prices, level requirements, and stats.
+The shop shows available items organized by category (rods, bait, gear, etc.) along with prices, level requirements, and stats.
 
 ## /buy
 
@@ -19,7 +19,7 @@ Purchase items from the shop.
 - **Aliases:** `purchase`
 - **Examples:** `/buy rod wooden_rod`, `/buy bait worm 10`
 
-Item types include `rod`, `bait`, `key`, and `consumable`. Quantity defaults to 1.
+Item types include `rod`, `bait`, `gear`, and `consumable`. Quantity defaults to 1.
 
 ## /wallet
 
@@ -37,7 +37,7 @@ View your items and equipment.
 - **Usage:** `/inventory`
 - **Aliases:** `inv`, `items`, `bag`
 
-Displays all your rods, bait, chests, keys, consumables, and gear in a categorized view.
+Displays all your rods, bait, chests, consumables, and gear in a categorized view.
 
 ## /equip
 

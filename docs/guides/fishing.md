@@ -148,9 +148,22 @@ In addition to casting your rod, you can passively catch fish using your **Net**
 
 Use `/net status` to view your current net capacity and what's waiting for you, and use `/net collect` to claim your catches! Nets can sometimes catch rare fish or items, making them an excellent way to continue progressing even when you aren't actively fishing.
 
+### How Net Fishing Works
+
+Your net fills gradually over time in the background — it doesn't matter where you are or what you're doing. However, **the fish are not decided until you collect them**.
+
+When you press `/net collect`:
+
+- **Location matters** — Your net generates fish based on **wherever you're standing right now**, not where you deployed the net
+- **Species pool** — The fish come from your current location's species pool
+- **No rod or bait bonuses** — Net fish are generated with a basic rod and no bait, so they miss out on the rarity and value boosts you'd get from equipped gear (only the net's own rarity bonus applies)
+- **Collection journal** — Your fish count toward the location you collect at, not the location where the net was soaking
+
+**Practical tip:** Travel to the location you want to fish from *before* collecting your net. If you leave a net soaking at Lake Baikal and collect at Svalbard Waters, you'll get Svalbard Arctic fish that count toward your Arctic collection — not Lake Baikal's.
+
 ## Chests
 
-There's a ~6% chance to receive a chest when you catch a fish. Chests come in tiers: Common, Rare, Epic, and Legendary. Core chests open directly with no key required. Seasonal chests (limited-time event chests) require a Chest Key and have a daily open limit based on your level.
+There's a ~6% chance to receive a chest when you catch a fish. Chests come in tiers: Common, Rare, Epic, and Legendary. Every chest opens directly from your inventory — no key, no daily limit. Seasonal chests (limited-time event chests) are the rare ones, at about 10% of chest drops.
 
 See the [Economy Guide](economy.md#chests) for more details on chest loot and seasonal variants.
 

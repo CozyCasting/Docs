@@ -23,7 +23,7 @@ We only collect data that is necessary to operate the Bot. All data is tied to y
 |---|---|
 | **Discord Identity** | Your Discord user ID and display name |
 | **Game Progress** | Level, XP, coins, pearls, current location |
-| **Inventory** | Rods, baits, chests, keys, consumables, and quantities |
+| **Inventory** | Rods, baits, chests, consumables, and quantities |
 | **Fish Collection** | Species, rarity, size, value, traits, catch location, tank status |
 | **Achievements & Titles** | Unlocked achievements and equipped titles |
 | **Guild Membership** | Which in-game guild you belong to, your rank |

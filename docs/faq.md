@@ -69,7 +69,7 @@ Occasional surprise encounters that can appear when a fishing session ends — a
 
 ### What are Vote Tickets?
 
-Vote Tickets are a currency earned by voting for CozyCasting on bot listing sites. They're spent to buy Chest Keys (`/buy key tickets`, 15 tickets per key), which are required to open seasonal chests.
+Vote Tickets are a currency earned by voting for CozyCasting on bot listing sites. Spend them with the Roaming Trader, who appears at a fishing location every Thursday with gear and consumables. More places to spend them are coming soon.
 
 ### What are Fishing Tickets?
 
@@ -115,7 +115,7 @@ Use `/give @player <item>` for a quick one-way transfer (no acceptance needed), 
 
 ### What items can I trade?
 
-You can trade coins, pearls, vote tickets, fish (from your tank), gear, rods, bait, keys, chests, and most consumables. A few consumables are not tradeable: Title Pouch, Fishing Pass, Fishing Journal, Shopping Card, and Twin Hook Token.
+You can trade coins, pearls, vote tickets, fish (from your tank), gear, rods, bait, chests, and most consumables. A few consumables are not tradeable: Title Pouch, Fishing Pass, Fishing Journal, Shopping Card, and Twin Hook Token.
 
 ### Can I cancel a trade after accepting?
 
@@ -139,7 +139,7 @@ Use `/units` to toggle between imperial (in/lbs) and metric (cm/kg).
 
 ### How do I open a chest?
 
-Use `/chest <type>` — for example `/chest common` or `/chest rare 5`. Core chests need no key. Seasonal chests require a Chest Key and have a daily limit based on your level.
+Use `/chest <type>` — for example `/chest common` or `/chest rare 5`. Every chest, core or seasonal, opens straight from your inventory with no key and no daily limit.
 
 ### What do consumables do?
 

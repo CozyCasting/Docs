@@ -18,7 +18,7 @@ A premium currency earned through special activities like displaying Pearlescent
 
 ### Vote Tickets
 
-A currency earned by voting for CozyCasting on bot listing sites. Spent to purchase Chest Keys (`/buy key tickets`, costs 15 Vote Tickets per key).
+A currency earned by voting for CozyCasting on bot listing sites. Spend them with the Roaming Trader, who sets up at a fishing location every Thursday. More places to spend them are coming soon.
 
 ## Earning Coins
 
@@ -108,7 +108,7 @@ There's a ~6% chance to receive a chest each time you catch a fish. When one dro
 
 ### Core Chests
 
-Core chests open directly — **no key required**. They come in four tiers:
+Core chests come in four tiers:
 
 | Chest | Rolls | Typical Loot |
 |-------|-------|--------------|
@@ -121,9 +121,9 @@ Possible loot from any chest includes coins, pearls, bait, consumables (XP boost
 
 ### Seasonal Chests
 
-Seasonal chests are limited-time event chests (e.g., Summer 2026) with unique loot pools and bonus gear drops. They require a **Chest Key** to open and have a daily open limit equal to your current level (resets at midnight UTC).
+Seasonal chests are limited-time event chests (e.g., Summer 2026) with unique loot pools and bonus gear drops. They open directly from your inventory, the same as core chests — no key, no daily limit.
 
-When a chest drops from fishing, there's an 80% chance it's a core chest and a 20% chance it's a seasonal chest (if one is currently active).
+They are rarer instead: when a chest drops from fishing, there's a 90% chance it's a core chest and a 10% chance it's a seasonal chest (if one is currently active).
 
 ### Unique Chest
 

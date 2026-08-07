@@ -5,12 +5,49 @@ All notable changes to CozyCasting will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.9.4] - 2026-08-07
+
+### Added
+- **Guilds are here** — Full write-up in the [Guilds guide](https://cozycasting.github.io/Docs/guides/guilds/) and the [command reference](https://cozycasting.github.io/Docs/commands/guilds/). Buy a 🏰 Guild Token from `/shop` → **Guild** for 🪙 1,000,000, then `/use guild_token` to name your guild and pick a tag. Invite people with `/guild invite` and they'll get a DM to accept or decline. `/guild members` shows the roster, `/guild promote` and `/guild demote` manage your Mods, and `/guild info` shows any guild's level, bank and buffs. You can be in one guild at a time, with a 24-hour wait before joining another after you leave.
+    - **Level your guild up with `/guild upgrade`** — The Owner and Mods spend coins **and** pearls straight out of the guild bank to raise the level; you need both currencies, and `/guild info` always shows what the next level costs and what the bank is holding. The money is spent for good, so cycling deposits in and out can't cheat levels.
+    - **Every guild level is worth having** — Each level adds **+10 roster slots** (10 at level 1, all the way to 50 at level 5) and gives every member **+2% sell value and +2% catch XP** per level, stacking up to +8% each.
+    - **Build a guild camp** — `/guild camp` shows seven buildings you can raise to tier 5 with `/guild camp upgrade`, which asks you to confirm and shows exactly what the bank holds before it spends a coin. **Lure Workshop** makes fish bite sooner, **Library** boosts catch XP, **Chapel** boosts your rare-fish chance, **Bait Hut** gives a growing chance your catch doesn't use up your bait, **Logging Camp** and **Stone Camp** produce materials daily based on how many members have been fishing, and **Storehouse** expands the chest. Upgrades come out of the guild bank, never your own pockets, and a building can never outrank the guild itself.
+    - **Share a guild bank** — `/guild chest` holds coins, pearls, logs, stone and 25+ item slots. Depositing is plain English: `/guild chest add 20 pearls`, `500 coins`, `3 logs`, `2 energy drinks`, or a fish/gear code — yes, you can stash fish and found gear in there too. Any member can add; only the Owner and Mods can remove, and `/guild chest log` records every movement so nobody has to guess who took what.
+    - **A new guild mission every week** — Every guild works toward the same goal each week — catch fish, earn coins, or land Rare-or-better catches — scaled to your guild's size. Hit it and the whole guild gets a −5% fishing cooldown for the following week. `/guild mission` shows live progress and who's carrying.
+- **Materials Bags while you fish** — Casts sometimes pull up a 🎒 Materials Bag full of 🪵 logs and 🪨 stone. It's a freebie: a bag doesn't use up a cast, so the fish after it is exactly as likely to stay on the line as if the bag had never shown up, and your chest luck is untouched. Epic and Legendary chests can also contain bags. Materials live in a new **Materials** tab in `/inventory` and fund your guild camp.
+- **Daily quests now fit where you can travel** — Personal location quests only appear when you can reach that kind of fishing spot. You can also reroll one unstarted personal quest each day from `/quests` if you'd rather take a different challenge.
+- **Find the Roaming Trader every Thursday** — He hides at one fishing location for 24 hours with two pieces of powerful Caravan Gear and three rotating consumables, all sold for voting tickets. Use `/trader` wherever you are to check; he won't reveal where he's hiding. New Fertility Tonic restores fertility with `/breed restore`, and Caravan Coffee makes fish bite faster.
+- **Be first to find the Roaming Trader** — The first angler to discover each week's caravan earns the one-time Caravan Pathfinder achievement and its exclusive Caravan Trail profile-card background.
+- **Monster fish get announced too** — Landing the beast at the end of a monster fight now posts to your server's rare-catch channel, the same way a Mythical or Unique catch from `/fish` does, ping role included. Set it up with `/settings rarecatch`.
+- **Catch a Monster Fish to earn an exclusive profile background** — Your first successful monster catch unlocks the **Monster Hunter** achievement and the **Monster's Wake** background in `/card`. Anglers who already own a Monster Fish receive it too.
+- **Look up any fish species with `/fishinfo`** — Search by fish name to see where it can be caught, location level requirements, typical size and weight in your preferred units, common colors and patterns, and seasonal bait availability. Fish and gear codes still work too.
+- **See who used your referral code** — `/referral` now lists the people you've referred, split into ⏳ Pending with the level they're at so you can see who's close to paying out, and ✅ Completed. Anglers who haven't fished in 30 days drop off the list, so it stays a list of people worth nudging — your Completed and Pending counts still include everyone.
+
+### Changed
+- **Monster fights need 2 anglers instead of 3** — Too many monsters were swimming off because a third person didn't hit **Join the Fight!** in time. Two is now enough to start.
+- **Leaderboard time filters renamed** — `/leaderboard` now says "Past 7 Days" and "Past 30 Days" instead of "This Week" and "This Month", matching the rolling windows it always used.
+- **Monster fish are a little easier to land** — The chance for the top scorer in a monster fight to actually reel the beast in has gone from 3% to 5% (higher with a better rod). Nobody had caught one yet.
+- **Seasonal chests are rarer now that nothing gates them** — When a chest drops from fishing, it used to be seasonal 20% of the time. That's now 10%. The scarcity moved out of the key and into the drop itself, so a seasonal chest is a real find rather than something you sat on waiting for a key.
+
+### Removed
+- **Chest Keys are gone** — Seasonal chests now open straight from `/inventory` with `/chest <type>`, exactly like Common, Rare, Epic and Legendary ones. No key, and no daily open limit tied to your level. **Every key you were holding has been turned into a Summer 2026 Chest, one for one** — nothing was lost and you don't need to do anything. Keys are no longer sold in `/shop` and can no longer be traded.
+    - Vote Tickets keep their home with the **Roaming Trader** every Thursday, and more places to spend them are on the way.
+
+### Fixed
+- **Monster fish say where they came from** — A caught monster showed a raw internal id under **Caught At** in `/tank`. It now reads "Monster Event" with the region it happened in.
+- **Event tokens can actually be bought** — The Events tab in `/shop` told you to use `/buy token <name>`, but the command rejected `token` as an invalid item type, so there was no way to buy a 🌊 Fishing Frenzy Token at all. It works now.
+- **Energy drinks work when you drink them mid-session** — Using a 🥤 Energy Drink after you'd already started fishing did nothing to the cooldown you got at the end of that session, because the buff was checked when you cast rather than when you finished. It now counts. If your drink runs out partway through a session, you still keep the shorter cooldown for it.
+- **Net catches count for your collection at the stream** — If you'd never used `/travel`, everything your net brought in was filed under a spot the collection journal didn't recognise, so `/collection` showed nothing for Appalachian Stream no matter how many nets you emptied. Those catches are now credited, including the ones you've already collected.
+- **`/refer`, `/referral` and `/chest` stop timing out** — All three did their database work before telling Discord they'd been received, so on a slow day you got "The application did not respond" instead of your rewards. They now answer first and work second.
+- **Come-back reminders reach lapsed anglers again** — A nightly cleanup was clearing the record of when you last fished after a week away, which quietly deleted you from the win-back reminder list, so the 14-day "we miss you" DM never arrived. Last-fished times have been rebuilt from your catch history and are never wiped again.
+
 ## [0.9.3] - 2026-07-31
 
 ### Changed
 - **Shop gear can't be salvaged** — `/salvage` now only accepts gear you found, not gear you bought. Buying ten cheap items was a cheaper route to a chest than earning one. Shop gear no longer shows up in the salvage list; use `/destroy` to clear it out.
 
 ### Fixed
+- **First-timers can claim community chests and join monster fights** — If you'd never used the bot before, clicking **Claim!** on a chest drop or **Join the Fight!** on a monster fish would fail to hand out the reward. Joining now signs you up as an angler, so the prizes actually land. Related: if the bot first met you through something other than `/fish` — a chest claim, `/profile` — you never received your starter rod. Your first `/fish` now hands it over.
 - **`/card` opens again for everyone** — If you'd earned both the achievement and the title for your first catch, the stamp menu listed it twice and Discord refused to show the card at all. The menu now lists each stamp once.
 - **`/card` menus stop snapping back to your old pick** — Choosing a new background updated the card but the menu jumped back to the one you started with, which then made it impossible to switch back. The menus now show what you actually have equipped.
 - **Redeem codes name your rewards properly** — Claiming a code listed rewards by their internal id, so an Epic Chest showed up as "epic". It now shows the real item names.

@@ -45,7 +45,7 @@ Open a chest from your inventory.
 
 - **Usage:** `/chest <type> [amount]`
 
-Chests drop randomly when you catch fish (~6% chance). Core chests (Common, Rare, Epic, Legendary) open directly with no key required. Seasonal event chests require a Chest Key and have a daily limit equal to your level. Loot includes coins, pearls, bait, consumables, titles, and gear. You can open up to 25 chests at once.
+Chests drop randomly when you catch fish (~6% chance). Core chests (Common, Rare, Epic, Legendary) and seasonal event chests all open directly with no key and no daily limit. Loot includes coins, pearls, bait, consumables, titles, and gear. You can open up to 25 chests at once.
 
 The **Unique Chest** is a special case — it isn't found while fishing. It's the prize for winning a weekly/monthly [contest](profile.md#contests) or placing top 3 in a Monster Fish event, and always contains a Rare-or-better piece of crafted gear.
 
@@ -55,7 +55,7 @@ Trade in spare gear for a chest.
 
 - **Usage:** `/salvage`
 
-Scrap **10 unequipped gear items** for one chest: **60%** chance Rare, **30%** Epic, **10%** Legendary. Pick which 10 to scrap from a paginated list, the same way you'd bulk-sell fish — equipped gear is never shown, so your loadout can't accidentally get scrapped. The chest lands in your inventory unopened, so you'll still need a key if it's a seasonal one.
+Scrap **10 unequipped gear items** for one chest: **60%** chance Rare, **30%** Epic, **10%** Legendary. Pick which 10 to scrap from a paginated list, the same way you'd bulk-sell fish — equipped gear is never shown, so your loadout can't accidentally get scrapped. The chest lands in your inventory unopened, ready for `/chest`.
 
 ## /use
 
@@ -133,9 +133,41 @@ Abort a breeding session and return both parents to normal status. Useful if you
 
 Manage your passive fishing net.
 
-- **Usage:** `/net status`, `/net collect`
+- **Usage:** `/net status` or `/net collect`
 
 Your net automatically gathers fish and occasional items or chests over time while you are away. Use `/net status` to view your current net capacity and what's waiting for you, and use `/net collect` to claim your catches!
+
+### How Net Catches Work
+
+Your net fills gradually with "slots" over time, but **the fish themselves are not decided until you collect**. Here's what that means:
+
+- **Location determines species** — When you press `/net collect`, the fish are generated based on your **current location**, not where you deployed the net
+- **Species pool from that location** — You'll get species that normally spawn at wherever you're standing
+- **No equipment bonuses** — Net fish are generated with a basic rod and no bait, so they don't get rod/bait/gear bonuses (only your net's own rarity bonus applies)
+- **Affects collection journal** — Catches count toward the location where you collect, not the location where the net was soaking
+
+**Practical tip:** If you leave a net soaking at one location and want to collect from a different one, travel there first! The fish will come from the new location and credit your collection journal there. See the [Fishing Guide](../guides/fishing.md#how-net-fishing-works) for more details.
+
+## /collection
+
+View your fishing collection by location.
+
+- **Usage:** `/collection [location]`
+- **Aliases:** `journal`, `col`
+
+Track which fish species you've caught at each location. `/collection` shows all 27 locations with a progress bar and what your journal is currently worth; `/collection [location]` shows that location's full checklist and how many species you still need (e.g. `/collection na_stream`).
+
+Filling it out pays off everywhere you fish:
+
+- **Half a location's species** — **+0.25%** rarity
+- **All of a location's species** — **+0.5%** rarity, plus that location's artwork as a `/profile` card background
+- **All nine locations in a region** — a **Naturalist** title
+- **All 27 locations** — the **World Cataloguer** title, and **+13.5%** rarity in total
+
+The rarity bonus applies at every location, not just the one that earned it, and stacks on top of your rod, bait and buffs. Only fish you caught yourself count — fish received in trades and bred offspring don't.
+
+!!! tip "Net catches count toward collection"
+    When you collect fish from your net, they count toward the **location where you collected**, not where the net was deployed. See the [`/net` command](#net) for details.
 
 ## /redeem
 

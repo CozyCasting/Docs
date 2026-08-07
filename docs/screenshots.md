@@ -46,7 +46,7 @@ Get a sneak peek at what CozyCasting looks like in action. All screenshots are t
 
 <figure markdown>
   ![Inventory screen](img/inventory.png)
-  <figcaption>Inventory — manage your rods, bait, gear, consumables, chests, and keys</figcaption>
+  <figcaption>Inventory — manage your rods, bait, gear, consumables, and chests</figcaption>
 </figure>
 
 </div>
