@@ -45,8 +45,9 @@ Customise your profile card.
 - **Usage:** `/card`
 - **Cooldown:** 10 seconds
 
-Renders your licence with a picker attached — one dropdown per cosmetic slot (background, frame, name style), a stamp picker, and a **Showcase fish** button. Only cosmetics you've actually unlocked appear in the menus.
+Renders your licence with a picker attached — a category dropdown and a background dropdown, one for your name style, a stamp picker, and a **Showcase fish** button. Only cosmetics you've actually unlocked appear in the menus. (Frames are still coming; there's no menu for them yet.)
 
+- **Backgrounds** — every one you've unlocked, listed below. They're grouped by how you earned them — Starter, Level unlocks, Achievements, one group per journal region, and Seasonal & Shop — so pick the category first and the dropdown below it fills with that group. It opens on whichever group holds the background you're currently using.
 - **Stamps** — pick up to six from your unlocked achievements and titles. If you have more than 25 unlocks, the picker shows your 25 most recent.
 - **Showcase fish** — opens a box for a fish's short code. Leave it blank to reset to automatic (your most valuable fish). You can only showcase a fish you currently own — one you've since traded away stops appearing.
 
@@ -65,7 +66,61 @@ Everything below is preset art and effects — there's no way to upload your own
 | Sunset Pier | Reach level 60 |
 | Volcanic | "Volcano Venturer" achievement (reach level 45) |
 | Arctic | "World Traveler" achievement (fish in all 9 location types) |
-| Summer 2026 | A seasonal drop — not yet obtainable, coming in a future update |
+| Caravan Trail | "Caravan Pathfinder" achievement (be the first to find a Roaming Trader) |
+| Monster's Wake | "Monster Hunter" achievement (land a Monster Fish) |
+| Cartographer's Sea | "The Complete Journal" achievement (catch every species at all 27 locations) |
+
+Another **27 backgrounds** come from your collection journal — see below — and a set of
+seasonal and shop backgrounds exists in the game but isn't obtainable yet; they'll arrive
+with a future update.
+
+**Journal Backgrounds**
+
+Catch **every species** at a location and you unlock that location's artwork as a
+background, named after the location itself. There's one for each of the 27 locations, so
+a finished journal is a finished background collection. Check your progress anywhere with
+[`/collection`](misc.md#collection), or `/collection <location>` for a single checklist.
+
+Completing a location also pays **+0.5% rarity everywhere you fish**, and finishing all
+nine in a region earns a **Naturalist** title. Only fish you caught yourself count — traded
+fish and bred offspring don't.
+
+Finish all 27 and you also earn the **World Cataloguer** title, **The Complete Journal**
+achievement, and the **Cartographer's Sea** background listed above. If you'd already
+finished the journal before that landed, run `/collection` once to claim it.
+
+| Region | Background / Location | Species to catch |
+|--------|----------------------|------------------|
+| North America | Appalachian Stream | 19 |
+| North America | Great Lakes Pond | 20 |
+| North America | Mississippi River | 19 |
+| North America | Lake Michigan | 19 |
+| North America | Pacific Ocean | 19 |
+| North America | Pacific Abyss | 19 |
+| North America | Mammoth Cave | 18 |
+| North America | Yellowstone Hot Springs | 18 |
+| North America | Alaskan Arctic | 18 |
+| Asia | Himalayan Stream | 17 |
+| Asia | Japanese Garden Pond | 19 |
+| Asia | Mekong River | 18 |
+| Asia | Lake Baikal | 18 |
+| Asia | South China Sea | 18 |
+| Asia | Mariana Trench | 19 |
+| Asia | Son Doong Cave | 18 |
+| Asia | Mount Fuji Hot Springs | 18 |
+| Asia | Siberian Arctic | 18 |
+| Europe | Alpine Stream | 19 |
+| Europe | English Garden Pond | 20 |
+| Europe | Danube River | 17 |
+| Europe | Lake Geneva | 18 |
+| Europe | North Sea | 18 |
+| Europe | Norwegian Trench | 19 |
+| Europe | Blue Grotto | 18 |
+| Europe | Icelandic Hot Springs | 18 |
+| Europe | Svalbard Waters | 18 |
+
+That's **497 catches** in total across all 27 locations. Level requirements and what each
+location is like are in the [Locations Reference](../reference/locations.md).
 
 **Name Styles**
 
@@ -77,16 +132,15 @@ Everything below is preset art and effects — there's no way to upload your own
 | Gold Leaf | Reach level 50 |
 | Prismatic | "Mythical Encounter" achievement (catch a Mythical fish) |
 
-**Frames**
+**Frames** — planned, not yet available. The picker shows as "coming soon".
 
-| Name | Unlocked by |
-|------|-------------|
-| No frame | Default |
-| Brass Frame | Reach level 20 |
-| Driftwood Frame | Reach level 40 |
+| Name | Will unlock at |
+|------|----------------|
+| Brass Frame | Level 20 |
+| Driftwood Frame | Level 40 |
 
 !!! note
-    Most background art hasn't been painted yet, so most cards still render on a plain generated background today even once unlocked — the unlock itself is live now, the artwork is catching up.
+    Frames are specced but have no artwork yet, so there's no frame picker in `/card` for now. Every background listed above is painted and live.
 
 ## /stats
 

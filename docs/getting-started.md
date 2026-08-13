@@ -2,7 +2,34 @@
 
 ## Adding CozyCasting to Your Server
 
-Use the `/invite` command in any server that already has the bot, or ask a server admin to add it. The bot needs permissions to send messages, embed links, and use application commands.
+Use the `/invite` command in any server that already has the bot, or ask a server admin to add it.
+
+### Permission checklist
+
+CozyCasting **never needs Administrator**. Grant these and you're set:
+
+| | Permission | Why |
+|---|---|---|
+| **Required** | View Channels | See the channels it's used in |
+| **Required** | Send Messages | Reply to commands |
+| **Required** | Embed Links | Every response is an embed |
+| **Required** | Attach Files | Rendered fish images and profile cards |
+| **Required** | Use Application Commands (`applications.commands` scope) | Slash commands — granted during install |
+| Trades only | Create Public Threads | Accepted `/trade` sessions run in their own thread |
+| Trades only | Send Messages in Threads | Posting inside that trade thread |
+| Trades only | Read Message History | Discord requires it for thread workflows |
+
+Permissions are **per channel**. A channel override can deny something the CozyCasting role grants, so one channel goes quiet while the rest work fine. See the [Server Admin guide](commands/server-admin.md#permissions-and-troubleshooting) for how to fix that.
+
+### Direct messages (optional)
+
+**Commands only work inside a server** — you can't fish in a DM with the bot. DMs are only how optional reminders and private invites reach you:
+
+- Cooldown-ready, `/daily`, `/vote`, net-full and come-back reminders
+- Trade requests and breeding alerts
+- Guild invitations — these fall back to the channel if your DMs are closed, so a closed DM never blocks an invite
+
+Nothing about core fishing needs DMs. To enable them, **right-click the server → Privacy Settings → Direct Messages** (Discord's exact wording varies by client and platform; your global privacy default can also be overridden per server). Once they're on, `/notifications` lets you choose which reminder types you actually get — or turn any of them back off.
 
 ## Your First Catch
 

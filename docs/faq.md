@@ -14,6 +14,8 @@ Yes, completely free to play. Pearls (the premium currency) are earned in-game b
 
 No, CozyCasting is a server-based bot. All commands must be used inside a Discord server.
 
+DMs are used for one thing only: optional reminders and private guild invitations. Enabling them is not required to play — see [Direct messages](getting-started.md#direct-messages-optional) for what they carry and how to turn them on, and use `/notifications` to control which types you receive.
+
 ### What's the image on my `/profile`?
 
 That's your profile card — a rendered "fishing licence" showing your level, stats, and a showcase fish. Customise its background, frame, name style, and stamps with `/card`. If you'd rather see plain text (slow connection, screen reader, or just preference), compact mode replaces it with the classic text-only embed.

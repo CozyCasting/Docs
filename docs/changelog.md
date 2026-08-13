@@ -5,6 +5,51 @@ All notable changes to CozyCasting will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.9.7] - 2026-08-13
+
+### Added
+- **A card for finishing the journal** — Catching every species at all 27 locations now unlocks **The Complete Journal** achievement and the **Cartographer's Sea** profile-card background, on top of the World Cataloguer title you already earned for it. All 497 entries in `/collection`, ticked. If you'd already finished the journal before this update, just run `/collection` once and it's yours.
+- **Send new materials straight to your guild** — `/autodeposit` routes every 🪵 log and 🪨 stone you earn from then on — Materials Bags you fish up and ones you open from your inventory — directly into your guild chest, with an entry in `/guild chest log` saying where it came from. It only affects future rewards: nothing already in your inventory moves, and `/guild chest add` still works by hand. Off by default, and if you're not in a guild your materials keep landing in your inventory as usual.
+- **Guild owners can tax fish sales** — `/guild tax <percent>` sets a whole-number cut, 0% to 15%, of every member's fish sale that goes straight into the guild chest. Off by default; the Owner is the only one who can change it, and `/guild info` always shows the current rate so members can see it before they sell. It applies to every sale — `/fish`, tank bulk sales and net auto-sells alike — in DMs and any server, and the coins you see credited are what you actually keep. Automatic credits are recorded in `/guild chest log` — a bulk sale writes one entry for the whole lot rather than one per fish.
+- **`/fishinfo` now tells you where a fish came from** — Inspecting a fish by its code shows a **Provenance** line: 🥚 Bred if it hatched in your breeding tank, 🎣 Wild-caught if you reeled it in. It is fixed when the fish comes into being, so selling, trading or moving it never changes the label, and fish you bred before this update are labelled correctly too.
+- **Your guild is on your profile** — `/profile` now shows the guild you belong to, name and tag, on your fishing licence card. Compact mode shows it as a **Guild** field on the embed instead, reading `No guild` if you haven't joined one. Looking up another angler shows *their* guild. Your **Home Waters** server is a separate thing and is unchanged.
+- **Leaderboard results in your own channel** — Server admins can opt in with `/settings leaderboard-results #channel` to have the completed **Weekly Fishing Champion**, **Monthly Fishing Champion** and **Top Server of the Month** results posted there. Off unless you set it; run it with no channel to turn it back off. The leaderboards are bot-wide, so every server that opts in sees the same global champion. Winners are still DMed and rewards are granted regardless of whether the announcement gets through.
+- **Setup and DM guidance during onboarding** — The message posted when CozyCasting joins a server now lists the permissions it actually needs (never Administrator), separates the thread permissions that only `/trade` uses, flags anything it can see is missing in that channel, and explains that a channel override can deny what your role grants. The first-time player welcome now says plainly that commands only work in a server, that DMs are optional, exactly which reminders and invites they carry, and how to switch them on — with `/notifications` to pick which ones you want. The [Getting Started](https://cozycasting.github.io/Docs/getting-started/) and Server Admin guides carry the same checklist.
+
+### Changed
+- **Fishing feels snappier** — Newly caught fish are drawn several times faster, so the picture appears sooner and the bot no longer stalls for everyone else while it renders one. Starting a session, keeping a fish and selling a fish also do far less database work, which shows up as quicker button responses through a long session.
+- **Sell and XP potions now lock in when a fishing session starts** — Drinking a sell or XP potion partway through a session takes effect from your **next** session rather than the current one. Your measurement units setting works the same way. Cooldown reduction still picks up a potion immediately, rarity potions already worked this way, and **switching bait mid-session still changes your very next cast** as before.
+- **Big amounts are quicker to type** — `/give`, `/trade` and `/guild chest add`/`remove` now understand `k` and `m` shorthand, in either case: `2.5k coins` is 2,500 and `1.25m coins` is 1,250,000. An amount that can't be a whole number, like `1.2 rabbit feet`, now tells you so instead of quietly handing over a single one.
+- **Guild chest material deposits are quicker** — Use `/guild chest add all logs`, `all stone`, or `all materials` to deposit everything you currently own.
+- **Guild levels now ask for more pooled XP** — The XP each guild level needs has gone up roughly fivefold, so the XP bar on `/guild` fills over about a week rather than a single day. Coin and pearl costs are unchanged, and no guild loses a level it already holds — guilds part-way to their next level keep every point they have earned, they just have further to go.
+- **`/guild info` tells you what the weekly mission pays** — The Weekly Mission field now shows the buff completing it earns and how long it lasts, so members can judge whether it's worth chasing before they contribute rather than finding out at rollover.
+
+- **`/tank` lists fertility instead of size** — The fish list now shows each fish's 🥚 fertility percentage, which is what you actually pick a breeding pair by. Size and weight are still on `/fishinfo` and the fish detail view.
+- **Bulk sales tell you what the guild tax took** — `/tank sell` and the bulk-sell picker show the same kept-versus-tax line `/fish` does, covering the whole sale.
+- **Fishing tells you what the guild tax took** — Selling a fish from `/fish` now shows what you kept, what the sale was worth before tax, and how much went to your guild's chest at what rate. The session summary shows the same for the whole session. The coins credited are unchanged — they were already net of the tax; now the embed says so instead of quietly disagreeing with the fish's listed value.
+- **Fishing cooldowns now show as live countdowns** — The cooldown on the `/fish` session embed is a Discord timestamp, so it stays accurate as the message sits in the channel instead of freezing at whatever it said when it was posted.
+
+### Fixed
+- **`/gear` no longer errors out** — The command crashed for anyone with a gear item equipped that carries a bonus.
+- **Fishing now explains missing channel permissions** — `/fish` and its session buttons identify the permissions CozyCasting needs instead of ending with a generic error when a channel override blocks access.
+- **Slash commands now remain available on the development bot** — Dev command sync no longer immediately deletes the commands it just registered.
+- **Seasonal fish no longer block a location from ever being finished** — Blossom Koi, Sunburst Angelfish and Frostbite Flounder were listed in the ordinary Pond, Ocean and Arctic species pools, but they can only be caught with seasonal bait during their season — so if you missed that season, those locations could never be completed, and the location bonus, naturalist titles, World Cataloguer, The Complete Journal and the Cartographer's Sea background were out of reach for good. They have been taken out of those pools, so every location is completable again. Run `/collection` once and anything you're now owed is granted.
+
+    Two things you'll notice. Each Pond, Ocean and Arctic now asks for one fewer species, so the journal total drops from 506 to 497. And if you *had* caught a seasonal fish in its matching water, it no longer counts toward that location, so your caught number can go down too — an angler on 134/506 with both Arctic seasonals lands on 132/497. Nothing was taken away: those locations are now one fish short of a fish you can actually go and get, instead of one short of a fish you couldn't.
+
+    Your seasonal catches are safe — still in your tank, still worth what they were, and seasonal bait works exactly as before. They just don't appear in the journal for now; they're getting their own section in a future update.
+- **Every background you've earned is now reachable in `/card`** — The background menu could only ever show 25 options, so anglers who had unlocked more than that — anyone well into their collection journal — simply could not see or equip the rest. Backgrounds are now grouped by how you earned them, with a category menu above the picker, and it opens on whichever group holds the one you're currently using. The frames menu, which never had any art behind it, is gone for now; frames are still coming.
+- **Double catches now mention Beginner's Luck** — Unlocking the Beginner's Luck buff on a double catch granted the faster bites but never said so. The keep/sell result now names it, exactly as a single catch already did.
+- **`/gear` was understating your bonuses** — The **⚡ Combined Effects** panel worked out its own numbers instead of using the ones the game applies, and left your guild out entirely — anyone in a guild with an active mission buff saw a longer cooldown than they actually had. Every line now comes from the same place `/fish` reads, so cooldown, rarity, sell, XP and bait-saving all include your gear, potions, server buffs, guild buffs, lucky charm and journal completion. Each line now breaks down which source contributed what.
+
+## [0.9.6] - 2026-08-07
+
+### Changed
+- **Pearl Bags are less common in high-tier chests** — Legendary and seasonal chests now award fewer Small and Medium Pearl Bags.
+
+### Fixed
+- **Extra Title Pouches now become Voting Tickets** — Opening a pouch after collecting every title now consumes it and awards one 🎟️ Voting Ticket instead of refunding the pouch and awarding coins. Opening several at once grants any remaining unique titles first, then one ticket for each extra pouch.
+
 ## [0.9.5] - 2026-08-07
 
 ### Changed

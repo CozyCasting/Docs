@@ -160,9 +160,9 @@ Track which fish species you've caught at each location. `/collection` shows all
 Filling it out pays off everywhere you fish:
 
 - **Half a location's species** — **+0.25%** rarity
-- **All of a location's species** — **+0.5%** rarity, plus that location's artwork as a `/profile` card background
+- **All of a location's species** — **+0.5%** rarity, plus that location's artwork as a `/profile` card background ([full list, with how many species each one needs](profile.md#cosmetic-unlocks))
 - **All nine locations in a region** — a **Naturalist** title
-- **All 27 locations** — the **World Cataloguer** title, and **+13.5%** rarity in total
+- **All 27 locations** — the **World Cataloguer** title, **The Complete Journal** achievement with the **Cartographer's Sea** card background, and **+13.5%** rarity in total
 
 The rarity bonus applies at every location, not just the one that earned it, and stacks on top of your rod, bait and buffs. Only fish you caught yourself count — fish received in trades and bred offspring don't.
 
