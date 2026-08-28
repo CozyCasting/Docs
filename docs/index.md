@@ -12,6 +12,7 @@ CozyCasting is a relaxing fishing game for Discord. Cast your line, catch unique
 - **[Guilds Guide](guides/guilds.md)** — Found guilds, recruit members, build camps, and coordinate missions
 - **[Locations](reference/locations.md)** — All regions, locations, and level requirements
 - **[Rarities](reference/rarities.md)** — Rarity tiers and sell multipliers
+- **[The Website](website.md)** — Game-wide stats, the rare-catch feed, and the species journal
 
 ## Features
 

@@ -35,7 +35,7 @@ Recently shipped features.
 - **Voting Integration** — `/vote` with streak bonuses and Vote Ticket rewards on top.gg
 - **Monster Fish** — Cooperative server-wide boss fights with reaction minigame and placement rewards
 - **Fishing Frenzy** — Server-wide frenzy events with accelerated cooldowns for all guild members
-- **Guild/Server Buffs** — Purchasable server-wide buffs benefitting all members (cooldown reduction, rarity boosts)
+- **Guild/Server Buffs** — Purchasable server-wide buffs benefitting all members (XP, cooldown reduction, sell value, faster bites)
 - **Fishing Nets** — Passive fish collection while offline, collect your haul with `/net collect`
 - **Community Chest Drops** — Channel-based chest drops players race to claim in real time
 - **Notification Preferences** — `/notifications` with per-type toggle panel for DMs and alerts

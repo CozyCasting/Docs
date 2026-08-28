@@ -17,6 +17,8 @@ Send one item (or currency) directly to another player — no acceptance require
 
 After you run the command, a private confirmation embed shows what you're about to send. Click **Confirm** to complete the transfer or **Cancel** to abort. This cannot be undone.
 
+The recipient is DM'd naming you and listing what arrived. That's a **trade** notification, so it follows their `/notifications` settings and their quiet hours — and if their DMs are closed the gift still goes through, they just don't get the message.
+
 **Examples:**
 
 ```

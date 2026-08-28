@@ -2,6 +2,8 @@
 
 CozyCasting features 3 geographic regions, each with up to 9 location types. Higher-level locations offer better base values and access to rarer fish.
 
+When you level up into a new stretch of water, your level-up message names it, so you don't have to read this table to find out something unlocked. Use `/locations` to see your available waters and `/travel` to go there.
+
 ## Location Types
 
 Each location type has a base value, level requirement, and set of available rarities. Geographic regions add a level offset on top.

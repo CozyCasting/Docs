@@ -83,6 +83,25 @@ Set (or clear) where rare catches are announced.
 
 ---
 
+## Public Rare-Catch Feed
+
+Publish this server's **Mythical and Unique** catches to the live feed on the CozyCasting website. Opt-in — off unless you turn it on.
+
+This is **separate from `/settings rarecatch`**, which posts in a Discord channel. A server can do either, both, or neither.
+
+### /settings globalfeed
+
+Enrol (or remove) this server in the public feed.
+
+- **Usage:** `/settings globalfeed <enabled>`
+- **Examples:** `/settings globalfeed enabled:True`, `/settings globalfeed enabled:False`
+
+Enrolling publishes, for every Mythical and Unique fish caught here: the fish, its size, weight and value, the location, and **the angler's name**. It is a public web page — anyone can read it without signing in. **Your server's name is never shown**, and neither is any Discord ID.
+
+Any member can remove themselves from the feed at any time with `/globalfeed`, in any server, and their choice overrides this setting for them. Turning this off stops future catches being published; entries already on the feed age off on their own.
+
+---
+
 ## Leaderboard Results
 
 Post completed **Weekly Fishing Champion**, **Monthly Fishing Champion** and **Top Server of the Month** results in a channel of your choice. Opt-in — off unless you set it.
@@ -97,6 +116,33 @@ Set (or clear) where completed leaderboard results are announced.
 Results post once per period, right after the winners are decided at midnight UTC. Leave `channel` empty to turn it back off. Announcements are best-effort: rewards are always granted regardless of whether the message gets through.
 
 The leaderboards are bot-wide, not per-server — every server that opts in sees the same global champion.
+
+---
+
+## Tournaments
+
+Run a live fishing tournament in your server with `/tournament start`.
+
+### /tournament start
+
+Start a live fishing tournament in this server.
+
+- **Usage:** `/tournament start <mode> <duration>`
+- **Required Permission:** **Manage Server**
+- **Mode:** pick from the dropdown — *Heaviest Single Catch* or *Most Total Fish Caught*
+- **Duration:** 5–120 minutes (Discord rejects anything outside that)
+
+Opens a timed competition where every `/fish` catch anyone in the server makes during the window counts automatically — there's nothing to sign up for. When the timer runs out, the bot announces the top 3 anglers in the channel where it started.
+
+**Key rules:**
+- One tournament per server at a time
+- Only active `/fish` catches count — nets and breeding don't
+- No prizes — bragging rights only
+- Ties go to whoever reached the score first
+- A bot restart cancels any tournament still running
+
+!!! info "Checking tournament progress"
+    Players can use `/tournament leaderboard` at any time to see the live standings and how much time is left.
 
 ---
 

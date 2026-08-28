@@ -112,18 +112,20 @@ Core chests come in four tiers:
 
 | Chest | Rolls | Typical Loot |
 |-------|-------|--------------|
-| Common | 2 | Bait, small coin drops, fishing tickets |
-| Rare | 3 | Better bait, consumables, fishing tickets |
-| Epic | 4 | Consumables, rare bait, titles |
-| Legendary | 5 | Premium consumables (Magnets, etc.), rare titles, gear |
+| Common | 2 | Coin drops, Materials Bags, entry-level buffs (Energy Drinks, Ale, Lucky Magnets), fishing tickets |
+| Rare | 3 | Coin purses, Materials Bags, Rabbit Feet, Lucky Double Worms, Rare gear |
+| Epic | 4 | Stronger buffs (Schnapps, Shiny Rabbit Feet, Twin Hook Tokens, Steady Hands), pearl bags, titles, Epic gear |
+| Legendary | 5 | The Epic pool at better rates, plus larger pearl bags and Legendary gear |
 
-Possible loot from any chest includes coins, pearls, bait, consumables (XP boosts, rarity boosts, Magnets, Double Worms), fishing tickets, titles, and gear.
+Possible loot from any chest includes coins, pearls, bait, consumables, materials, fishing tickets, titles, and gear.
+
+**Buffs are tiered.** Each buff type has an early-game version in the low chests and a stronger version in Epic and above — Ale and Schnapps for selling, Rabbit Foot and Shiny Rabbit Foot for rarity, Lucky Magnet and Gilded Magnet for chest luck. Only one buff of each type is active at a time, so the stronger one simply replaces the weaker when you have both.
 
 ### Seasonal Chests
 
 Seasonal chests are limited-time event chests (e.g., Summer 2026) with unique loot pools and bonus gear drops. They open directly from your inventory, the same as core chests — no key, no daily limit.
 
-They are rarer instead: when a chest drops from fishing, there's a 90% chance it's a core chest and a 10% chance it's a seasonal chest (if one is currently active).
+They are rarer instead: when a chest drops from fishing, there's a 93% chance it's a core chest and a 7% chance it's a seasonal chest (if one is currently active).
 
 ### Unique Chest
 

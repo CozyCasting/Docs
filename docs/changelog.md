@@ -5,6 +5,123 @@ All notable changes to CozyCasting will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.10.0] - 2026-08-28
+
+Note: Subscriptions/Purchases will be available on Sept 1st.
+
+### Added
+
+**Supporter subscription and the Server Pass** — Two optional purchases, both through Discord's store on the bot's profile.
+
+- **Supporter** is a monthly subscription, run entirely from `/subscription`:
+    - One of three items each week.
+    - Two perks you pick each month.
+    - A profile-card background each month, kept even if you cancel.
+    - The Supporter parts of the website: your Dashboard and the species Journal.
+        - This is meant as a way to monetize the game a bit to go towards development and hosting costs without restricting game-features. All info on the site is also available via discord; just in a less 'pretty' way.
+- Supporter has two tiers. The higher one also grants **one 14-day Server Boost Pass a month** — one server buff of your choice, in one server.
+- The **Server Pass** is a one-time purchase, not a subscription: activating it runs **every purchasable server buff for 30 days** in one server. It grants no website access.
+- Neither pass expires.
+- Discord shows the price and handles payment; we never see your card. Cancel any time and access lasts to the end of the period you paid for. The [Terms](https://cozycasting.github.io/Docs/terms/) and [Privacy Policy](https://cozycasting.github.io/Docs/privacy/) now state what is sold and what is kept about a purchase.
+
+**The Contest Pier** — `/contest` is a free weekly competition where rod, bait, gear, level, location, buffs and consumables count for nothing.
+
+- This will replace rewards previously provided to 'most-fish' leaderboards. That will now grant a title and recognition on the website 'Hall of Fame'.
+- **10 casts a day.** They don't roll over and can't be earned, bought or refilled, so a full week is 70.
+- **The water changes daily.** Each day of the week is a different location with its own species pool, and the whole schedule is posted in advance — a volcano day pays more than a stream day, for everyone equally.
+- **Three competitions a week**, drawn from Biggest Catch, Smallest Catch, Richest Haul, Widest Variety and Target Size, and fixed for the whole week.
+- **Nothing carries over.** Contest fish are released: no coins, XP, tank, journal or leaderboard credit.
+- **Each win pays 🦪 50 Pearls, a 🎁 Unique Chest and that competition's title** — Pearls and chest every time, the title once.
+- Each cast is recorded as it happens, so you can stop and come back. Ties are co-winners; casting earlier is worth nothing.
+- Casts reset 00:00 UTC daily; the week settles Saturday 00:00 UTC (Friday evening in the Americas).
+
+**Contest Pier page** — [/contest.html](https://cozycasting.app/contest.html), no sign-in.
+
+- This week's seven waters, with today's marked.
+- The three competitions running, their live standings, and the target size when that competition comes up.
+- Every settled week with the titles it awarded.
+- Tied anglers share a rank, as the pier does. `/globalfeed` opt-outs show as *Anonymous Angler*, keeping their rank and score.
+
+**Gear sets** — Save a loadout and swap it back in one command.
+
+- `/gearset save <name>` snapshots the rod and gear you have equipped; `/gearset equip <name>` puts it back on; `/gearset` lists your sets; `/gearset delete` removes one.
+- A set is exact, so a slot left empty at save time comes back empty.
+- Bait isn't included — it gets used up, so it stays on `/equip`.
+- Three sets are free; more are in `/shop` → **Upgrades** for 🦪 pearls.
+- If you traded or scrapped a piece since saving, the rest still equips and the command names what was missing.
+
+**Server tournaments** — `/tournament start` runs a live competition in your server.
+
+- **Heaviest Single Catch** or **Most Total Fish Caught**, 5 to 120 minutes.
+- Every `/fish` catch in the server counts automatically — there's nothing to join.
+- `/tournament leaderboard` shows standings and time left; the bot announces the top three in the starting channel when time runs out.
+- Needs **Manage Server**, one at a time per server.
+- Nets and breeding don't count, there are no prizes, ties go to whoever got there first, and a bot restart cancels a running tournament.
+
+**Other additions**
+
+- **Sort your tank** — `/tank` takes a **sort** option: rarity (the default, as before), value, species A–Z, fertility, size, newest or oldest. Your choice holds across every page and carries into the bulk-sell screen, so you can order by fertility and sell down the fish you don't want to breed with. Sorting by size or catch date puts that number on each row — 📏 42.5 cm or 📅 Jun 01 — in your own units. Works on other players' tanks. Tied fish now keep a fixed order instead of shuffling between pages.
+- **You're told when someone gives you something** — `/give` now DMs the recipient with the sender's name and what arrived. It's the **trade** notification, so `/notifications` and your quiet hours control it like everything else. If your DMs are closed the gift still goes through; you just don't get the message.
+- **The game now tells you where you can travel** — Levelling into a new location names it in the level-up message and points at `/locations` and `/travel`, including every location you cross if one catch jumps you several levels. If you've never left the Appalachian Stream, your fishing session says how many other waters are already open; that note disappears the first time you travel. `/travel` and `/locations` work as before.
+- **Special Waters** — The Monster Fish and the three seasonal exclusives belong to no location, so they appeared nowhere in `/collection` or the web journal even after you caught them. Both now have a **Special Waters** section split into **Monster Waters** and **Seasonal Waters**, with your count on each and silhouettes for the rest. **It counts toward nothing** — not the rarity bonus, the region Naturalist titles, World Cataloguer or The Complete Journal — so journal percentages and rewards are exactly as they were. An ended season and an event you missed are out of reach for good, so nothing is gated behind them. Monster catches missing from your journal appear the next time you run `/collection`.
+
+**New on the website**
+
+- **A page for every species** — Every species has a public page at `/fish/<name>` with its art, size and weight ranges, colours and patterns, and every water it lives in. No sign-in required. There's an A–Z index at [/fish](https://cozycasting.app/fish), linked from every page's footer, and every species in the journal has a **Full page** link to share.
+- **A page for every catch, and it unfurls in Discord** — Every fish has a page at `/c/<code>`, and pasting the link into a Discord channel renders a card with the fish, its rarity, size, weight and value, where it was caught and who caught it. It shows up as **Share this catch** on any fish you open, in the front page's rare-catch feed and in your logbook.
+- **Leaderboard page, with the Hall of Champions** — Most fish caught, largest fish, most valuable fish, highest level and longest streak, across every server, over 7 days, 30 days or all time. It reads the same rankings `/leaderboard` does and refreshes about once a minute.  The second tab is the **Hall of Champions**: every past Weekly and Monthly Fishing Champion, newest first, with the period's dates and the winning count, as awarded — nothing is recomputed, and a period nobody won is listed as such. No sign-in. `/globalfeed` opt-outs appear as *Anonymous Angler*, keeping their rank and score. The contest running right now is still `/leaderboard` in Discord, scope **Contest**. 
+    - Server-of-the-month winners stay in the Discord announcement; no server is named on the site.
+- **The rare-catch feed** — A public page with a live feed of **Mythical and Unique** catches from servers that opt in. Admins turn it on with `/settings globalfeed enabled:True`; it's off until they do. Enrolling publishes the fish, its size, weight and value, the location and **the angler's name** to a page anyone can read without signing in; your server's name is never shown. Any player can remove themselves everywhere at once with `/globalfeed`, which overrides the server setting — it applies to future catches, and anything already on the feed ages off. Clicking a catch opens it larger with its size, weight, value, location, angler and date.
+- **Game-wide totals on the front page** — Total fish caught across every server, how many anglers play, the split by rarity, how much of the species catalogue has ever been discovered, and the heaviest fish ever landed, plus a line showing fish caught in the last hour and anglers out today. 
+- **Your logbook on the web (Supporter)** — Signing in gives you a page with more depth than a Discord embed holds:
+    - Level and XP, coins, pearls, best single sale, session and daily streaks, and journal completion.
+    - The last 90 days of catches as a daily line, your split by rarity, and which waters and rods you actually use.
+    - Your equipped rod, bait and gear with the stats each piece rolled, and every achievement with the date you earned it.
+    - **Every fish you have ever caught, including sold ones** — sortable by date, value, weight or length, filterable by rarity, each one opening for full detail.
+- **The species journal on the web (Supporter)** — A map of all 27 locations grouped by region, each showing how much of its pool you've logged. Species you've never landed are silhouettes with hidden names; caught species show in colour with your count and first-catch date. It reads what `/collection` reads: traded fish don't count, selling doesn't undiscover one, bred fish don't count, and discovery is per location. Progress can be up to five minutes behind. The same journal is free in Discord through `/collection`.
+- **Search in the species journal** — 497 journal entries across 27 locations, and the only way in was clicking waters until you found the fish. The journal now has a search box: type a species and it tells you which water to fish, type a water and it takes you there. Seasonal and monster species are searchable. Arrow keys and Enter work.
+
+### Changed
+
+**`/subscription` shows the dates that matter**
+
+- When you subscribed, the start and end of the current billing period, and whether it will renew or has been canceled.
+- This week's item and reset, and where this month's 14-day Server Boost Pass was used.
+- **The weekly item is claimed here now**, from a menu on the same screen — the separate `/weekly` command is gone. What you get and the once-per-UTC-week rule are unchanged.
+- Separately purchased 30-day Server Passes stay on `/serverpass`; they aren't subscription benefits.
+- If Discord's billing status is unavailable, the command still shows the access dates the bot can verify itself.
+
+**Server buffs**
+
+- **Rarity Boost removed from the shop** — It was the one thing in the game where pearls bought a better chance at the fish everyone competes over. Rare-fish chance now comes only from your rod, bait, gear, consumables and guild.
+- **New server buff: 🪝 Faster Bites** — Takes Rarity Boost's place in `/shop` → **Server Buffs** at the same price. Everyone in the server waits **20% less** for a bite. It doesn't change what you catch or how often you can fish.
+- **The monthly top-server prize is now 🏆 Champion's Bite** — The server whose members catch the most fish in a calendar month wins **25% less bite wait for 7 days** instead of Rarity Boost. It can't be bought, and it stacks with a purchased Faster Bites for 45%. Qualifying is unchanged: most `/fish` catches in the month, minimum 100.
+- **The weekly and monthly fish-caught races now pay titles** — Top of the weekly board earns **Full Time Fisher**, top of the monthly earns **Career Angler**. The Pearls and Unique Chests they used to pay are gone; those boards are run with whatever gear and buffs each player owns, so they're a status board, and the prizes moved to `/contest` where everyone starts level. The standings are unchanged and still in `/leaderboard`.
+
+**Privacy**
+
+- **Catch pages follow the same rule as the feed** — A `/c/<code>` page named the angler whenever they hadn't opted out of `/globalfeed`. It now also requires that the catch happened in a server enrolled with `/settings globalfeed`. A catch from an unenrolled server, or one with no server at all (a DM, a net, a bred fish), now reads *Anonymous Angler*. Only the name is withheld.
+
+**Everything else**
+
+- **Bulk sell shows fertility instead of size** — Deciding what to sell out of a full tank is usually a breeding decision, and size didn't help. Each row now reads 🥚 75% where it showed length. Nothing else about bulk sell changed. Size is still on `/tank` and `/fishinfo`.
+- **`/locations` is one map, not three walls of text** — It sent three messages, one per region, each listing three fish names and "+16 more" per location. It's now a single embed with a world map and all 27 locations grouped by region, ordered the way you unlock them. Each location you can reach shows the base value of its fish, so you can see that Pacific Abyss pays more than Lake Michigan, and how much of its pool you've logged; locked ones show the level you need. Your total journal progress and the rarity bonus it currently pays sit at the top. Species names were dropped on purpose — truncated to three they were useless, and `/collection <location>` has the full checklist.
+
+### Fixed
+- **`/tank` no longer fails on a page of renamed fish** — Ten fish with custom names and several traits each could push a page past Discord's limit on how much text an embed section holds, and the command errored instead of showing anything. The page now continues into a second block. Nothing is hidden or shortened, and a normal tank looks as it did.
+
+## [0.9.9] - 2026-08-26
+
+### Fixed
+- **The Roaming Trader's stall opens again** — If you walked up to the caravan this week, `/trader` gave you nothing: no stall, no wares, no way to buy. One of the items on offer, the Gilded Magnet, carries a two-part emoji, and Discord refuses to draw a button labelled with more than one — so the entire stall was thrown out rather than that one button. Buttons now take just the first emoji of an item's name and the stall renders as it should. Nothing was lost while it was broken: if you were the first to find this week's caravan, that discovery is still unclaimed and waiting for you, along with the Caravan Pathfinder title and the Caravan Trail card background.
+
+## [0.9.8] - 2026-08-14
+
+### Changed
+- **Your rod now sets how far your cooldown can be cut** — Gear, potions, server buffs and guild buffs all still shorten your fishing cooldown exactly as before, but there's now a limit on how much they can take off in total, and that limit rises with the rod you're holding. Every rod from the Basic upward gets a bigger allowance than the one below it, so upgrading your rod pays twice: once for the rod's own reduction, and again for the extra headroom it unlocks. Nothing has been taken out of your inventory and no bonus has been reduced — the only thing that changes is that piling on past your rod's limit no longer buys you anything. Almost everyone is already under their limit and will notice nothing at all; if you're over it, `/gear` now says so on the cooldown line and tells you that a better rod raises it. This replaces a situation where a lucky run of crafted gear could out-cut a rod you hadn't earned yet, so a low-level angler could end up fishing faster than someone who had put in the work.
+- **Frenzy Potions are now a proper burst** — A Frenzy Potion sets your fishing cooldown to a flat few seconds for its duration rather than shaving a percentage off it, which is how the server-wide Fishing Frenzy event has always worked. It ignores the rod limit above entirely, so it's now a far bigger jump from your normal pace than it used to be — and it stays that way no matter how the limit is tuned in future. Fishing Frenzy events are completely unaffected.
+- **Chests hand out fewer duplicate buff potions** — Buff potions were dropping faster than anyone could realistically drink them, since only one potion of each kind works at a time. Common and Rare chests now give out fewer Lucky Magnets and Energy Drinks, and Fisherman's Schnapps has moved up to the chests that suit its strength. In their place, chests are more likely to hold 🎒 **Materials Bags**, which feed guild camp upgrades and were far harder to come by than they should have been. Chests still hand out the same number of items — you'll just see fewer potions you were never going to get through, and more of what your guild actually needs. Fisherman's Ale and Rabbit Feet are unchanged: they're the early-game versions of those buffs and still drop where they always did.
+
 ## [0.9.7] - 2026-08-13
 
 ### Added

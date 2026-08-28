@@ -68,6 +68,7 @@ Everything below is preset art and effects — there's no way to upload your own
 | Arctic | "World Traveler" achievement (fish in all 9 location types) |
 | Caravan Trail | "Caravan Pathfinder" achievement (be the first to find a Roaming Trader) |
 | Monster's Wake | "Monster Hunter" achievement (land a Monster Fish) |
+| Zeb's Hunt | "Zebukiel's Chosen" achievement (land Zeb's Abyssal Dragonfish) |
 | Cartographer's Sea | "The Complete Journal" achievement (catch every species at all 27 locations) |
 
 Another **27 backgrounds** come from your collection journal — see below — and a set of
@@ -89,35 +90,38 @@ Finish all 27 and you also earn the **World Cataloguer** title, **The Complete J
 achievement, and the **Cartographer's Sea** background listed above. If you'd already
 finished the journal before that landed, run `/collection` once to claim it.
 
-| Region | Background / Location | Species to catch |
-|--------|----------------------|------------------|
-| North America | Appalachian Stream | 19 |
-| North America | Great Lakes Pond | 20 |
-| North America | Mississippi River | 19 |
-| North America | Lake Michigan | 19 |
-| North America | Pacific Ocean | 19 |
-| North America | Pacific Abyss | 19 |
-| North America | Mammoth Cave | 18 |
-| North America | Yellowstone Hot Springs | 18 |
-| North America | Alaskan Arctic | 18 |
-| Asia | Himalayan Stream | 17 |
-| Asia | Japanese Garden Pond | 19 |
-| Asia | Mekong River | 18 |
-| Asia | Lake Baikal | 18 |
-| Asia | South China Sea | 18 |
-| Asia | Mariana Trench | 19 |
-| Asia | Son Doong Cave | 18 |
-| Asia | Mount Fuji Hot Springs | 18 |
-| Asia | Siberian Arctic | 18 |
-| Europe | Alpine Stream | 19 |
-| Europe | English Garden Pond | 20 |
-| Europe | Danube River | 17 |
-| Europe | Lake Geneva | 18 |
-| Europe | North Sea | 18 |
-| Europe | Norwegian Trench | 19 |
-| Europe | Blue Grotto | 18 |
-| Europe | Icelandic Hot Springs | 18 |
-| Europe | Svalbard Waters | 18 |
+Listed in the order you can reach them, so you can read it as a route rather than
+checking each location one at a time.
+
+| Region | Background / Location | Level | Species to catch |
+|--------|----------------------|-------|------------------|
+| North America | Appalachian Stream | 1 | 19 |
+| North America | Great Lakes Pond | 1 | 20 |
+| North America | Mississippi River | 5 | 19 |
+| North America | Lake Michigan | 10 | 19 |
+| North America | Pacific Ocean | 20 | 19 |
+| North America | Mammoth Cave | 25 | 18 |
+| North America | Pacific Abyss | 35 | 19 |
+| North America | Yellowstone Hot Springs | 45 | 18 |
+| North America | Alaskan Arctic | 50 | 18 |
+| Asia | Himalayan Stream | 15 | 17 |
+| Asia | Japanese Garden Pond | 15 | 19 |
+| Asia | Mekong River | 18 | 18 |
+| Asia | Lake Baikal | 22 | 18 |
+| Asia | South China Sea | 25 | 18 |
+| Asia | Son Doong Cave | 30 | 18 |
+| Asia | Mariana Trench | 40 | 19 |
+| Asia | Mount Fuji Hot Springs | 50 | 18 |
+| Asia | Siberian Arctic | 55 | 18 |
+| Europe | Alpine Stream | 30 | 19 |
+| Europe | English Garden Pond | 30 | 20 |
+| Europe | Danube River | 33 | 17 |
+| Europe | Lake Geneva | 37 | 18 |
+| Europe | North Sea | 40 | 18 |
+| Europe | Blue Grotto | 40 | 18 |
+| Europe | Norwegian Trench | 50 | 19 |
+| Europe | Icelandic Hot Springs | 55 | 18 |
+| Europe | Svalbard Waters | 60 | 18 |
 
 That's **497 catches** in total across all 27 locations. Level requirements and what each
 location is like are in the [Locations Reference](../reference/locations.md).
@@ -212,4 +216,4 @@ Every week and every month, whoever catches the most fish (globally) wins a priz
 
 ### Server of the Month
 
-Every calendar month, the server whose members catch the most fish (only `/fish` catches count — nets and breeding don't) wins a **7-day server-wide Rarity Boost (+15% rare fish chance) for everyone in it**. The leading server needs at least 100 attributed catches in the month to qualify. Watch the live race with `/leaderboard` → **Servers**.
+Every calendar month, the server whose members catch the most fish (only `/fish` catches count — nets and breeding don't) wins **7 days of Champion's Bite (25% shorter wait for a bite) for everyone in it**. It can't be bought, and it stacks with a purchased Faster Bites — a winning server that already owns one waits 45% less. The leading server needs at least 100 attributed catches in the month to qualify. Watch the live race with `/leaderboard` → **Servers**.

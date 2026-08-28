@@ -47,7 +47,7 @@ Open a chest from your inventory.
 
 Chests drop randomly when you catch fish (~6% chance). Core chests (Common, Rare, Epic, Legendary) and seasonal event chests all open directly with no key and no daily limit. Loot includes coins, pearls, bait, consumables, titles, and gear. You can open up to 25 chests at once.
 
-The **Unique Chest** is a special case — it isn't found while fishing. It's the prize for winning a weekly/monthly [contest](profile.md#contests) or placing top 3 in a Monster Fish event, and always contains a Rare-or-better piece of crafted gear.
+The **Unique Chest** is a special case — it isn't found while fishing. It's the prize for winning a Contest Pier competition or placing top 3 in a Monster Fish event, and always contains a Rare-or-better piece of crafted gear.
 
 ## /salvage
 
@@ -166,6 +166,12 @@ Filling it out pays off everywhere you fish:
 
 The rarity bonus applies at every location, not just the one that earned it, and stacks on top of your rod, bait and buffs. Only fish you caught yourself count — fish received in trades and bred offspring don't.
 
+### Special Waters
+
+Below the 27 locations is **Special Waters**, holding the fish that belong to no location: the 30 **Monster Fish** you win from an event, and the **seasonal exclusives** you catch with seasonal bait. `/collection special_monster` and `/collection special_seasonal` show each checklist.
+
+**Special Waters counts toward nothing** — not the rarity bonus, not the Naturalist titles, not World Cataloguer, not The Complete Journal, and not the percentage at the top of `/collection`. A season that has ended and an event you weren't around for are both permanently out of reach, so no reward is gated behind them. It exists so the fish you caught have somewhere to be.
+
 !!! tip "Net catches count toward collection"
     When you collect fish from your net, they count toward the **location where you collected**, not where the net was deployed. See the [`/net` command](#net) for details.
 
@@ -192,6 +198,63 @@ Toggle between metric and imperial units.
 - **Usage:** `/units`
 
 Switches fish size and weight display between **metric (cm / kg)** and **imperial (in / lbs)**. Your preference is saved per-user. Defaults to imperial.
+
+## /globalfeed
+
+Choose whether your rare catches appear on the public website feed.
+
+- **Usage:** `/globalfeed`
+
+CozyCasting's website carries a live feed of **Mythical and Unique** catches from across every server that has opted in. Entries show the fish, its size, weight and value, the location, and **the angler's name** — publicly, to anyone, with no sign-in.
+
+Two switches have to line up before any of your catches appear there: a server admin enrols the server with `/settings globalfeed`, and you have not opted out. `/globalfeed` toggles your side of it, and your choice applies **everywhere**, in every server, immediately.
+
+Opting out affects **future catches only**. Anything already on the feed keeps the name it was published with until it ages off — the feed holds the most recent 200 catches, so that happens on its own.
+
+The same page also carries **game-wide totals** — how many fish have been caught across every server, how many anglers play, the split by rarity, and the heaviest fish ever landed. Those are aggregates only: they never name anyone, so `/globalfeed` has nothing to do with them and there is nothing to opt out of. The heaviest-fish tile shows the fish and never who caught it.
+
+## /contest
+
+Visit the **Contest Pier** — the weekly competition where nothing you own matters.
+
+- **Usage:** `/contest`
+- **Aliases:** `pier`
+
+Your rod, bait, gear, level, current location, buffs and consumables count for **nothing** at the pier. Every angler casts the same water and rolls from the same species. A level 1 player and a level 100 player have identical odds.
+
+### Ten casts a day
+
+You get **10 casts a day**, reset at **00:00 UTC**. They **do not roll over** — an unused cast is gone at midnight, and no attempt is ever earned, bought or refilled. Fish all seven days and that is 70 casts for the week.
+
+Every cast is recorded the instant it happens, whether or not the message gets through, so you can stop and come back — `/contest` is always the authoritative count.
+
+### The pier moves every day
+
+Each day of the week is a **different stretch of water** with its own species — an Appalachian stream one day, a volcanic caldera the next — and the whole week's schedule is posted in advance on `/contest` and on the [website](../website.md).
+
+That schedule is the only decision the contest offers. Fish from a deep or volcanic water are appraised higher than a stream's, so where the pier stands decides what a day's ten casts are worth. It is the same water and the same timetable for everybody.
+
+### The competitions
+
+Three of these five run each week, picked when the week opens and locked in for its duration:
+
+| Competition | Wins with |
+|---|---|
+| 🐋 Biggest Catch | Your single longest fish of the week |
+| 🐟 Smallest Catch | Your single shortest fish of the week |
+| 💎 Richest Haul | The appraised value of everything you land |
+| 📖 Widest Variety | How many different species you land |
+| 🎯 Target Size | One fish as close to the posted target length as you can get |
+
+Exact ties are **co-winners** — casting earlier breaks nothing.
+
+### What you get, and what you don't
+
+Contest fish are measured, photographed and released. **No coins, no XP, no tank, no journal, no achievements, no leaderboard progress** — nothing from the pier touches your normal game.
+
+Winning a competition pays 🦪 **50 Pearls** and a 🎁 **Unique Chest**, plus that competition's **permanent title**. The Pearls and the chest are paid on every win, including a repeat; the title you only earn once. Titles cannot be traded and change nothing about how you fish. Three competitions run each week, so a clean sweep is 150 Pearls and three chests.
+
+The week runs **Saturday 00:00 UTC to Saturday 00:00 UTC** — Friday evening across the Americas — and settles the moment it ends.
 
 ## /lookup
 

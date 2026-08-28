@@ -27,7 +27,7 @@ A collection of tips to help you fish smarter and progress faster.
 - **Upgrade Display Tank to level 5** — Five display slots means five passive income streams. Prioritize this once you have the Pearl Rod.
 - **Use consumables strategically** — Pop an XP Boost + Rarity Boost together before a long fishing session at a top-tier location.
 - **Keep at least one of every species** — Mythical and Unique fish are extremely rare. Don't sell them — they're worth far more as collection pieces and achievement progress.
-- **Chase the weekly/monthly contest** — If you're already on a fishing binge, check `/leaderboard` → Contest to see if you're in range of a Unique Chest prize.
+- **Fish the Contest Pier** — `/contest` is the one board where your gear counts for nothing, so a new angler can win it. Each of the three weekly competitions pays 🦪 50 Pearls and a 🎁 Unique Chest. The pier moves daily and the week is posted in advance — pick the days worth your ten casts.
 
 ## General
 

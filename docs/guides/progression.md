@@ -37,6 +37,10 @@ The XP required to reach each level follows a power curve:
 
 The maximum level is **100**.
 
+### Level-Up Bonuses
+
+When you level up into a new stretch of water, your level-up message names the location and points you at `/locations` and `/travel` so you can find it. If you jump multiple levels at once, you'll see every water you crossed — so a big catch that takes you from level 18 to level 22 names both the Pacific Ocean (level 20) and Lake Baikal (level 22), not just the last one. If more than three open up at once, the message names three and says how many more there are.
+
 ## Achievements
 
 Achievements are milestones that reward you for playing. They're organized into categories:

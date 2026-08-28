@@ -120,6 +120,31 @@ Better rods reduce your fishing cooldown **and** increase your rarity bonus. Eac
 
 The **Pearl Rod** is special — it doesn't boost rarity or reduce cooldown, but it can give fish the exclusive **Pearlescent** trait.
 
+### Your rod caps your total cooldown reduction
+
+Gear, potions, server buffs and guild buffs all shorten your cooldown on top of your rod's own reduction — but there's a **limit on how much they can take off in total**, and that limit rises with every rod tier. Upgrading your rod therefore pays twice: once for the rod's reduction, and again for the extra headroom it unlocks.
+
+You are very unlikely to hit the limit through normal play — a full set of cooldown gear plus a server buff plus a guild mission buff still fits underneath it at every tier. It exists so that a lucky run of crafted gear can't out-cut a rod you haven't earned yet. If you *are* over it, `/gear` says so on the **Cooldown** line and tells you a better rod will raise it.
+
+**Frenzy Potions ignore this limit entirely.** They set your cooldown to a flat few seconds rather than reducing it by a percentage, so they're a full burst regardless of your rod. Server-wide **Fishing Frenzy** events work the same way and are also unaffected.
+
+### Server buffs
+
+Anyone with pearls can buy a buff that applies to **everyone in a Discord server**, from `/shop` → **Server Buffs**. They stack with your own gear and consumables.
+
+| Buff | Effect |
+|------|--------|
+| ⭐ XP Boost | +20% XP from fishing |
+| 🪝 Faster Bites | 20% less waiting for a bite |
+| ⏱️ Cooldown Reduction | 10% shorter fishing cooldown |
+| 💰 Sell Boost | +15% coins when selling |
+
+There is deliberately **no rarity buff here**. Rare-fish chance is earned — rod, bait, gear, consumables, guild — and never bought.
+
+Buying a buff a server already has **extends** it from its current expiry rather than replacing it, so nothing is wasted by buying early.
+
+The monthly top-server prize, 🏆 **Champion's Bite** (25% less waiting for a bite, 7 days), can't be bought at all and stacks with a purchased Faster Bites.
+
 ### Bait
 
 Bait is consumed on each cast and provides a rarity bonus. Some baits work better in specific location types.
@@ -184,4 +209,4 @@ Very rarely (about a 0.5% chance per catch), a massive Monster Fish appears in y
 3. **Rewards** — The top 3 scorers earn chests: 🥇 Legendary + Seasonal Chest, 🥈 Epic Chest, 🥉 Rare Chest. Ties for a placement are broken randomly, not by who joined first.
 4. **Catching the monster** — 1st place also has a chance to reel in the Monster Fish itself as a **Unique**-rarity catch. The base chance is small, but scales up with your equipped rod's rarity bonus — better rods meaningfully improve your odds.
 
-There are 30 unique Monster Fish species (10 per region) that can **only** be caught this way.
+There are 31 unique Monster Fish species that can **only** be caught this way — 10 belonging to each region, plus Zeb's Abyssal Dragonfish, which can surface in any of them.

@@ -23,11 +23,24 @@ After catching a fish, you'll see two buttons:
 
 View your fish tank and collection.
 
-- **Usage:** `/tank [user]`
+- **Usage:** `/tank [user] [sort]`
 - **Aliases:** `aquarium`, `fishtank`
-- **Examples:** `/tank`, `/tank @friend`
+- **Examples:** `/tank`, `/tank @friend`, `/tank sort:fertility`
 
-Shows a paginated list of all fish you've kept. You can also view another player's tank. The tank view includes a **Bulk Sell** button. Toggle fish individually or by page, then confirm to sell all at once.
+Shows a paginated list of all fish you've kept. You can also view another player's tank. The tank view includes a **Bulk Sell** button. Toggle fish individually or by page, then confirm to sell all at once. Bulk-sell rows show each fish's fertility rather than its size, because that's the number that decides whether a fish is worth keeping to breed with.
+
+**Sort** reorders the whole list, every page and the bulk-sell screen alike:
+
+| Sort | Order |
+|------|-------|
+| `rarity` | Rarest first, then most valuable — the default |
+| `value` | Most valuable first |
+| `species` | Species A-Z |
+| `fertility` | Highest fertility first |
+| `size` | Largest first |
+| `newest` / `oldest` | By when you caught it |
+
+Sorting by **size** or by **catch date** also adds that value to each row (📏 42.5 cm, 📅 Jun 01), in your own units — the other sorts order by something the row already shows.
 
 ## /fishinfo
 
@@ -56,3 +69,13 @@ Give a custom name to one of your fish.
 - **Usage:** `/namefish <code> <name>`
 - **Aliases:** `rename`, `namef`
 - **Example:** `/namefish ABC123DE Nemo`
+
+## /tournament leaderboard
+
+See the live standings for your server's active tournament.
+
+- **Usage:** `/tournament leaderboard`
+
+If your server has a tournament running, this shows the top 10 standings, each angler's score (weight in kg or fish count depending on the mode), and how much time is left. When there's no tournament, it lets you know so and points admins at `/tournament start`.
+
+Anyone can run this command — no permissions needed to view standings.

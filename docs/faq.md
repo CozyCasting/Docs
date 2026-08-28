@@ -8,7 +8,30 @@ Use `/fish` to cast your first line — no setup required. See the [Getting Star
 
 ### Is CozyCasting free?
 
-Yes, completely free to play. Pearls (the premium currency) are earned in-game by displaying Pearlescent fish in your camp.
+The game is free to play, and stays free. Every command works without paying, and pearls — the premium currency — are earned in-game by displaying Pearlescent fish in your camp. **Pearls cannot be bought.**
+
+There is an optional **Supporter** subscription and a one-time **Server Pass** (below). Every command the Bot has stays free — the paid parts are extras on top and a deeper view of the website.
+
+### What can I actually buy?
+
+Two things, both through Discord's own store on CozyCasting's bot profile:
+
+- **Supporter** — a monthly subscription, all of it on `/subscription`: one item of three each week, two perks you pick each month, a monthly profile-card background you keep forever, and the Supporter parts of the website: your Dashboard and the species Journal. Supporter comes at two levels; the higher one also gives you **one 14-day Server Boost Pass a month** to switch on a server buff wherever you play.
+- **Server Pass** — a one-time purchase, not a subscription. Activate it and **every purchasable server buff runs for 30 days** in one server of your choosing. It's consumed when you activate it, and it doesn't grant website access.
+
+Discord shows the current price at the point of purchase. Cancel a subscription any time from the same place; you keep access to the end of the period you paid for, and any backgrounds you were granted are yours permanently.
+
+### What does buying *not* get me?
+
+A better chance at rare fish, coins, pearls, or anything random. There are no paid chests, no loot boxes and no surprise rewards — everything sold tells you its exact effect and duration before you buy or activate it. See the [Terms of Service](terms.md#6-purchases) for the full statement.
+
+### Do I need to pay to see my stats?
+
+No. `/profile`, `/collection`, `/gear`, `/achievements` and `/leaderboard` are free in Discord and always will be. The website's Dashboard and Journal are the deeper, sortable version of the same numbers, and those are the Supporter part. The public website — species pages, shared catches, the rare-catch feed, the leaderboard, the Hall of Champions and the Contest Pier — needs no sign-in and no subscription.
+
+### Can I pay for a better chance at rare fish?
+
+No, and this is deliberate. Rare-fish chance comes from your rod, bait, gear, consumables and guild — all earned. The one thing that could be bought with pearls, a server-wide Rarity Boost, was **removed** for exactly this reason, and nothing that can be bought with money touches it either. See the changelog for 0.10.0.
 
 ### Does CozyCasting work in DMs?
 
@@ -146,6 +169,8 @@ Use `/chest <type>` — for example `/chest common` or `/chest rare 5`. Every ch
 ### What do consumables do?
 
 Consumables grant timed buffs: XP boost, rarity boost, sell boost, or cooldown reduction. Rare items like **Magnets** and **Lucky Double Worms** give special effects, like drawing in specific traits or a 15% chance to catch two fish at once! Use them with `/use <item>` and check active effects with `/effects`.
+
+**Only one buff of each type runs at a time**, so drinking a Schnapps while an Ale is active isn't possible — finish or wait out the first. That's why the stronger version of a buff simply replaces the weaker one rather than stacking with it. **Frenzy Potions** are the exception to the usual cooldown rules: they set your cooldown to a flat few seconds rather than reducing it by a percentage, ignoring the [rod cooldown limit](guides/fishing.md#your-rod-caps-your-total-cooldown-reduction) completely.
 
 ### What do I do with spare gear I'll never equip?
 
