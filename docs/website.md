@@ -7,9 +7,13 @@ page than in an embed.
 ## What's on it
 
 **The front page** carries the live feed of **Mythical and Unique** catches from
-every server that has opted in with `/settings globalfeed enabled:True`, and a
-line saying how many fish have been caught in the last hour and how many anglers
-have been out today. Both are open to everyone.
+**every** server, and a line saying how many fish have been caught in the last
+day and how many anglers have been out today. Both are open to everyone.
+
+Anglers on that feed read as **Anonymous Angler** unless their server's admin
+turned names on with `/settings globalfeed enabled:True` — the fish is public,
+the name is opt-in. Any player can take themselves off the feed entirely with
+`/globalfeed`, which also strips their name from the entries already on it.
 
 **Game-wide totals** — how many fish have been caught across every server, how
 many anglers play, the split by rarity, how much of the species catalogue anyone
@@ -19,7 +23,7 @@ feature. They are totals only; nothing in them names anybody.
 **The species journal** is the website version of `/collection` and `/fishinfo`,
 and it is a **Supporter** feature. The same journal and the same progression stay
 free in Discord on `/collection`; the website adds the visual, searchable layout.
-It opens on a map of all 27 locations grouped by region, each showing how much
+It opens on a map of all 44 locations grouped by region, each showing how much
 of its species pool you have logged — the same numbers `/collection` gives you,
 all on one screen. Pick a stretch of water and its whole pool lays out below the
 waterline. Species you have never landed are silhouettes with their names
@@ -28,7 +32,7 @@ and the date you first caught one. Click any fish — caught or not — for its 
 and weight range, its colours and patterns, everywhere else it lives, and how
 many of them everybody has ever landed.
 
-Below the 27 locations sits **Special Waters**: the 30 Monster Fish and the 3
+Below the 44 locations sits **Special Waters**: the 31 Monster Fish and the 3
 seasonal exclusives, which belong to no location and so appear nowhere else.
 **It counts toward nothing** — not the rarity bonus, not the Naturalist titles,
 not World Cataloguer, not The Complete Journal. A finished season and a missed

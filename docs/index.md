@@ -16,7 +16,7 @@ CozyCasting is a relaxing fishing game for Discord. Cast your line, catch unique
 
 ## Features
 
-- **Catch fish** across 9 location types and 3 geographic regions
+- **Catch fish** across 11 location types and 4 geographic regions
 - **Deploy nets** to passively catch fish over time while you are away
 - **Collect rarities** from Common to Mythical, each with unique traits
 - **Upgrade your gear** with rods and bait that improve your odds

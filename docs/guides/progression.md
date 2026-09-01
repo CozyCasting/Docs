@@ -4,20 +4,21 @@ Level up, unlock new content, and earn achievements and titles.
 
 ## XP and Leveling
 
-Every fish you catch earns XP. The amount depends on the fish's rarity and traits.
+Every fish you catch earns XP. The amount depends on where you caught it, its rarity, and its traits.
 
-**Base XP per catch:** 10 XP, multiplied by the rarity's XP multiplier and any trait bonuses.
+**Base XP per catch:** 25 XP, scaled up by three things in order:
 
-| Rarity | XP per Catch |
-|--------|-------------|
-| Common | 10 |
-| Uncommon | 15 |
-| Rare | 25 |
-| Epic | 50 |
-| Legendary | 100 |
-| Mythical | 250 |
+1. **Location type** — deeper, higher-level waters are worth more XP. The multiplier is roughly `1 + (location's base level x 0.04)`, so a Stream catch is about 1.04x while an Arctic catch is about 3.0x.
+2. **Geographic region** — the same water is worth more the further into a region's level range it sits, so a Common at the Patagonian Ice Fields earns noticeably more than a Common at the Alaskan Arctic even though both are "Arctic" catches.
+3. **Rarity's XP multiplier**, then trait bonuses (traits matter less for XP than they do for coins), a seasonal-pattern bonus, and any gear XP bonus.
 
-Traits like Giant (1.5x), Ancient (2x), and Glowing (1.75x) multiply on top of the rarity bonus.
+The number scales with **where** you fish as much as **what** you catch. For example:
+
+- A Common at the Appalachian Stream (NA Stream) is worth about **26 XP**.
+- A Common at the Patagonian Ice Fields (SA Arctic) is worth about **262 XP** — the same rarity, over ten times the reward, purely from location.
+- A Mythical at the Patagonian Ice Fields is worth about **6,562 XP**.
+
+Traits like Giant (1.5x), Ancient (2x), and Glowing (1.75x) multiply on top of all of the above, though their effect on XP is smaller than their effect on coin value.
 
 ### XP Formula
 
@@ -34,8 +35,10 @@ The XP required to reach each level follows a power curve:
 | 50 | 242,522 | 11,011 |
 | 75 | 616,257 | 18,735 |
 | 100 | 1,194,321 | 27,291 |
+| 110 | 1,487,046 | 30,910 |
+| 125 | 1,995,327 | 36,523 |
 
-The maximum level is **100**.
+The maximum level is **125**.
 
 ### Level-Up Bonuses
 
@@ -54,6 +57,8 @@ Achievements are milestones that reward you for playing. They're organized into 
 - **Daily** — Maintain daily streaks
 
 Each achievement grants a reward when unlocked — typically coins, bait, consumables, or a title.
+
+The Level category's headline milestones are **Mythical Angler** (level 75), **Fishing God** (level 100), **Deep Water** (level 110), and **End of the Map** (level 125 — the highest there is).
 
 Check your progress with `/achievements` and filter by category.
 
@@ -80,10 +85,17 @@ As you level up, you unlock access to new locations, better equipment, and achie
 | 15 | Asia (Stream, Pond), Pearl Rod, **Improved Net**, **Camp** |
 | 20 | Ocean (NA), Carbon Fiber Rod, **Reinforced Net** |
 | 25 | Cave (NA), **Master Net** |
-| 30 | Europe (Stream, Pond), **Legendary Net** |
+| 30 | Europe (Stream, Pond), Reef (NA), **Legendary Net** |
 | 35 | Deep Sea (NA), Titanium Rod |
 | 45 | Volcano (NA) |
 | 50 | Arctic (NA), Legendary Rod |
-| 75 | Mystic Rod |
+| 55 | Shipwreck (NA) |
+| 60 | Deep Sea (Europe) |
+| 65 | Shipwreck (Europe) |
+| 68 | Volcano (Europe) |
+| 75 | Mystic Rod, Arctic (Europe) |
+| 80–125 | South America opens gradually, from Andean Meltwater (Stream, level 80) through to Patagonian Ice Fields (Arctic, level 125) — the last water on the map |
+
+*South America's full route — every location and the level it opens at — is in the [Locations Reference](../reference/locations.md#south-america).*
 
 *Note: Nets are passive fishing items that automatically catch fish for you over time. Once you reach the required level, you can purchase them in the **Nets** tab of the `/shop`. Use `/net status` and `/net collect` to manage them!*

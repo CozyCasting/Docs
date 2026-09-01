@@ -85,20 +85,24 @@ Set (or clear) where rare catches are announced.
 
 ## Public Rare-Catch Feed
 
-Publish this server's **Mythical and Unique** catches to the live feed on the CozyCasting website. Opt-in — off unless you turn it on.
+Every server's **Mythical and Unique** catches appear on the live feed on the CozyCasting website: the fish, its size, weight and value, and the location. **There is no switch for that, and there is nothing in it that names anyone** — not your server's name, not a Discord ID, and by default not the angler.
+
+What you control is the one identifying field: whether your members are **named** on that feed, or read as "Anonymous Angler". Off unless you turn it on.
 
 This is **separate from `/settings rarecatch`**, which posts in a Discord channel. A server can do either, both, or neither.
 
 ### /settings globalfeed
 
-Enrol (or remove) this server in the public feed.
+Show this server's anglers by name on the public feed.
 
 - **Usage:** `/settings globalfeed <enabled>`
 - **Examples:** `/settings globalfeed enabled:True`, `/settings globalfeed enabled:False`
 
-Enrolling publishes, for every Mythical and Unique fish caught here: the fish, its size, weight and value, the location, and **the angler's name**. It is a public web page — anyone can read it without signing in. **Your server's name is never shown**, and neither is any Discord ID.
+Turning it on adds **the angler's name** to this server's entries on the feed. It is a public web page — anyone can read it without signing in. You are consenting on your members' behalf, so consider asking them first.
 
-Any member can remove themselves from the feed at any time with `/globalfeed`, in any server, and their choice overrides this setting for them. Turning this off stops future catches being published; entries already on the feed age off on their own.
+**It applies to the entries already on the feed, not just future ones**, in both directions: turn it on and the catches already there gain names, turn it off and they lose them again. Nothing is dropped from the feed either way — the fish stay, unnamed.
+
+Any member can remove themselves from the feed entirely at any time with `/globalfeed`, in any server, and their choice overrides this setting for them.
 
 ---
 

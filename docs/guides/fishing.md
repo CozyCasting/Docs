@@ -165,7 +165,12 @@ Bait is consumed on each cast and provides a rarity bonus. Some baits work bette
 
 ## Location Matters
 
-Different locations have different species pools, base values, and rarity modifiers. Higher-level locations like Deep Sea, Volcano, and Arctic have better odds for Epic+ fish and higher base coin values. See the [Locations Reference](../reference/locations.md) for details.
+Different locations have different species pools, base coin values, and XP — a Mythical from the Patagonian Ice Fields is worth vastly more XP and coins than a Mythical from the Appalachian Stream. What location does **not** change is your rarity odds: every rarity, from Common to Mythical, can appear at every location. See the [Rarities Reference](../reference/rarities.md) for what actually shifts the odds, and the [Locations Reference](../reference/locations.md) for the full list.
+
+Two location types are a bit different from the rest:
+
+- **Reef** — shallow, crowded, and gentle. Every fish here runs small, so its base value sits below what its level would suggest — reefs are where you fill out the journal, not where you earn.
+- **Shipwreck** — long waits between bites, but big fish and more chests than anywhere else.
 
 ## Nets (Passive Fishing)
 
@@ -209,4 +214,4 @@ Very rarely (about a 0.5% chance per catch), a massive Monster Fish appears in y
 3. **Rewards** — The top 3 scorers earn chests: 🥇 Legendary + Seasonal Chest, 🥈 Epic Chest, 🥉 Rare Chest. Ties for a placement are broken randomly, not by who joined first.
 4. **Catching the monster** — 1st place also has a chance to reel in the Monster Fish itself as a **Unique**-rarity catch. The base chance is small, but scales up with your equipped rod's rarity bonus — better rods meaningfully improve your odds.
 
-There are 31 unique Monster Fish species that can **only** be caught this way — 10 belonging to each region, plus Zeb's Abyssal Dragonfish, which can surface in any of them.
+There are 31 unique Monster Fish species that can **only** be caught this way — ten each in North America, Asia and Europe, plus Zeb's Abyssal Dragonfish, which can surface in any of them. South America has no monsters of its own yet.

@@ -20,32 +20,29 @@ Base chances are modified by:
 
 1. **Rod rarity bonus** — Each rod adds a flat percentage bonus (e.g., Mystic Rod adds +30%)
 2. **Bait rarity bonus** — Equipped bait adds an additional bonus (e.g., Magic Bait adds +30%)
-3. **Location rarity modifiers** — Some locations give extra chances for specific rarities
+3. **Active effects and consumables** — Timed buffs like a Rarity Boost potion shift the odds further
+4. **Gear** — Equipped gear can carry its own rarity bonus
 
 These bonuses shift weight from Common toward higher tiers.
 
+!!! note "Location doesn't change your odds"
+    Where you're fishing has no effect on rarity — the same odds apply whether you're casting into the Appalachian Stream or the Patagonian Ice Fields. Location decides the **species pool**, the **base coin value**, and the **XP** you earn, not what rarity you can pull. See the [Locations Reference](locations.md) for how those vary.
+
 ## Value Calculation
 
-A fish's coin value starts from:
+A fish's coin value builds up through an ordered chain of multipliers, all applied to the location type's base value:
 
-> **Value** = Location Base Value x Rarity Sell Multiplier x Trait Multipliers
+1. **Location level scaling** — higher-level location types scale the base value up; the Arctic's scaling is 13.5x the Stream's before anything else is applied.
+2. **Geographic region** — North America is the baseline, Asia runs about 1.15x, Europe about 1.30x, and South America about 1.79x, on top of the location scaling.
+3. **Rarity sell multiplier** — from the table above.
+4. **Size factor** — bigger-than-average fish of their species sell for more, smaller for less, within a 0.5x–5.0x range.
+5. **Weight bonus** — a smaller nudge, clamped between 0.5x and 2.0x.
+6. **Pattern bonus** — from Solid (1.0x) up to Speckled (1.5x).
+7. **Trait multipliers** — stack on top, and a fish with a secondary colour gets a further +15%.
 
-Size, weight, and pattern also nudge the final number up or down a bit around this baseline — a larger, heavier, more elaborately patterned specimen of the same species and rarity sells for more.
+Finally, a **soft cap** keeps any single fish from being worth an absurd amount: value above the cap only counts for 10% of what it normally would, and value above *twice* the cap only counts for 2.5%. The caps scale with rarity, from 12,000 for a Common up to 3,000,000 for a Unique.
 
-### Example Values by Location and Rarity
-
-| | Stream (15) | River (30) | Ocean (65) | Deep Sea (100) | Arctic (140) |
-|---|-----------|-----------|-----------|-------------|-------------|
-| Common (1x) | 15 | 30 | — | — | — |
-| Uncommon (2x) | 30 | 60 | 130 | — | — |
-| Rare (5x) | 75 | 150 | 325 | 500 | 700 |
-| Epic (12x) | — | 360 | 780 | 1,200 | 1,680 |
-| Legendary (20x) | — | — | 1,300 | 2,000 | 2,800 |
-| Mythical (50x) | — | — | — | 5,000 | 7,000 |
-
-*Dashes indicate that rarity is not available at that location type. See the [Locations Reference](locations.md) for base values of every location type.*
-
-Trait multipliers stack on top. A Giant (2x) Mythical fish from the Arctic would be worth **14,000 coins**.
+None of this changes which rarities can appear where — any rarity can come from any water. It only changes how much a given catch is worth once you land it.
 
 ## Unique Rarity
 

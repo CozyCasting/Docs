@@ -65,28 +65,28 @@ Everything below is preset art and effects — there's no way to upload your own
 | Deep Blue | Reach level 40 |
 | Sunset Pier | Reach level 60 |
 | Volcanic | "Volcano Venturer" achievement (reach level 45) |
-| Arctic | "World Traveler" achievement (fish in all 9 location types) |
+| Arctic | "World Traveler" achievement (fish in all 11 location types) |
 | Caravan Trail | "Caravan Pathfinder" achievement (be the first to find a Roaming Trader) |
 | Monster's Wake | "Monster Hunter" achievement (land a Monster Fish) |
 | Zeb's Hunt | "Zebukiel's Chosen" achievement (land Zeb's Abyssal Dragonfish) |
-| Cartographer's Sea | "The Complete Journal" achievement (catch every species at all 27 locations) |
+| Cartographer's Sea | "The Complete Journal" achievement (catch every species at all 44 locations) |
 
-Another **27 backgrounds** come from your collection journal — see below — and a set of
+Another **44 backgrounds** come from your collection journal — see below — and a set of
 seasonal and shop backgrounds exists in the game but isn't obtainable yet; they'll arrive
 with a future update.
 
 **Journal Backgrounds**
 
 Catch **every species** at a location and you unlock that location's artwork as a
-background, named after the location itself. There's one for each of the 27 locations, so
+background, named after the location itself. There's one for each of the 44 locations, so
 a finished journal is a finished background collection. Check your progress anywhere with
 [`/collection`](misc.md#collection), or `/collection <location>` for a single checklist.
 
 Completing a location also pays **+0.5% rarity everywhere you fish**, and finishing all
-nine in a region earns a **Naturalist** title. Only fish you caught yourself count — traded
+eleven in a region earns a **Naturalist** title. Only fish you caught yourself count — traded
 fish and bred offspring don't.
 
-Finish all 27 and you also earn the **World Cataloguer** title, **The Complete Journal**
+Finish all 44 and you also earn the **World Cataloguer** title, **The Complete Journal**
 achievement, and the **Cartographer's Sea** background listed above. If you'd already
 finished the journal before that landed, run `/collection` once to claim it.
 
@@ -101,29 +101,46 @@ checking each location one at a time.
 | North America | Lake Michigan | 10 | 19 |
 | North America | Pacific Ocean | 20 | 19 |
 | North America | Mammoth Cave | 25 | 18 |
+| North America | Florida Keys | 30 | 25 |
 | North America | Pacific Abyss | 35 | 19 |
 | North America | Yellowstone Hot Springs | 45 | 18 |
 | North America | Alaskan Arctic | 50 | 18 |
+| North America | Edmund Fitzgerald | 55 | 25 |
 | Asia | Himalayan Stream | 15 | 17 |
 | Asia | Japanese Garden Pond | 15 | 19 |
 | Asia | Mekong River | 18 | 18 |
 | Asia | Lake Baikal | 22 | 18 |
 | Asia | South China Sea | 25 | 18 |
 | Asia | Son Doong Cave | 30 | 18 |
+| Asia | Raja Ampat | 35 | 25 |
 | Asia | Mariana Trench | 40 | 19 |
 | Asia | Mount Fuji Hot Springs | 50 | 18 |
 | Asia | Siberian Arctic | 55 | 18 |
+| Asia | Java Sea Wrecks | 60 | 25 |
 | Europe | Alpine Stream | 30 | 19 |
 | Europe | English Garden Pond | 30 | 20 |
 | Europe | Danube River | 33 | 17 |
 | Europe | Lake Geneva | 37 | 18 |
 | Europe | North Sea | 40 | 18 |
 | Europe | Blue Grotto | 40 | 18 |
-| Europe | Norwegian Trench | 50 | 19 |
-| Europe | Icelandic Hot Springs | 55 | 18 |
-| Europe | Svalbard Waters | 60 | 18 |
+| Europe | Mediterranean Reef | 45 | 25 |
+| Europe | Norwegian Trench | 60 | 19 |
+| Europe | Scapa Flow | 65 | 25 |
+| Europe | Icelandic Hot Springs | 68 | 18 |
+| Europe | Svalbard Waters | 75 | 18 |
+| South America | Andean Meltwater | 80 | 19 |
+| South America | Pantanal Oxbow | 82 | 20 |
+| South America | Rio Negro | 86 | 19 |
+| South America | Lake Titicaca | 90 | 19 |
+| South America | Galápagos Reef | 94 | 25 |
+| South America | Humboldt Current | 98 | 19 |
+| South America | Cueva de los Tayos | 103 | 18 |
+| South America | Caribbean Galleon | 108 | 25 |
+| South America | Peru-Chile Trench | 113 | 19 |
+| South America | Galápagos Vents | 119 | 18 |
+| South America | Patagonian Ice Fields | 125 | 18 |
 
-That's **497 catches** in total across all 27 locations. Level requirements and what each
+That's **866 catches** in total across all 44 locations. Level requirements and what each
 location is like are in the [Locations Reference](../reference/locations.md).
 
 **Name Styles**
@@ -199,7 +216,7 @@ View the server leaderboard.
 | Servers | The live monthly race for [Server of the Month](#server-of-the-month) — which server's members have caught the most fish this month |
 | Contest | Live standings for the in-progress weekly/monthly **most fish caught** contest — see [Contests](#contests) below |
 
-**Categories** (Global / This Server scopes): Fish Caught, Largest Fish, Most Valuable, Highest Level, Highest Streak — switch between them with the navigation buttons on the embed, no need to retype the command.
+**Categories** (Global / This Server scopes): Fish Caught, Longest Fish, Most Valuable, Highest Level, Highest Streak — switch between them with the navigation buttons on the embed, no need to retype the command.
 
 **Time filter:** All Time, This Month, This Week (applies to the Global/This Server scopes).
 

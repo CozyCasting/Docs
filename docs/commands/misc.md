@@ -127,7 +127,7 @@ Cancel an active breeding session.
 
 - **Usage:** `/breed cancel [session_id]`
 
-Abort a breeding session and return both parents to normal status. Useful if you need the parents for fishing or another session. Fertility is not refunded.
+Abort a breeding session and return both parents to normal status. Useful if you need the parents for fishing or another session. Cancel within 15 minutes of starting and the fertility cost is refunded to both parents; after that, fertility is not refunded.
 
 ## /net
 
@@ -155,20 +155,20 @@ View your fishing collection by location.
 - **Usage:** `/collection [location]`
 - **Aliases:** `journal`, `col`
 
-Track which fish species you've caught at each location. `/collection` shows all 27 locations with a progress bar and what your journal is currently worth; `/collection [location]` shows that location's full checklist and how many species you still need (e.g. `/collection na_stream`).
+Track which fish species you've caught at each location. `/collection` shows all 44 locations with a progress bar and what your journal is currently worth; `/collection [location]` shows that location's full checklist and how many species you still need (e.g. `/collection na_stream`).
 
 Filling it out pays off everywhere you fish:
 
 - **Half a location's species** — **+0.25%** rarity
 - **All of a location's species** — **+0.5%** rarity, plus that location's artwork as a `/profile` card background ([full list, with how many species each one needs](profile.md#cosmetic-unlocks))
-- **All nine locations in a region** — a **Naturalist** title
-- **All 27 locations** — the **World Cataloguer** title, **The Complete Journal** achievement with the **Cartographer's Sea** card background, and **+13.5%** rarity in total
+- **All eleven locations in a region** — a **Naturalist** title
+- **All 44 locations** — the **World Cataloguer** title, **The Complete Journal** achievement with the **Cartographer's Sea** card background, and **+22%** rarity in total
 
 The rarity bonus applies at every location, not just the one that earned it, and stacks on top of your rod, bait and buffs. Only fish you caught yourself count — fish received in trades and bred offspring don't.
 
 ### Special Waters
 
-Below the 27 locations is **Special Waters**, holding the fish that belong to no location: the 30 **Monster Fish** you win from an event, and the **seasonal exclusives** you catch with seasonal bait. `/collection special_monster` and `/collection special_seasonal` show each checklist.
+Below the 44 locations is **Special Waters**, holding the fish that belong to no location: the 31 **Monster Fish** you win from an event, and the **seasonal exclusives** you catch with seasonal bait. `/collection special_monster` and `/collection special_seasonal` show each checklist.
 
 **Special Waters counts toward nothing** — not the rarity bonus, not the Naturalist titles, not World Cataloguer, not The Complete Journal, and not the percentage at the top of `/collection`. A season that has ended and an event you weren't around for are both permanently out of reach, so no reward is gated behind them. It exists so the fish you caught have somewhere to be.
 
@@ -205,11 +205,11 @@ Choose whether your rare catches appear on the public website feed.
 
 - **Usage:** `/globalfeed`
 
-CozyCasting's website carries a live feed of **Mythical and Unique** catches from across every server that has opted in. Entries show the fish, its size, weight and value, the location, and **the angler's name** — publicly, to anyone, with no sign-in.
+CozyCasting's website carries a live feed of **Mythical and Unique** catches from across every server. Entries show the fish, its size, weight and value, and the location — publicly, to anyone, with no sign-in.
 
-Two switches have to line up before any of your catches appear there: a server admin enrols the server with `/settings globalfeed`, and you have not opted out. `/globalfeed` toggles your side of it, and your choice applies **everywhere**, in every server, immediately.
+**The angler's name is the part that is opt-in.** Your catches are named there only where a server admin has turned names on with `/settings globalfeed`; everywhere else they read "Anonymous Angler". A catch on its own names nobody: no name, no Discord ID, no server.
 
-Opting out affects **future catches only**. Anything already on the feed keeps the name it was published with until it ages off — the feed holds the most recent 200 catches, so that happens on its own.
+`/globalfeed` is your own switch, and it is the stronger one — opting out keeps your catches off the feed altogether, in every server, immediately, whatever an admin has set. It applies to **future catches**, and it also **takes your name off the catches already on the feed**, straight away. Those fish stay there unnamed until they age off — the feed holds the most recent 200 catches, so that happens on its own.
 
 The same page also carries **game-wide totals** — how many fish have been caught across every server, how many anglers play, the split by rarity, and the heaviest fish ever landed. Those are aggregates only: they never name anyone, so `/globalfeed` has nothing to do with them and there is nothing to opt out of. The heaviest-fish tile shows the fish and never who caught it.
 

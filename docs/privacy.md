@@ -12,6 +12,8 @@ This Privacy Policy explains how Cozy Casting ("we," "us," or "our") collects, u
 > **What changed on August 28, 2026:** paid subscriptions and a one-time Server Pass went on sale through Discord. We now store a record of what Discord tells us you hold (Section 2d) so the Bot and the Website can answer "is this a Supporter?" without asking Discord on every request. We still never see or store your payment details. Section 6 describes what is sold and what we keep.
 >
 > Two corrections landed the same day. **The game-wide totals on the Website are public** — earlier drafts of this policy and our Terms described them as a Supporter feature. They are aggregates that name nobody, so there was never anything there to gate or to opt out of, and the pages now match the description. And the Supporter extras that used to have their own commands are all claimed on **`/subscription`** now; the records we keep about them (Section 2d) are unchanged.
+>
+> **What changed on August 31, 2026:** Section 5 — the rare-catch feed. A **Mythical or Unique catch from any server** now appears on the feed; previously only servers whose administrator had enrolled appeared on it at all. **What is published about you did not widen: it narrowed.** A catch entry now carries no name, and `/settings globalfeed` became the switch for whether your server's anglers are **named** there — still off by default, so a server that never touched it publishes catches that name nobody. Your name is now worked out each time the page loads rather than frozen when the fish was caught, which means **`/globalfeed` now takes your name off catches already on the feed**, where before it only applied to future ones.
 
 ---
 
@@ -126,20 +128,22 @@ Game data is stored on servers we control. The Website is served from behind a r
 
 Two things on the Website are visible to anyone, without signing in. They are very different, and the difference matters.
 
-### The rare-catch feed — can show your name, and is opt-in
+### The rare-catch feed — shows the fish always, your name only if two permissions line up
 
-The Website carries a live feed of **Mythical and Unique** catches from across servers that have joined it. Each entry shows the fish, its size, weight and value, the location it was caught in, **the name you were using when you caught it**, and how long ago it happened.
+The Website carries a live feed of **Mythical and Unique** catches from across every server. Each entry shows the fish, its size, weight and value, the location it was caught in, how long ago it happened, and **the name you were using when you caught it — but only under the conditions below.**
 
-Two separate permissions must both be in place before any catch of yours appears there:
+**The catch itself is published from any server.** There is no server-level switch for that, and a catch on its own names nobody: it carries no name, no Discord user ID, no server ID and no server name.
 
-1. **A server administrator has enrolled that server** with `/settings globalfeed`. This is off by default. No server participates until an administrator turns it on.
-2. **You have not opted out.** Any player can run **`/globalfeed`** to remove themselves from the feed entirely, in every server at once. Your choice overrides the server's.
+**Your name is a separate question, and both of these must be true:**
 
-Both checks happen at the moment a fish is caught. If either says no, nothing about that catch is ever published or stored for the feed.
+1. **A server administrator has turned on angler names for that server** with `/settings globalfeed`. This is off by default. Until an administrator turns it on, catches from that server read **"Anonymous Angler"**.
+2. **You have not opted out.** Any player can run **`/globalfeed`** to remove themselves from the feed entirely, in every server at once. Your choice overrides the server's — and unlike condition 1, it keeps the catch off the feed altogether, not just your name.
+
+**Your name is decided each time the page is loaded, not once when the fish is caught.** That makes both permissions work in both directions and without delay: if your server turns names on, entries of yours already on the feed start showing your name, and if you run `/globalfeed`, your name comes off entries already there straight away.
 
 The feed **never shows** which Discord server a catch happened in, your Discord user ID, or your avatar. It holds only the most recent 200 catches; older entries are discarded automatically.
 
-Opting out applies to **future catches**. Entries already published keep the name they were published with until they age off the feed, which happens on its own as new catches arrive.
+Running `/globalfeed` stops **future** catches of yours being published at all, and removes your name from the ones already on the feed. The fish already published stay there, unnamed, until they age off on their own as new catches arrive.
 
 ### The leaderboard and the Hall of Champions — can show your name, and are global
 
@@ -147,9 +151,9 @@ The Website publishes a public leaderboard at [cozycasting.app/leaderboard.html]
 
 What they show: your **rank**, the **name you last used**, and the **score for that category** — nothing else. Five categories (fish caught, largest fish, most valuable fish, highest level, best streak), each over an all-time, monthly or weekly window, and up to 100 places per board.
 
-**These are global, not per-server.** They rank every player of the Bot together, so unlike the rare-catch feed there is no single server whose administrator could enrol you or keep you out. That means **there is no server-level switch here** — the only control is your own.
+**These are global, not per-server.** They rank every player of the Bot together, so unlike the rare-catch feed there is no single server whose administrator could allow or withhold your name. That means **there is no server-level switch here** — the only control is your own.
 
-**`/globalfeed` covers these too.** If you opt out, your name is replaced with **"Anonymous Angler"** everywhere on the site. Your rank and score stay on the board: removing the row entirely would renumber everyone below you and make the board wrong. Opting out takes effect on the next refresh of the page — it is not limited to future catches, because unlike the feed, nothing here is published once and frozen.
+**`/globalfeed` covers these too.** If you opt out, your name is replaced with **"Anonymous Angler"** everywhere on the site. Your rank and score stay on the board: removing the row entirely would renumber everyone below you and make the board wrong. Opting out takes effect on the next refresh of the page — it is not limited to future catches.
 
 The leaderboard and the Hall of Champions **never show** your Discord user ID, your avatar, or which server you play in. The Hall of Champions also has "server of the month" periods; those are **not** published on the Website at all.
 
@@ -157,7 +161,7 @@ The leaderboard and the Hall of Champions **never show** your Discord user ID, y
 
 Every fish you catch has a short code, and the Bot prints it in the catch message. That code opens a public page for that catch at `cozycasting.app/c/<code>`, which is what makes a link unfurl with a picture when you paste it into Discord.
 
-The page shows the fish, its rarity, size, weight, value, where it was caught and when. **It shows your name only if both of the same permissions in the feed rules above are in place** — your server enrolled with `/settings globalfeed`, and you have not run `/globalfeed`. If either is missing, or if the fish was not caught in a server at all (a DM, a net, or breeding), the page reads **"Anonymous Angler"** instead. It never shows your Discord user ID.
+The page shows the fish, its rarity, size, weight, value, where it was caught and when. **It shows your name only if both of the same permissions in the feed rules above are in place** — your server turned on angler names with `/settings globalfeed`, and you have not run `/globalfeed`. If either is missing, or if the fish was not caught in a server at all (a DM, a net, or breeding), the page reads **"Anonymous Angler"** instead. It never shows your Discord user ID.
 
 The catch details themselves are visible to anyone holding the code. Codes are random, not sequential, so a page is not findable by guessing — but a code you paste into a public channel is readable by everyone in it.
 

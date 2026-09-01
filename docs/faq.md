@@ -57,7 +57,7 @@ You're on cooldown. Use `/cooldown` to see how long until you can cast again. Up
 
 ### How do I catch rarer fish?
 
-Three things help: a better **rod** (rarity bonus), **bait** (rarity bonus per cast), and fishing at **higher-level locations**. Stack all three for the best odds.
+Two things directly boost your odds: a better **rod** (rarity bonus) and **bait** (rarity bonus per cast) — stack them for the best combined boost. Active effects and gear rarity bonuses help too. Location doesn't change your odds; it changes the species you can catch and how much they're worth.
 
 ### What's the difference between Keep and Sell?
 
@@ -70,7 +70,7 @@ Each fish you keep gets a unique 8-character code (e.g. `ABC123DE`). Use it with
 
 ### Can I fish at multiple locations?
 
-You can only be at one location at a time. Use `/travel` to move. Higher-level locations have better species, base values, and rarity odds.
+You can only be at one location at a time. Use `/travel` to move. Higher-level locations have different species, higher base values, and more XP — but the same rarity odds as anywhere else.
 
 ### How do I use a Net (Passive Fishing)?
 

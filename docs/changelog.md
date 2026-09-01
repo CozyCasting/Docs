@@ -5,6 +5,60 @@ All notable changes to CozyCasting will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.10.1] - 2026-09-01
+
+### Added
+
+**South America, and the level cap moves to 125** — A fourth region and the whole back half of the progression curve.
+
+- **Eleven new locations**, from the Andean Meltwater at Lv 80 up to the Patagonian Ice Fields at Lv 125: the Rio Negro's blackwater, Lake Titicaca, the Galapagos Reef and Vents, the Humboldt Current, Cueva de los Tayos, a sunken Caribbean galleon, and the Peru-Chile Trench.
+- **165 new species** — arapaima, payara, peacock bass, piranha, pacu, candiru, electric eel, silver arowana, and the pink river dolphin at the very top of the rarity table.
+- **The level cap moves 100 to 125.** The XP curve itself is unchanged, so nothing about levels 1-100 is re-priced. Two new milestones land in the new band: **Deep Water** at 110 and **End of the Map** at 125.
+
+**Three European locations now require higher levels** — The Norwegian Trench moves Lv 50 to 60, the Icelandic Hot Springs 55 to 68, and Svalbard Waters 60 to 75. This closes the empty stretch between the old top of the map and where South America begins.
+
+**If you are already standing in one of them, you keep fishing there** — the requirement is only checked when you travel. Travel away and you will need the new level to return.
+
+**Two new kinds of water: the Reef and the Shipwreck** — Six new locations, two in each of North America, Asia and Europe.
+
+- **Reefs** are shallow, crowded and gentle: the Florida Keys (Lv 30), Raja Ampat (Lv 35) and the Mediterranean Reef (Lv 45). Bites come constantly and fish rarely escape, but everything you catch is small and doesn't sell for much. This is where you fill the journal.
+- **Shipwrecks** are the exact opposite: the Edmund Fitzgerald (Lv 55), the Java Sea Wrecks (Lv 60) and Scapa Flow (Lv 65). Long waits, big fish, sharks, far more chests than anywhere else — and a session that can collapse under you with no warning.
+
+**Your journal percentage will drop, and that's expected.** There are 44 locations now instead of 27, so the same collection is a smaller share of a bigger world. Two knock-on effects worth knowing:
+
+- The full-journal rarity bonus ceiling went up with it, from +13.5% to +22%.
+- **World Cataloguer** and the regional **Naturalist** titles now need the new waters too. **If you already have one, you keep it** — nothing is taken back. But anyone earning them from here needs the reefs and the wrecks as well.
+
+**Nine new profile-card backgrounds for South America** — Every South American water now unlocks card art when you finish its journal, the same as everywhere else: the Andean Meltwater, the Pantanal Oxbow, the Rio Negro, Lake Titicaca, the Humboldt Current, Cueva de los Tayos, the Peru-Chile Trench, the Galápagos Vents and the Patagonian Ice Fields. Every location in the game now has one — South America was the last region where finishing a journal gave you nothing to show for it, and it held the nine hardest journeys in the game.
+
+**Eight new profile-card backgrounds for the reefs and wrecks** — Complete a reef or a shipwreck's journal and you unlock its art in `/card`, the same as every other water: the Florida Keys, Raja Ampat and the Mediterranean Reef; the Edmund Fitzgerald, the Java Sea Wrecks and Scapa Flow; and in South America, the Galápagos Reef and the Caribbean Galleon.
+
+**No more rarity bonus per location** — Each location listed a "Rarity Bonuses" but it was hard to find and generally didn't impact too much.
+
+**Every water now fishes differently** — Until now the only thing separating one location from another was which fish lived there. Now the water itself has a character, and you'll feel it on the very first cast.
+
+- **Ponds and streams** are nurseries: bites come easily and the fish rarely get away, but nothing you pull out is big.
+- **Lakes** are the opposite — you'll wait longer and lose more, and the fish are worth the wait.
+- **Caves** hide things. Bites are slow down there, but chests turn up far more often.
+- **The deep sea, volcanoes and the arctic** all fight you in their own way: longer waits, more escapes, and the biggest fish in the game as the payoff.
+- **Rivers and oceans are deliberately plain.** They're the yardstick everything else is measured against.
+- `/travel` tells you what a water does before you commit to it, and `/fish` reminds you at the top of every session.
+
+Nothing was taken away and no location got worse across the board — each one trades something for something else. Your gear, buffs and consumables all still apply exactly as before, on top of whatever the water is doing.
+
+### Changed
+
+**Every server's rare catches are on the website feed now, and the angler is anonymous unless the server opts in** — The feed used to be empty for almost everybody, because a server only appeared on it once an admin ran `/settings globalfeed`, and almost nobody did. Participation is now universal and the switch moved to the part that actually identifies someone.
+
+- **Mythical and Unique catches from any server appear on the feed.** A catch entry carries the fish, its size, value and location, and nothing that names a person, a server, or a Discord ID.
+- **`/settings globalfeed` now controls whether your server's anglers are named there** — still off by default, so a server that never touches it publishes catches that read "Anonymous Angler".
+
+**Cancelling a breed within 15 minutes refunds the fertility** — Starting a breed still costs both parents 15 fertility, but if you cancel in the first 15 minutes it is given straight back (never above 100). Cancel later than that and the cost stands, as before.
+
+### Fixed
+
+
+
 ## [0.10.0] - 2026-08-28
 
 Note: Subscriptions/Purchases will be available on Sept 1st.
