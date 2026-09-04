@@ -1,0 +1,2658 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Your guide to CozyCasting — a relaxing Discord fishing bot">
+      
+      
+        <meta name="author" content="Drew">
+      
+      
+        <link rel="canonical" href="https://cozycasting.github.io/Docs/guides/economy/">
+      
+      
+        <link rel="prev" href="../progression/">
+      
+      
+        <link rel="next" href="../guilds/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Economy - CozyCasting</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="cyan">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#economy-guide" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="CozyCasting" class="md-header__button md-logo" aria-label="CozyCasting" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            CozyCasting
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Economy
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="cyan"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="cyan"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../getting-started/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Getting Started
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../commands/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Commands
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../fishing/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Guides
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../reference/locations/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Reference
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../website/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Website
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../screenshots/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Screenshots
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../faq/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  FAQ
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../tips/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Tips
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../changelog/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Changelog
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../roadmap/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Roadmap
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../privacy/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Legal
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="CozyCasting" class="md-nav__button md-logo" aria-label="CozyCasting" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    CozyCasting
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Getting Started
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../commands/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Commands
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Commands
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/fishing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fishing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/economy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Economy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/trading/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Trading
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/travel/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Travel
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/guilds/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guilds
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/profile/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Profile
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/misc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Misc
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/server-admin/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Server Admin
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guides
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Guides
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fishing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fishing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../progression/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Progression
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Economy
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Economy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#currencies" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Currencies
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Currencies">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#coins" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Coins
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pearls" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pearls
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vote-tickets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vote Tickets
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#earning-coins" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Earning Coins
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Earning Coins">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#selling-fish" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Selling Fish
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#daily-rewards" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Daily Rewards
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#referral-rewards" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Referral Rewards
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#weekly-monthly-contests" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Weekly &amp; Monthly Contests
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#camp-income" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Camp Income
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#spending-coins" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Spending Coins
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Spending Coins">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rods" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rods
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bait" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bait
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tank-slot-upgrades" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tank Slot Upgrades
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#camp-upgrades" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Camp Upgrades
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chests" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Chests
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chests">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#core-chests" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Core Chests
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#seasonal-chests" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Seasonal Chests
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unique-chest" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Unique Chest
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#opening-chests" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Opening Chests
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gear-salvage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gear Salvage
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#camp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Camp
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Camp">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#camp-commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Camp Commands
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#buildings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Buildings
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Buildings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bait-bin" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bait Bin
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tackle-shop" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tackle Shop
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#display-tank" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Display Tank
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#breeding-tank" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Breeding Tank
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#building-costs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Building Costs
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#camp-levels" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Camp Levels
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tips" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tips
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guilds/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guilds
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reference
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Reference
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/locations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Locations
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/rarities/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Rarities
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../website/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Website
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../screenshots/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Screenshots
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faq/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    FAQ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tips/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tips
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../changelog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Changelog
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../roadmap/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Roadmap
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" >
+        
+          
+          <label class="md-nav__link" for="__nav_12" id="__nav_12_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Legal
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_12">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Legal
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../privacy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Privacy Policy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../terms/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Terms of Service
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#currencies" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Currencies
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Currencies">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#coins" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Coins
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pearls" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pearls
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vote-tickets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vote Tickets
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#earning-coins" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Earning Coins
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Earning Coins">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#selling-fish" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Selling Fish
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#daily-rewards" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Daily Rewards
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#referral-rewards" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Referral Rewards
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#weekly-monthly-contests" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Weekly &amp; Monthly Contests
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#camp-income" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Camp Income
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#spending-coins" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Spending Coins
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Spending Coins">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rods" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rods
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bait" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bait
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tank-slot-upgrades" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tank Slot Upgrades
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#camp-upgrades" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Camp Upgrades
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chests" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Chests
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chests">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#core-chests" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Core Chests
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#seasonal-chests" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Seasonal Chests
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unique-chest" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Unique Chest
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#opening-chests" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Opening Chests
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gear-salvage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gear Salvage
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#camp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Camp
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Camp">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#camp-commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Camp Commands
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#buildings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Buildings
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Buildings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bait-bin" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bait Bin
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tackle-shop" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tackle Shop
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#display-tank" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Display Tank
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#breeding-tank" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Breeding Tank
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#building-costs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Building Costs
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#camp-levels" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Camp Levels
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tips" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tips
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="economy-guide">Economy Guide<a class="headerlink" href="#economy-guide" title="Permanent link">&para;</a></h1>
+<p>How to earn and spend your currencies in CozyCasting.</p>
+<h2 id="currencies">Currencies<a class="headerlink" href="#currencies" title="Permanent link">&para;</a></h2>
+<p>CozyCasting has three currencies:</p>
+<h3 id="coins">Coins<a class="headerlink" href="#coins" title="Permanent link">&para;</a></h3>
+<p>The primary currency. Earned by selling fish, claiming dailies, and from camp income.</p>
+<p><strong>Starting balance:</strong> 100 coins</p>
+<h3 id="pearls">Pearls<a class="headerlink" href="#pearls" title="Permanent link">&para;</a></h3>
+<p>A premium currency earned through special activities like displaying Pearlescent fish in your camp. Used to buy the Pearl Rod (500 pearls) and other exclusive items.</p>
+<h3 id="vote-tickets">Vote Tickets<a class="headerlink" href="#vote-tickets" title="Permanent link">&para;</a></h3>
+<p>A currency earned by voting for CozyCasting on bot listing sites. Spend them with the Roaming Trader, who sets up at a fishing location every Thursday. More places to spend them are coming soon.</p>
+<h2 id="earning-coins">Earning Coins<a class="headerlink" href="#earning-coins" title="Permanent link">&para;</a></h2>
+<h3 id="selling-fish">Selling Fish<a class="headerlink" href="#selling-fish" title="Permanent link">&para;</a></h3>
+<p>The main way to earn coins. Fish value is determined by:</p>
+<ol>
+<li><strong>Location base value</strong> — Higher-level locations have higher base values (see the <a href="../../reference/locations/">Locations Reference</a> for every location type's base value)</li>
+<li><strong>Rarity sell multiplier</strong> — Rarer fish are worth much more</li>
+<li><strong>Trait multipliers</strong> — Traits like Giant (2x) and Ancient (2.5x) boost the value</li>
+</ol>
+<p>The final sell value is: <code>base_value x rarity_multiplier x trait_multipliers</code>, with size and weight nudging it up or down a bit further.</p>
+<p>For example, a Giant Legendary fish from the Arctic (base value 140) would be worth roughly: 140 x 20 x 2.0 = <strong>5,600 coins</strong>.</p>
+<p>Your <code>/tank</code> has a <strong>Bulk Sell</strong> button — toggle individual fish or entire pages for sale, then confirm in one click. Fish sitting in your camp Display Tank, or with the Pearlescent trait, are flagged with a warning before you confirm — selling them ends their passive income.</p>
+<h3 id="daily-rewards">Daily Rewards<a class="headerlink" href="#daily-rewards" title="Permanent link">&para;</a></h3>
+<p>Use <code>/daily</code> once every 24 hours to claim:</p>
+<ul>
+<li><strong>Base reward:</strong> 200 coins</li>
+<li><strong>Streak bonus:</strong> +25 coins per consecutive day</li>
+<li><strong>Level bonus:</strong> +5 coins per level</li>
+<li><strong>Chest chance:</strong> 10% to receive a common chest</li>
+</ul>
+<h3 id="referral-rewards">Referral Rewards<a class="headerlink" href="#referral-rewards" title="Permanent link">&para;</a></h3>
+<p>Share your referral code with <code>/referral</code>. New players can use <code>/refer &lt;code&gt;</code> before reaching level 4. When the referred player reaches level 10, <strong>you earn 150 pearls</strong> and <strong>they earn 100 pearls</strong>.</p>
+<h3 id="weekly-monthly-contests">Weekly &amp; Monthly Contests<a class="headerlink" href="#weekly-monthly-contests" title="Permanent link">&para;</a></h3>
+<p>Catch the most fish in a week or a month and you'll be paid out automatically once the period ends — see <a href="../../commands/profile/#contests">Contests</a> for prize details and how to check the live standings.</p>
+<h3 id="camp-income">Camp Income<a class="headerlink" href="#camp-income" title="Permanent link">&para;</a></h3>
+<p>Your fishing camp generates passive income from the Display Tank and free bait from the Bait Bin. See the <a href="#camp">Camp</a> section below for details.</p>
+<h2 id="spending-coins">Spending Coins<a class="headerlink" href="#spending-coins" title="Permanent link">&para;</a></h2>
+<h3 id="rods">Rods<a class="headerlink" href="#rods" title="Permanent link">&para;</a></h3>
+<p>Your biggest investment. Better rods reduce cooldown and boost rarity odds.</p>
+<table>
+<thead>
+<tr>
+<th>Rod</th>
+<th>Cost</th>
+<th>Level</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Basic Rod</td>
+<td>Free</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Wooden Rod</td>
+<td>500</td>
+<td>5</td>
+</tr>
+<tr>
+<td>Fiberglass Rod</td>
+<td>2,000</td>
+<td>10</td>
+</tr>
+<tr>
+<td>Carbon Fiber Rod</td>
+<td>25,000</td>
+<td>20</td>
+</tr>
+<tr>
+<td>Titanium Rod</td>
+<td>75,000</td>
+<td>35</td>
+</tr>
+<tr>
+<td>Legendary Rod</td>
+<td>250,000</td>
+<td>50</td>
+</tr>
+<tr>
+<td>Mystic Rod</td>
+<td>1,000,000</td>
+<td>75</td>
+</tr>
+</tbody>
+</table>
+<h3 id="bait">Bait<a class="headerlink" href="#bait" title="Permanent link">&para;</a></h3>
+<p>Consumable items that boost rarity or add special effects per cast. Ranges from 5 coins (Earthworm) to 6,000 coins (Magic Bait). See the <a href="../fishing/">Fishing Guide</a> for the full bait table.</p>
+<h3 id="tank-slot-upgrades">Tank Slot Upgrades<a class="headerlink" href="#tank-slot-upgrades" title="Permanent link">&para;</a></h3>
+<p>Expand your fish tank capacity with permanent upgrades.</p>
+<p>Each Tank Slot upgrade adds 5 additional slots to your storage capacity. Prices scale with each purchase:</p>
+<table>
+<thead>
+<tr>
+<th>Purchase</th>
+<th>Cost</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1st Slot</td>
+<td>2,000 coins</td>
+</tr>
+<tr>
+<td>2nd Slot</td>
+<td>3,600 coins</td>
+</tr>
+<tr>
+<td>3rd Slot</td>
+<td>6,480 coins</td>
+</tr>
+<tr>
+<td>4th Slot</td>
+<td>11,664 coins</td>
+</tr>
+<tr>
+<td>5th Slot</td>
+<td>20,995 coins</td>
+</tr>
+<tr>
+<td>6th Slot</td>
+<td>37,791 coins</td>
+</tr>
+<tr>
+<td>7th Slot</td>
+<td>68,023 coins</td>
+</tr>
+<tr>
+<td>8th Slot</td>
+<td>122,442 coins</td>
+</tr>
+<tr>
+<td>9th Slot</td>
+<td>220,395 coins</td>
+</tr>
+<tr>
+<td>10th Slot</td>
+<td>396,711 coins</td>
+</tr>
+</tbody>
+</table>
+<p>Each subsequent purchase costs 1.8x the previous price (base cost: 2,000 coins).</p>
+<h3 id="camp-upgrades">Camp Upgrades<a class="headerlink" href="#camp-upgrades" title="Permanent link">&para;</a></h3>
+<p>Invest in your camp buildings for long-term passive income. See the <a href="#camp">Camp</a> section below.</p>
+<h2 id="chests">Chests<a class="headerlink" href="#chests" title="Permanent link">&para;</a></h2>
+<p>There's a ~6% chance to receive a chest each time you catch a fish. When one drops, it goes straight into your inventory.</p>
+<h3 id="core-chests">Core Chests<a class="headerlink" href="#core-chests" title="Permanent link">&para;</a></h3>
+<p>Core chests come in four tiers:</p>
+<table>
+<thead>
+<tr>
+<th>Chest</th>
+<th>Rolls</th>
+<th>Typical Loot</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Common</td>
+<td>2</td>
+<td>Coin drops, Materials Bags, entry-level buffs (Energy Drinks, Ale, Lucky Magnets), fishing tickets</td>
+</tr>
+<tr>
+<td>Rare</td>
+<td>3</td>
+<td>Coin purses, Materials Bags, Rabbit Feet, Lucky Double Worms, Rare gear</td>
+</tr>
+<tr>
+<td>Epic</td>
+<td>4</td>
+<td>Stronger buffs (Schnapps, Shiny Rabbit Feet, Twin Hook Tokens, Steady Hands), pearl bags, titles, Epic gear</td>
+</tr>
+<tr>
+<td>Legendary</td>
+<td>5</td>
+<td>The Epic pool at better rates, plus larger pearl bags and Legendary gear</td>
+</tr>
+</tbody>
+</table>
+<p>Possible loot from any chest includes coins, pearls, bait, consumables, materials, fishing tickets, titles, and gear.</p>
+<p><strong>Buffs are tiered.</strong> Each buff type has an early-game version in the low chests and a stronger version in Epic and above — Ale and Schnapps for selling, Rabbit Foot and Shiny Rabbit Foot for rarity, Lucky Magnet and Gilded Magnet for chest luck. Only one buff of each type is active at a time, so the stronger one simply replaces the weaker when you have both.</p>
+<h3 id="seasonal-chests">Seasonal Chests<a class="headerlink" href="#seasonal-chests" title="Permanent link">&para;</a></h3>
+<p>Seasonal chests are limited-time event chests (e.g., Summer 2026) with unique loot pools and bonus gear drops. They open directly from your inventory, the same as core chests — no key, no daily limit.</p>
+<p>They are rarer instead: when a chest drops from fishing, there's a 93% chance it's a core chest and a 7% chance it's a seasonal chest (if one is currently active).</p>
+<h3 id="unique-chest">Unique Chest<a class="headerlink" href="#unique-chest" title="Permanent link">&para;</a></h3>
+<p>The Unique Chest isn't a fishing drop — it's a reward you win, from a weekly/monthly <a href="../../commands/profile/#contests">contest</a> or a top-3 finish in a <a href="../fishing/#monster-fish">Monster Fish</a> event. It always contains a guaranteed Rare-or-better piece of crafted gear. Open it the same way, with <code>/chest unique</code>.</p>
+<h3 id="opening-chests">Opening Chests<a class="headerlink" href="#opening-chests" title="Permanent link">&para;</a></h3>
+<p>Use <code>/chest &lt;type&gt; [amount]</code> to open chests. You can open up to 25 at once and loot is aggregated into a single summary.</p>
+<h2 id="gear-salvage">Gear Salvage<a class="headerlink" href="#gear-salvage" title="Permanent link">&para;</a></h2>
+<p>Got more gear than slots? Use <code>/salvage</code> to trade in <strong>10 unequipped gear items</strong> for one chest: <strong>60%</strong> Rare, <strong>30%</strong> Epic, <strong>10%</strong> Legendary. Pick which 10 to scrap from a paginated list — equipped gear never shows up as an option, so your loadout is safe. The chest lands unopened, same as any other.</p>
+<h2 id="camp">Camp<a class="headerlink" href="#camp" title="Permanent link">&para;</a></h2>
+<p>The fishing camp is a passive income system that unlocks at <strong>level 15</strong> for <strong>75,000 coins</strong>. Once purchased, your camp earns XP from fishing and levels up to unlock building upgrades.</p>
+<h3 id="camp-commands">Camp Commands<a class="headerlink" href="#camp-commands" title="Permanent link">&para;</a></h3>
+<ul>
+<li><code>/camp view</code> — View your camp overview, buildings, and display tank</li>
+<li><code>/camp buy</code> — Purchase your camp (level 15+, 75,000 coins)</li>
+<li><code>/camp build &lt;building&gt;</code> — Construct a new building (level 1)</li>
+<li><code>/camp upgrade &lt;building&gt;</code> — Upgrade a building to the next level</li>
+<li><code>/camp collect</code> — Collect accumulated bait and display income</li>
+<li><code>/camp display add &lt;fish_code&gt;</code> — Place a fish in your Display Tank</li>
+<li><code>/camp display remove &lt;fish_code&gt;</code> — Remove a fish from your Display Tank</li>
+</ul>
+<h3 id="buildings">Buildings<a class="headerlink" href="#buildings" title="Permanent link">&para;</a></h3>
+<p>Your camp has four buildings, each upgradeable up to level 5:</p>
+<h4 id="bait-bin">Bait Bin<a class="headerlink" href="#bait-bin" title="Permanent link">&para;</a></h4>
+<p>Generates free bait over time. Higher levels produce more bait per cycle and unlock better bait types.</p>
+<ul>
+<li>Generates bait every <strong>2 hours</strong>, stacking up to 12 cycles</li>
+<li>Level 1 produces 1 bait per cycle (mostly Earthworms)</li>
+<li>Level 5 produces 5 bait per cycle with a mix of all bait types</li>
+<li>Collect with <code>/camp collect</code></li>
+</ul>
+<h4 id="tackle-shop">Tackle Shop<a class="headerlink" href="#tackle-shop" title="Permanent link">&para;</a></h4>
+<p>Gives you a discount on shop purchases and <strong>camp building upgrades</strong>. Each level adds <strong>5% off</strong>, up to 25% at level 5.</p>
+<h4 id="display-tank">Display Tank<a class="headerlink" href="#display-tank" title="Permanent link">&para;</a></h4>
+<p>Lets you showcase your best fish and earn passive coin and pearl income.</p>
+<ul>
+<li>Each level adds <strong>1 display slot</strong> (up to 5 fish at level 5)</li>
+<li>Displayed fish earn <strong>5% of their value per day</strong> in coins</li>
+<li>Fish with the <strong>Pearlescent</strong> trait (marked 🦪 wherever your fish are listed) earn pearls instead of coins</li>
+<li>Income accumulates for up to 3 days before it caps — collect regularly with <code>/camp collect</code></li>
+</ul>
+<h4 id="breeding-tank">Breeding Tank<a class="headerlink" href="#breeding-tank" title="Permanent link">&para;</a></h4>
+<p>Unlock the fish breeding system. Breed two compatible fish to create offspring with inherited traits and rare mutations.</p>
+<ul>
+<li><strong>Requirements:</strong> Breeding Tank must be built (level 1+)</li>
+<li><strong>Breeding slots per level:</strong> Level 1–2 = 1 slot, Level 3–4 = 2 slots, Level 5 = 3 slots</li>
+<li><strong>Breeding time:</strong> 12–24 hours depending on parent rarities. Tank level reduces time (up to 30% faster at level 5)</li>
+<li><strong>Offspring inheritance:</strong> Species (45% each parent + 10% random), rarity (mostly matches parent avg, 15% up/10% down), traits (40% inherit chance per trait)</li>
+<li><strong>Breeding-only mutations:</strong> Gilded (3.5× value), Bioluminescent (2.5× value), Colossal (1.8× value + size multiplier)</li>
+</ul>
+<p>See the <a href="../fishing/#breeding-only-mutations">Fishing Guide</a> for details on the special traits that can only appear via breeding.</p>
+<h3 id="building-costs">Building Costs<a class="headerlink" href="#building-costs" title="Permanent link">&para;</a></h3>
+<p>Buildings cost coins (and pearls at higher levels) to construct and upgrade:</p>
+<table>
+<thead>
+<tr>
+<th>Level</th>
+<th>Coin Cost</th>
+<th>Pearl Cost</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1 (Build)</td>
+<td>15,000</td>
+<td>0</td>
+</tr>
+<tr>
+<td>2</td>
+<td>40,000</td>
+<td>0</td>
+</tr>
+<tr>
+<td>3</td>
+<td>75,000</td>
+<td>0</td>
+</tr>
+<tr>
+<td>4</td>
+<td>150,000</td>
+<td>50</td>
+</tr>
+<tr>
+<td>5</td>
+<td>300,000</td>
+<td>150</td>
+</tr>
+</tbody>
+</table>
+<h3 id="camp-levels">Camp Levels<a class="headerlink" href="#camp-levels" title="Permanent link">&para;</a></h3>
+<p>Your camp earns XP passively from fishing. Higher camp levels unlock the ability to upgrade buildings further.</p>
+<table>
+<thead>
+<tr>
+<th>Camp Level</th>
+<th>XP Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr>
+<td>2</td>
+<td>15,000</td>
+</tr>
+<tr>
+<td>3</td>
+<td>40,000</td>
+</tr>
+<tr>
+<td>4</td>
+<td>75,000</td>
+</tr>
+<tr>
+<td>5</td>
+<td>120,000</td>
+</tr>
+</tbody>
+</table>
+<h2 id="tips">Tips<a class="headerlink" href="#tips" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Don't sell everything</strong> — Keep rare fish for your collection and achievement progress</li>
+<li><strong>Use bait wisely</strong> — Expensive bait at low-level locations is wasteful; save it for Ocean+ spots</li>
+<li><strong>Daily streaks matter</strong> — A 30-day streak gives you +750 bonus coins per claim</li>
+<li><strong>Upgrade your rod first</strong> — The cooldown reduction lets you fish more often, compounding your earnings over time</li>
+<li><strong>Display your most valuable fish</strong> — A Legendary fish in the Display Tank earns far more passive income than a Common one</li>
+<li><strong>Pearlescent fish are display gold</strong> — They generate pearls instead of coins, which are much harder to earn otherwise</li>
+<li><strong>Collect your camp regularly</strong> — Bait and display income cap out, so don't let resources go to waste</li>
+<li><strong>Salvage instead of hoarding</strong> — Spare gear you'll never equip is worth more as a chest than as inventory clutter</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.sections", "navigation.indexes", "navigation.top", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>
