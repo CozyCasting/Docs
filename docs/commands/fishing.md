@@ -10,7 +10,7 @@ Cast your line and catch a fish.
 - **Aliases:** `f`, `catch`
 - **Cooldown:** 15 minutes base (applied once per session, not per cast; reduced by better rods)
 
-When you use `/fish`, a fishing session starts. You'll see a **Cast Line** button to begin your first cast — it's guaranteed to catch a fish or chest. Subsequent casts have an increasing escape chance.
+When you use `/fish`, a fishing session starts. You'll see a **Cast Line** button to begin. Your **first three casts are guaranteed** to catch a fish or chest — five if you're below level 10 — and after that the escape chance climbs steeply.
 
 Consecutive catches build a **streak** with **+1% rarity bonus per catch** (capped at +10%). If you're on cooldown, a **Fishing Ticket** button appears to skip it. Your session ends on a miss or manual stop, and you'll see a summary showing fish caught, kept/sold split, coins earned, XP, chests found, and best streak.
 

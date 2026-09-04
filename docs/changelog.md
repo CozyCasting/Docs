@@ -5,6 +5,54 @@ All notable changes to CozyCasting will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.10.3] - 2026-09-04
+
+### Changed
+
+**The early game is much faster** — A brand new angler used to catch one fish and then wait a quarter of an hour with nothing to do, which is where most people quietly put the game down. The fishing cooldown now scales with level: **2 minutes at level 1**, rising gradually to the usual 15 minutes at **level 10**. Rod and gear reductions apply on top exactly as before, and `/gear` shows both the base you're on and where it's heading. Nothing changes for anyone at level 10 or above.
+
+**Your first casts of a session can't escape** — The escape ladder used to start on cast two, so a session could end on a single fish through nothing but bad luck. The **first three casts of every session are now guaranteed** for everyone, at every location, with the ladder falling away much more steeply afterwards — the average session still lands about the same number of fish, but the floor is real. **Below level 10 you get five guaranteed casts.** A Shipwreck can still cut a session brutally short, but it can no longer send you home empty-handed.
+
+**Every session gives you at least one real fish** — Guaranteed casts can turn up chests, and a player stacking chest bonuses could spend all of them on chests and land no fish at all (about one session in twenty-three at the 35% cap). If chests have eaten every guaranteed cast, the last one is a fish. Materials Bags are unaffected — they never spent a cast to begin with.
+
+**Referrals pay out at level 10** — A referral used to complete when your friend reached level 5. It now completes at level 10. (Partly to combat abuse where people seemed to get their friends or alts to level 5 then immediately quit.)
+
+**Monster Fish are one per server, not one per channel** — The 30-minute cooldown between Monster Fish was held per *channel*, so a server with several fishing channels quietly gave itself several times the spawn rate, and two monsters could run at once and split the same handful of anglers between them. The cooldown is now per server, and only one monster can be active in a server at a time. A spawn that fizzles for want of players still costs nothing, as before.
+
+**The Roaming Trader always stocks Fertility Tonic** — He's the only source of it, so a bad rotation could put breeding out of reach for weeks. It's now guaranteed every Thursday and the other two consumable slots rotate as before.
+
+**Bites come much faster below level 10** — A new angler's session was mostly spent watching the water: five guaranteed casts at up to twelve seconds each, before anything happened. Below level 10 the wait is now **1.5 to 6 seconds**. Every bite-speed bonus — rods, gear, potions, guild and server buffs — still applies on top, and nothing changes at level 10 or above.
+
+### Added
+
+**A starter chain for your first sessions** — Five one-off steps — catch a fish, sell one, keep one, use bait, land 25 — that pay out **the moment you finish them**, with no claiming. They show up on your catch results and at the top of `/quests`, each one naming the next thing to try. Between them they're roughly your first rod upgrade.
+
+**New species are called out when you catch them** — Catching a species for the first time now says so on the catch itself, instead of it looking identical to the hundredth common you've sold. `/profile` also shows your journal completion, so there's a number to chase that isn't your coin balance.
+
+**Nine more daily quests** — The early quest pool was three entries wide, so a new player saw nearly the same board every day. There are now quests for opening chests, catching uncommons, shorter catch and sell targets, smaller streaks, and — at level 10 — collecting from your net.
+
+**Weekly server quests** — Your whole Discord server now shares one goal each week, rotating between **Full Harbour** (catch fish together), **Broad Waters** (land as many different species as you can) and **Deep Prizes** (Rare-or-better catches). The target scales with how many anglers your server actually has, so a small server gets a real target rather than an impossible one. Clear it and the whole server gets **Quest Current** — 10% faster bites — for the following week, and everyone who contributed at least 5 gets **2× Rabbit Foot**. Check progress any time with `/server quest`; the result is posted when the week rolls over, in whichever channel you've set for leaderboard results, rare catches or chest drops, falling back to your system channel.
+
+**Pearls for voting** — Every **10th vote** now pays **10 pearls** on top of the usual voting ticket. It runs off your lifetime vote count, not your streak, so a missed day costs you nothing toward it. `/vote` shows how many votes are left until the next one.
+
+**A nudge about invites at level 10** — Reaching level 10 now tells you that it's the same bar anyone you invite has to clear, and points you at `/referral`. The rewards were always there; almost nobody knew about them.
+
+### Fixed
+
+- Monster Fish fights now reliably preserve an active Fishing Frenzy, ordinary waters guarantee a real catch before a session can end, and streak quest completions appear in the session summary.
+
+## [0.10.2] - 2026-09-01
+
+### Added
+
+**`/subscription` has buy buttons now** — Supporting CozyCasting used to end with the bot telling you to go and find its Store page yourself, which looks different on desktop, mobile and web and was easy to give up on. Every tier now has its own button right there in `/subscription`, with the name and price read straight from Discord, and checkout happens without leaving the chat. There's still a link through to the full store listing if you want the descriptions and the art before you decide. Anything you already subscribe to is left off — you'll only ever see what you don't have yet.
+
+### Fixed
+
+**Your river trout came back** — Every river in the game served a fish called "Brook Trout" up to 0.10.1, because a shared species id let the stream's trout overwrite the river's in the database. 0.10.1 untangled the two, so rivers correctly ask for the Rainbow Trout they were always meant to hold — and every trout you had already caught in one was still filed under the stream's name, leaving the Mississippi, the Mekong and the Danube one short of complete. The 1,183 trout caught in a river are renamed to Rainbow Trout, which is what they always were. Trout caught in a stream are untouched.
+
+**`/locations` and `/collection` no longer disagree after new waters land** — When a content update was loaded into a running bot, `/locations` kept listing the world as it was before the update while `/collection` already counted the new waters, so the two commands told you different things until the bot was restarted. Every list built on top of game data is now rebuilt when that data is reloaded.
+
 ## [0.10.1] - 2026-09-01
 
 ### Added

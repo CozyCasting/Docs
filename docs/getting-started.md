@@ -36,8 +36,32 @@ Nothing about core fishing needs DMs. To enable them, **right-click the server �
 1. **Type `/fish`** (or `!f fish`) to cast your line.
 2. A fish will appear with its species, rarity, traits, and value.
 3. Choose **Keep** to add it to your tank, or **Sell** to pocket the coins.
+4. **Cast again.** Your first five casts of a session are guaranteed to land while you're under level 10, and your cooldown is only 2 minutes at level 1.
 
 That's it — you're fishing!
+
+## The Starter Chain
+
+Your first few sessions come with a short guided chain — five one-off steps that pay out **the instant you finish them**, no claiming required. They appear on your catch results and at the top of `/quests`.
+
+| Step | What to do | Reward |
+|------|------------|--------|
+| 🎣 First Cast | Catch your first fish | 100 coins |
+| 💰 Cashing In | Sell a fish | 150 coins + 10 bait |
+| 🐟 Your First Tank | Keep a fish in your tank | 200 coins |
+| 🪱 Bait the Hook | Catch 3 fish while using bait | 250 coins |
+| 🌊 A Real Haul | Catch 25 fish | 500 coins, 50 pearls, a Rare Chest |
+
+Between them that's roughly enough to buy your first rod upgrade.
+
+## The Early Game Is Faster
+
+Two things are deliberately generous until level 10, then settle to the normal rules:
+
+- **Cooldowns are short.** 2 minutes at level 1, rising gradually to the standard 15 minutes at level 10.
+- **Sessions are safe.** Your first *five* casts can't escape (everyone gets three).
+
+Level 10 is the point where the game opens up — nets, better rods, more locations — so the ramp is there to get you to it.
 
 ## Understanding the Catch Embed
 
@@ -58,6 +82,8 @@ When you catch a fish, you'll see:
 - **Claim daily rewards** with `/daily` for free coins and streak bonuses
 - **Check your net** with `/net status` to see passively caught fish
 - **Travel** with `/travel` to unlock new fishing spots as you level up
+- **Track your journal** — `/profile` shows how many of the game's species you've caught, and `/collection` shows which ones are still missing. A catch that's new to your journal is flagged on the catch itself.
+- **Invite a friend** with `/referral` — you both earn pearls when they reach level 10
 - **Check your level** with `/level` to see progress toward the next milestone
 - **Share your code** with `/referral` once you're a few levels in
 

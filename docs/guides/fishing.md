@@ -18,9 +18,23 @@ When you use `/fish`, the game:
 
 When you use `/fish`, a fishing session begins. Press **Cast Line** to start your first cast — it's guaranteed to catch a fish or chest.
 
-Subsequent casts in the same session have an increasing **escape chance** that climbs from 0% on your second cast to roughly 80% by the 10th+ cast. If a fish escapes, your session ends. If you have a **Fishing Ticket**, you can use it to guarantee the next catch and keep fishing.
+Your **first three casts of every session are guaranteed** — nothing escapes. After that the **escape chance** climbs steeply: 65% on the fourth cast, rising to 90% from the seventh on. If a fish escapes, your session ends. If you have a **Fishing Ticket**, you can use it to guarantee the next catch and keep fishing.
 
-You can keep casting until you miss, run out of time, or manually stop. **One 15-minute cooldown applies per session, not per cast** — so all your catches in a session share the same cooldown timer.
+**Below level 10 you get five guaranteed casts instead of three.** On average a session still lands about the same number of fish either way once you're established — the guarantee removes the bad luck, not the ceiling.
+
+A guaranteed cast can produce a fish, a chest or a Materials Bag, but **every session gives you at least one actual fish** — if chests have used up all your guaranteed casts, the last one is a fish instead. Materials Bags don't count against the guarantee at all: a bag is a free cast that leaves the ladder exactly where it was.
+
+You can keep casting until you miss, run out of time, or manually stop. **One cooldown applies per session, not per cast** — so all your catches in a session share the same cooldown timer.
+
+The base cooldown is **15 minutes**, but new anglers wait far less: it starts at **2 minutes at level 1** and rises gradually to the full 15 minutes at **level 10**. Rod and gear reductions apply on top of whichever base you're on, and `/gear` always shows the number you'll actually wait.
+
+| Level | Base cooldown |
+|-------|---------------|
+| 1 | 2m |
+| 3 | 4m 20s |
+| 5 | 6m 40s |
+| 7 | 9m 50s |
+| 10+ | 15m |
 
 ### Streaks
 
@@ -209,9 +223,11 @@ You have 2 minutes to respond before the moment passes with no reward — never 
 
 Very rarely (about a 0.5% chance per catch), a massive Monster Fish appears in your channel and kicks off a cooperative boss fight:
 
-1. **Join phase (60 seconds)** — Anyone in the channel can join. At least 3 players are needed for the fight to start; if too few join, the event fizzles out with no cooldown penalty.
+1. **Join phase (60 seconds)** — Anyone in the channel can join. At least 2 players are needed for the fight to start; if too few join, the event fizzles out with no cooldown penalty.
 2. **The fight (15 rounds, 5 seconds each)** — Each round, click the attack button matching the monster's weak spot. A correct hit scores a point; a miss costs one (never below zero).
-3. **Rewards** — The top 3 scorers earn chests: 🥇 Legendary + Seasonal Chest, 🥈 Epic Chest, 🥉 Rare Chest. Ties for a placement are broken randomly, not by who joined first.
+3. **Rewards** — The top 3 scorers earn chests: 🥇 Seasonal Chest, 🥈 Epic Chest, 🥉 Rare Chest. Ties for a placement are broken randomly, not by who joined first.
 4. **Catching the monster** — 1st place also has a chance to reel in the Monster Fish itself as a **Unique**-rarity catch. The base chance is small, but scales up with your equipped rod's rarity bonus — better rods meaningfully improve your odds.
+
+**One monster at a time, per server.** After a fight finishes, the whole server waits 30 minutes before another can appear — having several fishing channels doesn't get you more monsters, and two can never run at once and split your anglers.
 
 There are 31 unique Monster Fish species that can **only** be caught this way — ten each in North America, Asia and Europe, plus Zeb's Abyssal Dragonfish, which can surface in any of them. South America has no monsters of its own yet.

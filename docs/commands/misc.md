@@ -16,7 +16,9 @@ View and claim your daily quests.
 
 - **Usage:** `/quests`
 
-You get 3 quests per day: 2 shared globally across all players, plus 1 personal quest scaled to your level. Quest types include catching a number of fish, hunting specific rarities, fishing at certain locations, selling goals, and bait usage. Rewards are XP + coins scaled to your level. Quests and the daily reward reset at midnight UTC — a live countdown is shown.
+You get 3 quests per day: 2 shared globally across all players, plus 1 personal quest scaled to your level. Quest types include catching a number of fish, hunting specific rarities, fishing at certain locations, selling goals, bait usage, opening chests, session streaks, and — once you own one — collecting from your net. Rewards are XP + coins scaled to your level. Quests and the daily reward reset at midnight UTC — a live countdown is shown.
+
+If you haven't finished the **starter chain** yet, its current step sits at the top of this embed. Starter steps are one-off, pay out the instant you complete them, and don't need claiming. See [Getting Started](../getting-started.md#the-starter-chain).
 
 Complete all 3 to earn a bonus chest — usually Common, but a **quest completion streak** (finishing all 3 every day) shifts the odds toward rarer chests the longer it runs, capping out at 30 days.
 
@@ -26,7 +28,7 @@ View and share your referral code.
 
 - **Usage:** `/referral`
 
-Share your personal referral code with friends. New players can enter it with `/refer <code>` before reaching level 4. When they hit level 5, you receive **150 pearls** and they receive **100 pearls**. Your referral count also appears on `/profile`.
+Share your personal referral code with friends. New players can enter it with `/refer <code>` before reaching level 4. When they hit level 10, you receive **150 pearls** and they receive **100 pearls**. Your referral count also appears on `/profile`.
 
 ## /refer
 
@@ -34,7 +36,7 @@ Use a referral code from another player.
 
 - **Usage:** `/refer <code>`
 
-Must be used before you reach level 4. Earns you 100 pearls when you reach level 5.
+Must be used before you reach level 4. Earns you 100 pearls when you reach level 10.
 
 !!! note "Alt-account protection"
     Referral codes can't be redeemed from a Discord account under 30 days old.

@@ -47,7 +47,7 @@ Use `/daily` once every 24 hours to claim:
 
 ### Referral Rewards
 
-Share your referral code with `/referral`. New players can use `/refer <code>` before reaching level 4. When the referred player reaches level 5, **you earn 150 pearls** and **they earn 100 pearls**.
+Share your referral code with `/referral`. New players can use `/refer <code>` before reaching level 4. When the referred player reaches level 10, **you earn 150 pearls** and **they earn 100 pearls**.
 
 ### Weekly & Monthly Contests
 
