@@ -5,6 +5,19 @@ All notable changes to CozyCasting will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.10.4] - 2026-09-11
+
+### Added
+
+**The Summer 2026 season has a finish line** — Seasonal chests, titles, gear and an exclusive fish have been dropping all summer, but there was nothing to actually *complete*, and the Summer 2026 profile-card background sat in the game unobtainable by any means. There is now one season-long quest running alongside your dailies: **Summer Angler — catch 75 fish before the season ends on September 22nd**. Finish it and you permanently earn the Summer Angler badge, which unlocks the **Summer 2026** card background — equip it with `/card`. There is nothing to claim; it lands the moment you land the 75th fish.
+
+**`/quests` has tabs** — The board now opens on **Daily** as before, with a **Seasonal** button beside it that swaps the embed. Seasonal progress, what it pays out, and how long is left all live on their own page rather than being crammed under your dailies.
+
+### Fixed
+
+- Fixed a bug where certain fish didn't get counted towards guild missions.
+- Fixed an issue where `/gear` didn't show the proper values for certain items. 
+
 ## [0.10.3] - 2026-09-04
 
 ### Changed
