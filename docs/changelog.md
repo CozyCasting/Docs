@@ -5,6 +5,21 @@ All notable changes to CozyCasting will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.10.5] - 2026-09-12
+
+### Fixed
+
+- `/title list` no longer fails outright once you've collected a lot of titles. The list now opens on your rarest tier with a dropdown to switch between rarities, and a long tier spills into a continuation block instead of blowing past Discord's field limit.
+- `/inventory` now pages large gear collections instead of overflowing Discord's message limit.
+
+**Monster Fish are not grey any more** — Monsters you have already caught will re-render in colour the next time their image is built.
+
+**Uncommon catches count towards the uncommon quest** — "Something Better" (catch 3 uncommon+ fish) and the starter-friendly rarity quests only ever advanced on Rare-or-better catches: the catch handler filtered at Rare before the quest system ever saw the fish, so an uncommon was thrown away and the quest looked stuck at 2/3 after two Rares. The filter now follows the lowest rarity any quest actually asks for.
+
+### Changed
+
+**The cooldown DM explains itself, once** — Shortening the early cooldown to 2 minutes also made the "your rod is ready!" DM fire roughly seven times as often for a new angler, with nothing in it to say why or how to stop it. The first one you ever receive now carries a **Turn off fishing DMs** button and, below level 10, a line explaining that the reminders space out on their own as the cooldown stretches back to the full wait at level 10. Every DM after that is unchanged. Existing players get the notice too, on their next reminder — the toggle has always been in `/notifications`, but almost nobody had found it.
+
 ## [0.10.4] - 2026-09-11
 
 ### Added
