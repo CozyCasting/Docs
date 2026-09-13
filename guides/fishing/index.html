@@ -1,0 +1,2582 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Your guide to CozyCasting — a relaxing Discord fishing bot">
+      
+      
+        <meta name="author" content="Drew">
+      
+      
+        <link rel="canonical" href="https://cozycasting.github.io/Docs/guides/fishing/">
+      
+      
+        <link rel="prev" href="../../commands/server-admin/">
+      
+      
+        <link rel="next" href="../progression/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Fishing - CozyCasting</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="cyan">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#fishing-guide" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="CozyCasting" class="md-header__button md-logo" aria-label="CozyCasting" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            CozyCasting
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Fishing
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="cyan"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="cyan"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../getting-started/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Getting Started
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../commands/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Commands
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Guides
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../reference/locations/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Reference
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../website/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Website
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../screenshots/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Screenshots
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../faq/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  FAQ
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../tips/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Tips
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../changelog/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Changelog
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../roadmap/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Roadmap
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../privacy/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Legal
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="CozyCasting" class="md-nav__button md-logo" aria-label="CozyCasting" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    CozyCasting
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Getting Started
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../commands/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Commands
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Commands
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/fishing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fishing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/economy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Economy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/trading/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Trading
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/travel/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Travel
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/guilds/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guilds
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/profile/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Profile
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/misc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Misc
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/server-admin/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Server Admin
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guides
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Guides
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fishing
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fishing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#how-catching-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How Catching Works
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fishing-sessions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fishing Sessions
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Fishing Sessions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#streaks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Streaks
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#during-a-session" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        During a Session
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rarity-tiers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rarity Tiers
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#traits" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Traits
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Traits">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#positive-traits" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Positive Traits
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#special-traits" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Special Traits
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#negative-traits" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Negative Traits
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#breeding-only-mutations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Breeding-Only Mutations
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#improving-your-odds" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Improving Your Odds
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Improving Your Odds">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rods" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rods
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#your-rod-caps-your-total-cooldown-reduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Your rod caps your total cooldown reduction
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#server-buffs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Server buffs
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bait" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bait
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#location-matters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Location Matters
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nets-passive-fishing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Nets (Passive Fishing)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Nets (Passive Fishing)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-net-fishing-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How Net Fishing Works
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chests" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Chests
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#random-events" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Random Events
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#monster-fish" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Monster Fish
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../progression/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Progression
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../economy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Economy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guilds/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guilds
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reference
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Reference
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/locations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Locations
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/rarities/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Rarities
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../website/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Website
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../screenshots/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Screenshots
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faq/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    FAQ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tips/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tips
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../changelog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Changelog
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../roadmap/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Roadmap
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" >
+        
+          
+          <label class="md-nav__link" for="__nav_12" id="__nav_12_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Legal
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_12">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Legal
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../privacy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Privacy Policy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../terms/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Terms of Service
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#how-catching-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How Catching Works
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fishing-sessions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fishing Sessions
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Fishing Sessions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#streaks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Streaks
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#during-a-session" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        During a Session
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rarity-tiers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rarity Tiers
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#traits" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Traits
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Traits">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#positive-traits" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Positive Traits
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#special-traits" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Special Traits
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#negative-traits" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Negative Traits
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#breeding-only-mutations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Breeding-Only Mutations
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#improving-your-odds" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Improving Your Odds
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Improving Your Odds">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rods" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rods
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#your-rod-caps-your-total-cooldown-reduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Your rod caps your total cooldown reduction
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#server-buffs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Server buffs
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bait" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bait
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#location-matters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Location Matters
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nets-passive-fishing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Nets (Passive Fishing)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Nets (Passive Fishing)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-net-fishing-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How Net Fishing Works
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chests" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Chests
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#random-events" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Random Events
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#monster-fish" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Monster Fish
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="fishing-guide">Fishing Guide<a class="headerlink" href="#fishing-guide" title="Permanent link">&para;</a></h1>
+<p>Everything you need to know about catching fish in CozyCasting.</p>
+<h2 id="how-catching-works">How Catching Works<a class="headerlink" href="#how-catching-works" title="Permanent link">&para;</a></h2>
+<p>When you use <code>/fish</code>, the game:</p>
+<ol>
+<li><strong>Picks a species</strong> from the pool available at your current location</li>
+<li><strong>Rolls a rarity</strong> based on base weights, modified by your rod and bait bonuses</li>
+<li><strong>Rolls for traits</strong> — special modifiers that affect value and XP</li>
+<li><strong>Calculates size, value, and XP</strong> based on all the above</li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">Beginner's Luck</p>
+<p>The very first achievement you unlock (even something as small as your first catch) grants <strong>Beginner's Luck</strong> — bites come 75% faster for the next <strong>24 hours</strong>. It's a one-time nudge to help new anglers get going.</p>
+</div>
+<h2 id="fishing-sessions">Fishing Sessions<a class="headerlink" href="#fishing-sessions" title="Permanent link">&para;</a></h2>
+<p>When you use <code>/fish</code>, a fishing session begins. Press <strong>Cast Line</strong> to start your first cast — it's guaranteed to catch a fish or chest.</p>
+<p>Your <strong>first three casts of every session are guaranteed</strong> — nothing escapes. After that the <strong>escape chance</strong> climbs steeply: 65% on the fourth cast, rising to 90% from the seventh on. If a fish escapes, your session ends. If you have a <strong>Fishing Ticket</strong>, you can use it to guarantee the next catch and keep fishing.</p>
+<p><strong>Below level 10 you get five guaranteed casts instead of three.</strong> On average a session still lands about the same number of fish either way once you're established — the guarantee removes the bad luck, not the ceiling.</p>
+<p>A guaranteed cast can produce a fish, a chest or a Materials Bag, but <strong>every session gives you at least one actual fish</strong> — if chests have used up all your guaranteed casts, the last one is a fish instead. Materials Bags don't count against the guarantee at all: a bag is a free cast that leaves the ladder exactly where it was.</p>
+<p>You can keep casting until you miss, run out of time, or manually stop. <strong>One cooldown applies per session, not per cast</strong> — so all your catches in a session share the same cooldown timer.</p>
+<p>The base cooldown is <strong>15 minutes</strong>, but new anglers wait far less: it starts at <strong>2 minutes at level 1</strong> and rises gradually to the full 15 minutes at <strong>level 10</strong>. Rod and gear reductions apply on top of whichever base you're on, and <code>/gear</code> always shows the number you'll actually wait.</p>
+<table>
+<thead>
+<tr>
+<th>Level</th>
+<th>Base cooldown</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>2m</td>
+</tr>
+<tr>
+<td>3</td>
+<td>4m 20s</td>
+</tr>
+<tr>
+<td>5</td>
+<td>6m 40s</td>
+</tr>
+<tr>
+<td>7</td>
+<td>9m 50s</td>
+</tr>
+<tr>
+<td>10+</td>
+<td>15m</td>
+</tr>
+</tbody>
+</table>
+<h3 id="streaks">Streaks<a class="headerlink" href="#streaks" title="Permanent link">&para;</a></h3>
+<p>Consecutive catches in a session build a <strong>streak</strong>. Each catch adds <strong>+1% rarity bonus</strong>, capped at <strong>+10%</strong> (shown on the catch embed). When your session ends, you see a summary: fish caught, kept/sold split, coins earned, XP gained, chests found, best streak, and any achievements or quests you completed along the way.</p>
+<h3 id="during-a-session">During a Session<a class="headerlink" href="#during-a-session" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Chest catches</strong> — There's roughly a 6% chance to reel in a chest instead of a fish. Chests count toward your streak.</li>
+<li><strong>Bait switching</strong> — After each catch, a "Bait" button appears so you can switch bait mid-session without ending it.</li>
+<li><strong>Double catches</strong> — A small chance to reel in two fish on one cast (each with independent species and rarity rolls). You get a 4-button view: Keep Both / Sell Both / Keep 1st Sell 2nd / Sell 1st Keep 2nd.</li>
+<li><strong>Random events</strong> — Once in a while (about 4% per session end, level 3+), you'll run into a random encounter — a riddle, a lucky frog, a wishing well, and more. Every outcome is a win or a wash; there's no way to lose anything. See <a href="#random-events">Random Events</a> below.</li>
+<li><strong>Monster Fish</strong> — Very rarely (about 1 in 200 catches), a cooperative boss fight can spawn in your channel. See <a href="#monster-fish">Monster Fish</a> below.</li>
+</ul>
+<h2 id="rarity-tiers">Rarity Tiers<a class="headerlink" href="#rarity-tiers" title="Permanent link">&para;</a></h2>
+<p>Fish come in 7 rarity tiers. Higher rarities are worth more coins and XP but are much harder to catch.</p>
+<table>
+<thead>
+<tr>
+<th>Rarity</th>
+<th>Base Chance</th>
+<th>Sell Multiplier</th>
+<th>XP Multiplier</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Common</td>
+<td>~70%</td>
+<td>1x</td>
+<td>1x</td>
+</tr>
+<tr>
+<td>Uncommon</td>
+<td>~20%</td>
+<td>2x</td>
+<td>1.5x</td>
+</tr>
+<tr>
+<td>Rare</td>
+<td>~7%</td>
+<td>5x</td>
+<td>2.5x</td>
+</tr>
+<tr>
+<td>Epic</td>
+<td>~2.25%</td>
+<td>12x</td>
+<td>5x</td>
+</tr>
+<tr>
+<td>Legendary</td>
+<td>~0.6%</td>
+<td>20x</td>
+<td>10x</td>
+</tr>
+<tr>
+<td>Mythical</td>
+<td>~0.15%</td>
+<td>50x</td>
+<td>25x</td>
+</tr>
+<tr>
+<td>Unique</td>
+<td>Event only</td>
+<td>500x</td>
+<td>50x</td>
+</tr>
+</tbody>
+</table>
+<p>Your rod and bait add <strong>rarity bonuses</strong> that shift the odds in your favor. See the <a href="../../reference/rarities/">Rarities Reference</a> for the full breakdown.</p>
+<h2 id="traits">Traits<a class="headerlink" href="#traits" title="Permanent link">&para;</a></h2>
+<p>Fish can spawn with special traits that modify their value and XP. Traits are rolled independently of rarity.</p>
+<h3 id="positive-traits">Positive Traits<a class="headerlink" href="#positive-traits" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Trait</th>
+<th>Value Multiplier</th>
+<th>XP Multiplier</th>
+<th>Rarity</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Shiny</td>
+<td>1.5x</td>
+<td>1.25x</td>
+<td>Uncommon</td>
+</tr>
+<tr>
+<td>Pristine</td>
+<td>1.75x</td>
+<td>1.5x</td>
+<td>Uncommon</td>
+</tr>
+<tr>
+<td>Giant</td>
+<td>2x</td>
+<td>1.5x</td>
+<td>Rare</td>
+</tr>
+<tr>
+<td>Glowing</td>
+<td>2.25x</td>
+<td>1.75x</td>
+<td>Rare</td>
+</tr>
+<tr>
+<td>Ancient</td>
+<td>2.5x</td>
+<td>2x</td>
+<td>Very Rare</td>
+</tr>
+</tbody>
+</table>
+<h3 id="special-traits">Special Traits<a class="headerlink" href="#special-traits" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Trait</th>
+<th>Value Multiplier</th>
+<th>XP Multiplier</th>
+<th>Source</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pearlescent</td>
+<td>1.6x</td>
+<td>1.3x</td>
+<td>Pearl Rod exclusive</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">Spotting Pearlescent fish</p>
+<p>Pearlescent fish are marked with 🦪 everywhere your fish are listed (<code>/tank</code>, bulk sell, etc.) — they're the only fish worth displaying in your camp's <a href="../economy/#camp">Display Tank</a> instead of selling, since they earn pearls instead of coins. Bulk sell will warn you before you sell one, so you don't lose a pearl-earner by accident.</p>
+</div>
+<h3 id="negative-traits">Negative Traits<a class="headerlink" href="#negative-traits" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Trait</th>
+<th>Value Multiplier</th>
+<th>XP Multiplier</th>
+<th>Rarity</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tiny</td>
+<td>0.5x</td>
+<td>1x</td>
+<td>Common</td>
+</tr>
+<tr>
+<td>Damaged</td>
+<td>0.25x</td>
+<td>0.75x</td>
+<td>Common</td>
+</tr>
+</tbody>
+</table>
+<p>Trait multipliers stack with rarity multipliers, so a Giant Legendary fish is worth significantly more than a normal one.</p>
+<h3 id="breeding-only-mutations">Breeding-Only Mutations<a class="headerlink" href="#breeding-only-mutations" title="Permanent link">&para;</a></h3>
+<p>These rare traits can <strong>only</strong> appear through the fish breeding system. They offer exceptional value bonuses and unique appearances.</p>
+<p><strong>Fertility</strong> is a stat (0–100) on every fish that determines how many times it can breed. Wild-caught fish start with <strong>50 fertility</strong>. Each breeding costs <strong>15 fertility</strong> from each parent (minimum 10 required to breed). Offspring start with a fertility penalty — roughly parent average minus 10 — which naturally limits how many generations you can chain.</p>
+<table>
+<thead>
+<tr>
+<th>Trait</th>
+<th>Value Multiplier</th>
+<th>XP Multiplier</th>
+<th>Appearance</th>
+<th>Source</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Gilded</td>
+<td>3.5x</td>
+<td>1.3x</td>
+<td>Rich golden shimmer</td>
+<td>Breeding mutation (2–6% chance)</td>
+</tr>
+<tr>
+<td>Bioluminescent</td>
+<td>2.5x</td>
+<td>1.3x</td>
+<td>Glowing teal coloration</td>
+<td>Breeding mutation (2–6% chance)</td>
+</tr>
+<tr>
+<td>Colossal</td>
+<td>1.8x</td>
+<td>1.3x</td>
+<td>Massive size (2–3× normal)</td>
+<td>Special: Both parents Giant (5% chance)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>How to obtain:</strong>
+- <strong>Gilded &amp; Bioluminescent</strong> — Random mutations that can occur during breeding. Mutation chance increases with Breeding Tank level (2% at Level 1–2, 4% at Level 3–4, 6% at Level 5). Only one mutation per breeding session.
+- <strong>Colossal</strong> — A special upgrade that occurs when both parents have the Giant trait. There's a 5% chance the Giant trait becomes Colossal instead. If both parents are Giant, the offspring also has a bonus 25% chance to inherit Giant even if the normal inheritance roll fails.</p>
+<div class="admonition note">
+<p class="admonition-title">Pearlescent fish can't breed</p>
+<p>Pearlescent fish have 0 fertility and can't be used for breeding.</p>
+</div>
+<h2 id="improving-your-odds">Improving Your Odds<a class="headerlink" href="#improving-your-odds" title="Permanent link">&para;</a></h2>
+<h3 id="rods">Rods<a class="headerlink" href="#rods" title="Permanent link">&para;</a></h3>
+<p>Better rods reduce your fishing cooldown <strong>and</strong> increase your rarity bonus. Each rod has a rarity bonus percentage that shifts catches toward higher tiers.</p>
+<table>
+<thead>
+<tr>
+<th>Rod</th>
+<th>Cooldown Reduction</th>
+<th>Rarity Bonus</th>
+<th>Cost</th>
+<th>Level</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Basic Rod</td>
+<td>0s</td>
+<td>+0%</td>
+<td>Free</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Wooden Rod</td>
+<td>-5s</td>
+<td>+5%</td>
+<td>500 coins</td>
+<td>5</td>
+</tr>
+<tr>
+<td>Fiberglass Rod</td>
+<td>-10s</td>
+<td>+10%</td>
+<td>2,000 coins</td>
+<td>10</td>
+</tr>
+<tr>
+<td>Carbon Fiber Rod</td>
+<td>-15s</td>
+<td>+15%</td>
+<td>25,000 coins</td>
+<td>20</td>
+</tr>
+<tr>
+<td>Titanium Rod</td>
+<td>-20s</td>
+<td>+20%</td>
+<td>75,000 coins</td>
+<td>35</td>
+</tr>
+<tr>
+<td>Legendary Rod</td>
+<td>-25s</td>
+<td>+25%</td>
+<td>250,000 coins</td>
+<td>50</td>
+</tr>
+<tr>
+<td>Mystic Rod</td>
+<td>-30s</td>
+<td>+30%</td>
+<td>1,000,000 coins</td>
+<td>75</td>
+</tr>
+<tr>
+<td>Pearl Rod</td>
+<td>0s</td>
+<td>+0%</td>
+<td>500 pearls</td>
+<td>15</td>
+</tr>
+</tbody>
+</table>
+<p>The <strong>Pearl Rod</strong> is special — it doesn't boost rarity or reduce cooldown, but it can give fish the exclusive <strong>Pearlescent</strong> trait.</p>
+<h3 id="your-rod-caps-your-total-cooldown-reduction">Your rod caps your total cooldown reduction<a class="headerlink" href="#your-rod-caps-your-total-cooldown-reduction" title="Permanent link">&para;</a></h3>
+<p>Gear, potions, server buffs and guild buffs all shorten your cooldown on top of your rod's own reduction — but there's a <strong>limit on how much they can take off in total</strong>, and that limit rises with every rod tier. Upgrading your rod therefore pays twice: once for the rod's reduction, and again for the extra headroom it unlocks.</p>
+<p>You are very unlikely to hit the limit through normal play — a full set of cooldown gear plus a server buff plus a guild mission buff still fits underneath it at every tier. It exists so that a lucky run of crafted gear can't out-cut a rod you haven't earned yet. If you <em>are</em> over it, <code>/gear</code> says so on the <strong>Cooldown</strong> line and tells you a better rod will raise it.</p>
+<p><strong>Frenzy Potions ignore this limit entirely.</strong> They set your cooldown to a flat few seconds rather than reducing it by a percentage, so they're a full burst regardless of your rod. Server-wide <strong>Fishing Frenzy</strong> events work the same way and are also unaffected.</p>
+<h3 id="server-buffs">Server buffs<a class="headerlink" href="#server-buffs" title="Permanent link">&para;</a></h3>
+<p>Anyone with pearls can buy a buff that applies to <strong>everyone in a Discord server</strong>, from <code>/shop</code> → <strong>Server Buffs</strong>. They stack with your own gear and consumables.</p>
+<table>
+<thead>
+<tr>
+<th>Buff</th>
+<th>Effect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>⭐ XP Boost</td>
+<td>+20% XP from fishing</td>
+</tr>
+<tr>
+<td>🪝 Faster Bites</td>
+<td>20% less waiting for a bite</td>
+</tr>
+<tr>
+<td>⏱️ Cooldown Reduction</td>
+<td>10% shorter fishing cooldown</td>
+</tr>
+<tr>
+<td>💰 Sell Boost</td>
+<td>+15% coins when selling</td>
+</tr>
+</tbody>
+</table>
+<p>There is deliberately <strong>no rarity buff here</strong>. Rare-fish chance is earned — rod, bait, gear, consumables, guild — and never bought.</p>
+<p>Buying a buff a server already has <strong>extends</strong> it from its current expiry rather than replacing it, so nothing is wasted by buying early.</p>
+<p>The monthly top-server prize, 🏆 <strong>Champion's Bite</strong> (25% less waiting for a bite, 7 days), can't be bought at all and stacks with a purchased Faster Bites.</p>
+<h3 id="bait">Bait<a class="headerlink" href="#bait" title="Permanent link">&para;</a></h3>
+<p>Bait is consumed on each cast and provides a rarity bonus. Some baits work better in specific location types.</p>
+<table>
+<thead>
+<tr>
+<th>Bait</th>
+<th>Rarity Bonus</th>
+<th>Best Locations</th>
+<th>Cost</th>
+<th>Uses</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Earthworm</td>
+<td>+1%</td>
+<td>All</td>
+<td>5 coins</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Cricket</td>
+<td>+2%</td>
+<td>Pond, River, Lake</td>
+<td>10 coins</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Minnow</td>
+<td>+5%</td>
+<td>Lake, River</td>
+<td>25 coins</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Shrimp</td>
+<td>+8%</td>
+<td>Ocean, Deep Sea</td>
+<td>50 coins</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Squid</td>
+<td>+12%</td>
+<td>Deep Sea, Ocean</td>
+<td>500 coins</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Golden Lure</td>
+<td>+20%</td>
+<td>All</td>
+<td>2,500 coins</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Magic Bait</td>
+<td>+30%</td>
+<td>All</td>
+<td>6,000 coins</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Seasonal Bait</td>
+<td>+25%</td>
+<td>All</td>
+<td>500 coins</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Lucky Double Worm</td>
+<td>+5%</td>
+<td>All</td>
+<td>N/A (Event/Drop)</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<p><em>Note: The <strong>Seasonal Bait</strong> gives a 50% chance to guarantee catching a Seasonal Variant fish (when an event is active). The <strong>Lucky Double Worm</strong> provides a 15% chance to catch two fish in a single cast!</em></p>
+<h2 id="location-matters">Location Matters<a class="headerlink" href="#location-matters" title="Permanent link">&para;</a></h2>
+<p>Different locations have different species pools, base coin values, and XP — a Mythical from the Patagonian Ice Fields is worth vastly more XP and coins than a Mythical from the Appalachian Stream. What location does <strong>not</strong> change is your rarity odds: every rarity, from Common to Mythical, can appear at every location. See the <a href="../../reference/rarities/">Rarities Reference</a> for what actually shifts the odds, and the <a href="../../reference/locations/">Locations Reference</a> for the full list.</p>
+<p>Two location types are a bit different from the rest:</p>
+<ul>
+<li><strong>Reef</strong> — shallow, crowded, and gentle. Every fish here runs small, so its base value sits below what its level would suggest — reefs are where you fill out the journal, not where you earn.</li>
+<li><strong>Shipwreck</strong> — long waits between bites, but big fish and more chests than anywhere else.</li>
+</ul>
+<h2 id="nets-passive-fishing">Nets (Passive Fishing)<a class="headerlink" href="#nets-passive-fishing" title="Permanent link">&para;</a></h2>
+<p>In addition to casting your rod, you can passively catch fish using your <strong>Net</strong>. Your net automatically gathers fish and occasional items or chests over time while you are away.</p>
+<p>Use <code>/net status</code> to view your current net capacity and what's waiting for you, and use <code>/net collect</code> to claim your catches! Nets can sometimes catch rare fish or items, making them an excellent way to continue progressing even when you aren't actively fishing.</p>
+<h3 id="how-net-fishing-works">How Net Fishing Works<a class="headerlink" href="#how-net-fishing-works" title="Permanent link">&para;</a></h3>
+<p>Your net fills gradually over time in the background — it doesn't matter where you are or what you're doing. However, <strong>the fish are not decided until you collect them</strong>.</p>
+<p>When you press <code>/net collect</code>:</p>
+<ul>
+<li><strong>Location matters</strong> — Your net generates fish based on <strong>wherever you're standing right now</strong>, not where you deployed the net</li>
+<li><strong>Species pool</strong> — The fish come from your current location's species pool</li>
+<li><strong>No rod or bait bonuses</strong> — Net fish are generated with a basic rod and no bait, so they miss out on the rarity and value boosts you'd get from equipped gear (only the net's own rarity bonus applies)</li>
+<li><strong>Collection journal</strong> — Your fish count toward the location you collect at, not the location where the net was soaking</li>
+</ul>
+<p><strong>Practical tip:</strong> Travel to the location you want to fish from <em>before</em> collecting your net. If you leave a net soaking at Lake Baikal and collect at Svalbard Waters, you'll get Svalbard Arctic fish that count toward your Arctic collection — not Lake Baikal's.</p>
+<h2 id="chests">Chests<a class="headerlink" href="#chests" title="Permanent link">&para;</a></h2>
+<p>There's a ~6% chance to receive a chest when you catch a fish. Chests come in tiers: Common, Rare, Epic, and Legendary. Every chest opens directly from your inventory — no key, no daily limit. Seasonal chests (limited-time event chests) are the rare ones, at about 10% of chest drops.</p>
+<p>See the <a href="../economy/#chests">Economy Guide</a> for more details on chest loot and seasonal variants.</p>
+<h2 id="random-events">Random Events<a class="headerlink" href="#random-events" title="Permanent link">&para;</a></h2>
+<p>While you're fishing, you might stumble into a random encounter — roughly a <strong>4% chance</strong> each time a session ends, once you're level 3 or higher. Ten different events can appear, from a riddling old angler to a lucky frog, a wishing well, a shooting star, and more.</p>
+<p>Every event follows one rule: <strong>it can only help you or do nothing — it's never a loss.</strong> Rewards range from small coin drops to timed buffs (XP, rarity, cooldown, or sell boosts) up to chests and pearls. A few events are puzzles (answer right for the better reward table; a wrong answer still gets you a small consolation prize).</p>
+<p>You have 2 minutes to respond before the moment passes with no reward — never a penalty. Events have their own 30-minute cooldown per player, separate from your fishing cooldown.</p>
+<h2 id="monster-fish">Monster Fish<a class="headerlink" href="#monster-fish" title="Permanent link">&para;</a></h2>
+<p>Very rarely (about a 0.5% chance per catch), a massive Monster Fish appears in your channel and kicks off a cooperative boss fight:</p>
+<ol>
+<li><strong>Join phase (60 seconds)</strong> — Anyone in the channel can join. At least 2 players are needed for the fight to start; if too few join, the event fizzles out with no cooldown penalty.</li>
+<li><strong>The fight (15 rounds, 5 seconds each)</strong> — Each round, click the attack button matching the monster's weak spot. A correct hit scores a point; a miss costs one (never below zero).</li>
+<li><strong>Rewards</strong> — The top 3 scorers earn chests: 🥇 Seasonal Chest, 🥈 Epic Chest, 🥉 Rare Chest. Ties for a placement are broken randomly, not by who joined first.</li>
+<li><strong>Catching the monster</strong> — 1st place also has a chance to reel in the Monster Fish itself as a <strong>Unique</strong>-rarity catch. The base chance is small, but scales up with your equipped rod's rarity bonus — better rods meaningfully improve your odds.</li>
+</ol>
+<p><strong>One monster at a time, per server.</strong> After a fight finishes, the whole server waits 30 minutes before another can appear — having several fishing channels doesn't get you more monsters, and two can never run at once and split your anglers.</p>
+<p>There are 31 unique Monster Fish species that can <strong>only</strong> be caught this way — ten each in North America, Asia and Europe, plus Zeb's Abyssal Dragonfish, which can surface in any of them. South America has no monsters of its own yet.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.sections", "navigation.indexes", "navigation.top", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>

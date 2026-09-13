@@ -1,0 +1,2695 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Your guide to CozyCasting — a relaxing Discord fishing bot">
+      
+      
+        <meta name="author" content="Drew">
+      
+      
+        <link rel="canonical" href="https://cozycasting.github.io/Docs/commands/guilds/">
+      
+      
+        <link rel="prev" href="../travel/">
+      
+      
+        <link rel="next" href="../profile/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Guilds - CozyCasting</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="cyan">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#guild-commands" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="CozyCasting" class="md-header__button md-logo" aria-label="CozyCasting" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            CozyCasting
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Guilds
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="cyan"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="cyan"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../getting-started/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Getting Started
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Commands
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../guides/fishing/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Guides
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../reference/locations/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Reference
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../website/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Website
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../screenshots/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Screenshots
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../faq/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  FAQ
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../tips/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Tips
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../changelog/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Changelog
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../roadmap/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Roadmap
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../privacy/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Legal
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="CozyCasting" class="md-nav__button md-logo" aria-label="CozyCasting" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    CozyCasting
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Getting Started
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Commands
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Commands
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fishing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fishing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../economy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Economy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../trading/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Trading
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../travel/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Travel
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guilds
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guilds
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#guild" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        /guild
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#guild-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Guild Setup
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Guild Setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#guild-create" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        /guild create
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#membership" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Membership
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Membership">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#guild-invite" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        /guild invite
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#guild-members" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        /guild members
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#guild-promote" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        /guild promote
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#guild-demote" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        /guild demote
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#guild-kick" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        /guild kick
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#guild-leave" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        /guild leave
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#guild-disband" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        /guild disband
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#guild-bank-chest" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Guild Bank &amp; Chest
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Guild Bank &amp; Chest">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#guild-chest" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        /guild chest
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#guild-chest-add" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        /guild chest add
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#guild-chest-remove" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        /guild chest remove
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#guild-chest-log" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        /guild chest log
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#guild-camp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Guild Camp
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Guild Camp">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#guild-camp_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        /guild camp
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#guild-camp-upgrade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        /guild camp upgrade
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="/guild camp upgrade">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#building-specs-costs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Building Specs &amp; Costs
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#building-effects" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Building Effects
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#guild-level-bonuses" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Guild Level &amp; Bonuses
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Guild Level &amp; Bonuses">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#guild-upgrade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        /guild upgrade
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#level-thresholds" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Level Thresholds
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#weekly-guild-missions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Weekly Guild Missions
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Weekly Guild Missions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#guild-mission" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        /guild mission
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mission-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mission Types
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#materials-drops" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Materials &amp; Drops
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Materials &amp; Drops">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#materials-bags" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Materials Bags
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#guild-materials" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Guild Materials
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tips" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tips
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../profile/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Profile
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../misc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Misc
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../server-admin/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Server Admin
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guides
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Guides
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guides/fishing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fishing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guides/progression/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Progression
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guides/economy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Economy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guides/guilds/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guilds
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reference
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Reference
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/locations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Locations
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/rarities/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Rarities
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../website/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Website
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../screenshots/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Screenshots
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faq/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    FAQ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tips/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tips
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../changelog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Changelog
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../roadmap/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Roadmap
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" >
+        
+          
+          <label class="md-nav__link" for="__nav_12" id="__nav_12_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Legal
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_12">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Legal
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../privacy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Privacy Policy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../terms/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Terms of Service
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#guild" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        /guild
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#guild-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Guild Setup
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Guild Setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#guild-create" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        /guild create
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#membership" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Membership
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Membership">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#guild-invite" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        /guild invite
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#guild-members" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        /guild members
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#guild-promote" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        /guild promote
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#guild-demote" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        /guild demote
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#guild-kick" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        /guild kick
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#guild-leave" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        /guild leave
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#guild-disband" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        /guild disband
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#guild-bank-chest" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Guild Bank &amp; Chest
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Guild Bank &amp; Chest">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#guild-chest" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        /guild chest
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#guild-chest-add" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        /guild chest add
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#guild-chest-remove" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        /guild chest remove
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#guild-chest-log" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        /guild chest log
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#guild-camp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Guild Camp
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Guild Camp">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#guild-camp_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        /guild camp
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#guild-camp-upgrade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        /guild camp upgrade
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="/guild camp upgrade">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#building-specs-costs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Building Specs &amp; Costs
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#building-effects" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Building Effects
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#guild-level-bonuses" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Guild Level &amp; Bonuses
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Guild Level &amp; Bonuses">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#guild-upgrade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        /guild upgrade
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#level-thresholds" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Level Thresholds
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#weekly-guild-missions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Weekly Guild Missions
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Weekly Guild Missions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#guild-mission" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        /guild mission
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mission-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mission Types
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#materials-drops" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Materials &amp; Drops
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Materials &amp; Drops">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#materials-bags" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Materials Bags
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#guild-materials" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Guild Materials
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tips" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tips
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="guild-commands">Guild Commands<a class="headerlink" href="#guild-commands" title="Permanent link">&para;</a></h1>
+<p>Found a player-run guild, recruit members, manage your guild bank, and build guild camps to unlock server-wide bonuses.</p>
+<h2 id="guild">/guild<a class="headerlink" href="#guild" title="Permanent link">&para;</a></h2>
+<p>View a guild's profile including name, tag, level, member count, and current mission progress.</p>
+<ul>
+<li><strong>Usage:</strong> <code>/guild [name]</code></li>
+<li><strong>Aliases:</strong> <code>guild info</code></li>
+<li><strong>Examples:</strong> <code>/guild</code>, <code>/guild Fishmongers</code>, <code>/guild FM</code></li>
+</ul>
+<p>If you don't specify a guild name, it shows your own guild's profile. To look up another guild, search by exact name or tag (case-insensitive).</p>
+<hr />
+<h2 id="guild-setup">Guild Setup<a class="headerlink" href="#guild-setup" title="Permanent link">&para;</a></h2>
+<h3 id="guild-create">/guild create<a class="headerlink" href="#guild-create" title="Permanent link">&para;</a></h3>
+<p>Found a new guild using a Guild Token. Costs 1,000,000 coins.</p>
+<ul>
+<li><strong>Requires:</strong> Guild Token (purchasable from <code>/shop</code>)</li>
+<li><strong>Rewards:</strong> You become the Owner and can start inviting members</li>
+</ul>
+<p>To create a guild:
+1. Buy a Guild Token from <code>/shop</code> (1,000,000 coins)
+2. Use <code>/guild create</code> or <code>/use guild_token</code>
+3. Click <strong>Found Guild</strong>
+4. Enter your guild name (2–24 characters: letters, numbers, spaces, apostrophes, hyphens, periods)
+5. Enter your guild tag (3–5 letters or numbers only)</p>
+<p>Both the name and tag must be unique (case-insensitive). If your name or tag is rejected, the token stays in your inventory — you can try again.</p>
+<p><strong>One guild per player.</strong> If you leave or are kicked, you must wait 24 hours before founding or joining another guild.</p>
+<hr />
+<h2 id="membership">Membership<a class="headerlink" href="#membership" title="Permanent link">&para;</a></h2>
+<h3 id="guild-invite">/guild invite<a class="headerlink" href="#guild-invite" title="Permanent link">&para;</a></h3>
+<p>Invite a player to join your guild (Owner/Mod only).</p>
+<ul>
+<li><strong>Usage:</strong> <code>/guild invite @user</code></li>
+<li><strong>Cooldown:</strong> None</li>
+<li><strong>Requires:</strong> You must be the Owner or a Mod</li>
+</ul>
+<p>The invitee receives a private message with <strong>Accept</strong> and <strong>Decline</strong> buttons. The invite expires after <strong>7 days</strong>.</p>
+<p>If their DMs are closed, the invite posts in the channel instead.</p>
+<p><strong>Pending invite cap:</strong> A guild can have up to <strong>20 outstanding invites</strong>, and never more than the number of free roster slots.</p>
+<h3 id="guild-members">/guild members<a class="headerlink" href="#guild-members" title="Permanent link">&para;</a></h3>
+<p>View your guild's roster, paginated by 10 members per page.</p>
+<ul>
+<li><strong>Usage:</strong> <code>/guild members</code></li>
+</ul>
+<p><strong>Members see:</strong> Rank, join date</p>
+<p><strong>Owner/Mod see:</strong> Member level, last fish time, ⭐ guild XP contributed and 🪙 coins donated — ranked by XP contributed, so it doubles as a leaderboard for who's carrying the guild</p>
+<hr />
+<h3 id="guild-promote">/guild promote<a class="headerlink" href="#guild-promote" title="Permanent link">&para;</a></h3>
+<p>Promote a Member to Mod (Owner only).</p>
+<ul>
+<li><strong>Usage:</strong> <code>/guild promote @member</code></li>
+</ul>
+<h3 id="guild-demote">/guild demote<a class="headerlink" href="#guild-demote" title="Permanent link">&para;</a></h3>
+<p>Demote a Mod back to Member (Owner only).</p>
+<ul>
+<li><strong>Usage:</strong> <code>/guild demote @mod</code></li>
+</ul>
+<h3 id="guild-kick">/guild kick<a class="headerlink" href="#guild-kick" title="Permanent link">&para;</a></h3>
+<p>Remove a member from your guild (Owner/Mod only).</p>
+<ul>
+<li><strong>Usage:</strong> <code>/guild kick @member</code></li>
+<li><strong>Mod restriction:</strong> Mods can only kick Members, not other Mods or the Owner</li>
+</ul>
+<p>The removed member is notified via DM.</p>
+<h3 id="guild-leave">/guild leave<a class="headerlink" href="#guild-leave" title="Permanent link">&para;</a></h3>
+<p>Leave your guild voluntarily.</p>
+<ul>
+<li><strong>Usage:</strong> <code>/guild leave</code></li>
+<li><strong>Cooldown:</strong> 24 hours before you can join or found another guild</li>
+</ul>
+<p>If you're the Owner and no other Mods exist, the oldest Member becomes Owner. If no members remain, the guild is disbanded and the chest is destroyed with no refund.</p>
+<h3 id="guild-disband">/guild disband<a class="headerlink" href="#guild-disband" title="Permanent link">&para;</a></h3>
+<p>Disband your guild and destroy all its contents (Owner only, requires confirmation).</p>
+<ul>
+<li><strong>Usage:</strong> <code>/guild disband</code></li>
+</ul>
+<p><strong>Warning:</strong> This destroys the guild bank and chest contents with no refund. Confirm before proceeding.</p>
+<hr />
+<h2 id="guild-bank-chest">Guild Bank &amp; Chest<a class="headerlink" href="#guild-bank-chest" title="Permanent link">&para;</a></h2>
+<h3 id="guild-chest">/guild chest<a class="headerlink" href="#guild-chest" title="Permanent link">&para;</a></h3>
+<p>View the guild chest contents (items and balances).</p>
+<ul>
+<li><strong>Usage:</strong> <code>/guild chest</code></li>
+</ul>
+<p>Shows all coins, pearls, logs, stone, and the 25+ item slots (capped by Storehouse tier).</p>
+<h3 id="guild-chest-add">/guild chest add<a class="headerlink" href="#guild-chest-add" title="Permanent link">&para;</a></h3>
+<p>Deposit items or currency into the guild chest (any member).</p>
+<ul>
+<li><strong>Usage:</strong> <code>/guild chest add &lt;item&gt; &lt;quantity&gt;</code></li>
+<li><strong>Examples:</strong></li>
+<li><code>/guild chest add coins 500000</code></li>
+<li><code>/guild chest add pearls 100</code></li>
+<li><code>/guild chest add worm 50</code></li>
+<li><code>/guild chest add materials_bag 3</code></li>
+</ul>
+<p>Only <strong>coins and pearls</strong> can pay for <code>/guild upgrade</code>. Materials and items cannot.</p>
+<p>Deposits are <strong>not escrowed</strong> — everything in the chest stays spendable on camp upgrades until <code>/guild upgrade</code> actually spends it.</p>
+<h3 id="guild-chest-remove">/guild chest remove<a class="headerlink" href="#guild-chest-remove" title="Permanent link">&para;</a></h3>
+<p>Withdraw items from the guild chest (Owner/Mod only).</p>
+<ul>
+<li><strong>Usage:</strong> <code>/guild chest remove &lt;item&gt; &lt;quantity&gt;</code></li>
+</ul>
+<h3 id="guild-chest-log">/guild chest log<a class="headerlink" href="#guild-chest-log" title="Permanent link">&para;</a></h3>
+<p>View an audit trail of all deposits and withdrawals (Owner/Mod only).</p>
+<ul>
+<li><strong>Usage:</strong> <code>/guild chest log</code></li>
+</ul>
+<p>Shows paginated history of every coin, pearl, and item movement in the guild bank.</p>
+<hr />
+<h2 id="guild-camp">Guild Camp<a class="headerlink" href="#guild-camp" title="Permanent link">&para;</a></h2>
+<h3 id="guild-camp_1">/guild camp<a class="headerlink" href="#guild-camp_1" title="Permanent link">&para;</a></h3>
+<p>View the guild camp: current building tiers, their buffs, and production status.</p>
+<ul>
+<li><strong>Usage:</strong> <code>/guild camp</code></li>
+</ul>
+<p>Shows:
+- <strong>7 buildings:</strong> Logging Camp, Stone Camp, Lure Workshop, Library, Chapel, Storehouse, Bait Hut
+- <strong>Each building's tier</strong> (0–5) and current buff
+- <strong>Material production status</strong> (logs/stone generation)
+- <strong>Item storage capacity</strong></p>
+<h3 id="guild-camp-upgrade">/guild camp upgrade<a class="headerlink" href="#guild-camp-upgrade" title="Permanent link">&para;</a></h3>
+<p>Upgrade a guild building to the next tier (Owner/Mod only).</p>
+<ul>
+<li><strong>Usage:</strong> <code>/guild camp upgrade &lt;building&gt;</code></li>
+<li><strong>Requirements:</strong></li>
+<li>Building tier cannot exceed guild level (e.g., a level 3 guild cannot build tier 5 buildings)</li>
+<li>Guild chest must have sufficient coins, logs, stone, and pearls</li>
+<li>Costs are per building and paid from the guild bank</li>
+</ul>
+<p><strong>Example progression:</strong> Tier 1→2→3→4→5</p>
+<p>All upgrades are permanent. After confirmation, costs are deducted from the guild bank immediately.</p>
+<h4 id="building-specs-costs">Building Specs &amp; Costs<a class="headerlink" href="#building-specs-costs" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Building</th>
+<th>Tier 1</th>
+<th>Tier 2</th>
+<th>Tier 3</th>
+<th>Tier 4</th>
+<th>Tier 5</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Lure Workshop</strong></td>
+<td>250K 🪙<br/>50 🪓<br/>40 ⛏️</td>
+<td>750K 🪙<br/>150 🪓<br/>120 ⛏️</td>
+<td>2M 🪙<br/>400 🪓<br/>320 ⛏️</td>
+<td>5M 🪙<br/>900 🪓<br/>750 ⛏️<br/>50 💎</td>
+<td>12M 🪙<br/>2K 🪓<br/>1.7K ⛏️<br/>150 💎</td>
+</tr>
+<tr>
+<td><strong>Library</strong></td>
+<td>250K 🪙<br/>50 🪓<br/>40 ⛏️</td>
+<td>750K 🪙<br/>150 🪓<br/>120 ⛏️</td>
+<td>2M 🪙<br/>400 🪓<br/>320 ⛏️</td>
+<td>5M 🪙<br/>900 🪓<br/>750 ⛏️<br/>50 💎</td>
+<td>12M 🪙<br/>2K 🪓<br/>1.7K ⛏️<br/>150 💎</td>
+</tr>
+<tr>
+<td><strong>Chapel</strong></td>
+<td>250K 🪙<br/>50 🪓<br/>40 ⛏️</td>
+<td>750K 🪙<br/>150 🪓<br/>120 ⛏️</td>
+<td>2M 🪙<br/>400 🪓<br/>320 ⛏️</td>
+<td>5M 🪙<br/>900 🪓<br/>750 ⛏️<br/>50 💎</td>
+<td>12M 🪙<br/>2K 🪓<br/>1.7K ⛏️<br/>150 💎</td>
+</tr>
+<tr>
+<td><strong>Bait Hut</strong></td>
+<td>250K 🪙<br/>50 🪓<br/>40 ⛏️</td>
+<td>750K 🪙<br/>150 🪓<br/>120 ⛏️</td>
+<td>2M 🪙<br/>400 🪓<br/>320 ⛏️</td>
+<td>5M 🪙<br/>900 🪓<br/>750 ⛏️<br/>50 💎</td>
+<td>12M 🪙<br/>2K 🪓<br/>1.7K ⛏️<br/>150 💎</td>
+</tr>
+<tr>
+<td><strong>Storehouse</strong></td>
+<td>Same as above</td>
+<td>Same</td>
+<td>Same</td>
+<td>Same</td>
+<td>Same</td>
+</tr>
+<tr>
+<td><strong>Logging Camp</strong></td>
+<td>Same as above</td>
+<td>Same</td>
+<td>Same</td>
+<td>Same</td>
+<td>Same</td>
+</tr>
+<tr>
+<td><strong>Stone Camp</strong></td>
+<td>Same as above</td>
+<td>Same</td>
+<td>Same</td>
+<td>Same</td>
+<td>Same</td>
+</tr>
+</tbody>
+</table>
+<p>Key: 🪙 = coins, 🪓 = logs, ⛏️ = stone, 💎 = pearls</p>
+<h4 id="building-effects">Building Effects<a class="headerlink" href="#building-effects" title="Permanent link">&para;</a></h4>
+<p><strong>Lure Workshop</strong> — fish bite 3% sooner per tier for every member<br />
+<strong>Library</strong> — +3% catch XP per tier for every member<br />
+<strong>Chapel</strong> — +1% rare fish chance per tier for every member<br />
+<strong>Bait Hut</strong> — +5% chance per tier that a catch doesn't consume your bait<br />
+<strong>Storehouse</strong> — +25 guild chest item slots per tier (up to 150 total)<br />
+<strong>Logging Camp</strong> — Produces logs daily: tier × active members × 2 (active = fished in last 3 days)<br />
+<strong>Stone Camp</strong> — Produces stone daily: tier × active members × 2 (active = fished in last 3 days)</p>
+<p>Materials are deposited automatically into the guild bank and capped at 500 per cycle.</p>
+<hr />
+<h2 id="guild-level-bonuses">Guild Level &amp; Bonuses<a class="headerlink" href="#guild-level-bonuses" title="Permanent link">&para;</a></h2>
+<p>Guilds level up from <strong>Level 1 to Level 5</strong> with <code>/guild upgrade</code> (Owner/Mod only).</p>
+<h3 id="guild-upgrade">/guild upgrade<a class="headerlink" href="#guild-upgrade" title="Permanent link">&para;</a></h3>
+<p>Raise the guild one level. Requires <strong>all three</strong>:</p>
+<ul>
+<li>⭐ <strong>Guild XP</strong> — earned automatically as members fish. It never goes down, and it is only <em>checked</em>, never spent.</li>
+<li>
+<p>🪙 <strong>Coins</strong> and 🦪 <strong>Pearls</strong> — <strong>spent</strong> out of the guild chest, permanently.</p>
+</li>
+<li>
+<p><strong>Usage:</strong> <code>/guild upgrade</code></p>
+</li>
+</ul>
+<p><code>/guild info</code> always shows how you're tracking against all three.</p>
+<h3 id="level-thresholds">Level Thresholds<a class="headerlink" href="#level-thresholds" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Level</th>
+<th>Guild XP</th>
+<th>Coins</th>
+<th>Pearls</th>
+<th>Max Members</th>
+<th>Sell Bonus</th>
+<th>XP Bonus</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>10</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>2</td>
+<td>350,000</td>
+<td>25,000,000</td>
+<td>250</td>
+<td>20</td>
+<td>+2%</td>
+<td>+2%</td>
+</tr>
+<tr>
+<td>3</td>
+<td>1,000,000</td>
+<td>75,000,000</td>
+<td>750</td>
+<td>30</td>
+<td>+4%</td>
+<td>+4%</td>
+</tr>
+<tr>
+<td>4</td>
+<td>2,000,000</td>
+<td>200,000,000</td>
+<td>2,000</td>
+<td>40</td>
+<td>+6%</td>
+<td>+6%</td>
+</tr>
+<tr>
+<td>5</td>
+<td>3,500,000</td>
+<td>500,000,000</td>
+<td>5,000</td>
+<td>50</td>
+<td>+8%</td>
+<td>+8%</td>
+</tr>
+</tbody>
+</table>
+<p>Guild XP comes <strong>only from fishing</strong> — every point of catch XP a member earns is mirrored into the guild automatically, boosts included. Quest rewards, redeem codes and admin grants do not count. A member leaving never lowers the guild's total.</p>
+<p>Each guild level above 1 grants all members a <strong>+2% sell value</strong> and <strong>+2% catch XP</strong> bonus (stacking with camp building bonuses).</p>
+<hr />
+<h2 id="weekly-guild-missions">Weekly Guild Missions<a class="headerlink" href="#weekly-guild-missions" title="Permanent link">&para;</a></h2>
+<p>Every week, all guilds compete on the same rotating mission. Completing it grants all members a <strong>−5% fishing cooldown</strong> buff for the following week.</p>
+<h3 id="guild-mission">/guild mission<a class="headerlink" href="#guild-mission" title="Permanent link">&para;</a></h3>
+<p>View the current week's mission, your guild's progress, and top contributors.</p>
+<ul>
+<li><strong>Usage:</strong> <code>/guild mission</code></li>
+</ul>
+<p>Shows the mission name, goal, current progress, and a leaderboard of members' contributions.</p>
+<h3 id="mission-types">Mission Types<a class="headerlink" href="#mission-types" title="Permanent link">&para;</a></h3>
+<p><strong>Full Nets</strong> — Catch fish with <code>/fish</code>. Goal: 100 per member (scaled by member count at week start)</p>
+<p><strong>Market Rush</strong> — Earn coins by selling. Goal: 50,000 coins per member</p>
+<p><strong>Trophy Hunt</strong> — Catch Rare-or-better fish with <code>/fish</code>. Goal: 10 per member</p>
+<p>Missions rotate weekly. Only active <code>/fish</code> catches count — nets and breeding do not.</p>
+<hr />
+<h2 id="materials-drops">Materials &amp; Drops<a class="headerlink" href="#materials-drops" title="Permanent link">&para;</a></h2>
+<h3 id="materials-bags">Materials Bags<a class="headerlink" href="#materials-bags" title="Permanent link">&para;</a></h3>
+<p>While fishing, about <strong>8% of successful catches</strong> drop a free <strong>Materials Bag</strong> that doesn't consume a cast (fishing odds and chest chances are unaffected).</p>
+<ul>
+<li><strong>Usage:</strong> <code>/use materials_bag</code></li>
+<li><strong>Rewards:</strong> 3–8 logs and 2–6 stone</li>
+</ul>
+<p>Bags can also drop from Epic and Legendary chests. Materials go into a <strong>Materials tab</strong> in your <code>/inventory</code>.</p>
+<h3 id="guild-materials">Guild Materials<a class="headerlink" href="#guild-materials" title="Permanent link">&para;</a></h3>
+<p>Logs and stone are used for guild camp upgrades. The guild chest holds them as slotless balances.</p>
+<hr />
+<h2 id="tips">Tips<a class="headerlink" href="#tips" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Founding costs 1 million coins</strong> — save up or join an existing guild to start building immediately</li>
+<li><strong>Donating doesn't lock money away</strong> — deposited coins and pearls stay spendable on camp until an upgrade spends them</li>
+<li><strong>Money alone can't level a guild</strong> — you need guild XP too, and the only way to earn it is members fishing</li>
+<li><strong>Level matters for building</strong> — you can't upgrade a building past your guild level</li>
+<li><strong>Active members count</strong> — Logging/Stone camps produce more when more members have fished recently</li>
+<li><strong>Missions are global</strong> — the same mission runs for every guild each week, so coordination helps</li>
+<li><strong>Materials scale</strong> — budget time for high-tier camp upgrades; early tiers are cheap, tier 4–5 are expensive</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.sections", "navigation.indexes", "navigation.top", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>
